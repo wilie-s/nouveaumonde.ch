@@ -1,4 +1,4 @@
-uuid: c5b1b707-4eb6-4a6b-b939-503e0dbec494
+uuid: 5b33be49-99c8-4027-8890-aa0c2e95eab2
 langcode: fr
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - monde
-_core:
-  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: monde_branding
+id: marquedusite
 theme: monde
 region: navigation
-weight: -4
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:
