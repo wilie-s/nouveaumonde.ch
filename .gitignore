@@ -14,3 +14,7 @@ web/sites/simpletest
 # Ignore core phpcs.xml and phpunit.xml.
 web/core/phpcs.xml
 web/core/phpunit.xml
+
+## Nodejs files
+
+node_modules
