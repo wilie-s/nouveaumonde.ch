@@ -1,0 +1,18 @@
+{
+  "name": "nouveaumonde",
+  "version": "0.1.0",
+  "dependencies": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "node-sass": "^4.5.3"
+  },
+  "scripts": {
+    "sass": "node-sass web/themes/monde/scss/style.scss --output web/themes/monde/css",
+    "sass:watch": "yarn run sass -- --watch",
+    "fractal:watch": "fractal start --sync",
+    "start": "concurrently --kill-others --names SASS -p name -c bgBlue.bold,bgMagenta.bold \"yarn run sass:watch\"",
+    "build": "yarn run sass"
+  }
+}
