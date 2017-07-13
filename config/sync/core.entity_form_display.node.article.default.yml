@@ -1,5 +1,5 @@
 uuid: 0696d4c0-37fd-4f53-8d47-f7a7978892e4
-langcode: en
+langcode: fr
 status: true
 dependencies:
   config:
@@ -45,6 +45,12 @@ content:
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }

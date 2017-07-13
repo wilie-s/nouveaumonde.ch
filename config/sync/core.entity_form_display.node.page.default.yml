@@ -1,5 +1,5 @@
 uuid: c8ae0189-7750-478c-8a41-ab3243c2f754
-langcode: en
+langcode: fr
 status: true
 dependencies:
   config:
@@ -27,6 +27,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }

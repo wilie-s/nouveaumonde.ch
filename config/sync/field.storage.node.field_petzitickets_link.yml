@@ -1,0 +1,19 @@
+uuid: 5534989d-f408-44b0-9650-8f6f6f3b7022
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_petzitickets_link
+field_name: field_petzitickets_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

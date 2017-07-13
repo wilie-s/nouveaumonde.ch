@@ -1,0 +1,17 @@
+uuid: f48d808d-61b4-4d46-8d11-30e6f87b7452
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Event
+type: event
+description: 'Use that to add an event'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
