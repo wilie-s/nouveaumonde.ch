@@ -1,25 +1,25 @@
-uuid: 7eff2ab2-58e7-4ef9-8f61-43d77e9cf508
+uuid: c5b1b707-4eb6-4a6b-b939-503e0dbec494
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - monde
 _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: bartik_branding
-theme: bartik
-region: header
-weight: 0
+id: monde_branding
+theme: monde
+region: navigation
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: 'Site branding'
+  label: 'Marque du site'
   provider: system
   label_display: '0'
   use_site_logo: true
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }

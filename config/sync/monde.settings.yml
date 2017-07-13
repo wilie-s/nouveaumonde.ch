@@ -1,0 +1,27 @@
+cdn_provider: ''
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://nouveaumonde.ch.dev/themes/monde/favicon.ico'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  monde: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+breadcrumb: '2'
+navbar_position: static-top
+table_responsive: '-1'
+modal_enabled: 0
+popover_enabled: 0
+tooltip_enabled: 0
+table: ''

@@ -1,20 +1,20 @@
-uuid: f2161230-5ab3-4758-9d4a-9bff43a05473
+uuid: 7852f4e1-1526-4234-9781-de37bbf989a9
 langcode: fr
 status: true
 dependencies:
   theme:
-    - bartik
+    - monde
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
-id: bartik_page_title
-theme: bartik
+id: monde_page_title
+theme: monde
 region: content
-weight: -50
+weight: -5
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: 'Titre de page'
   provider: core
   label_display: '0'
 visibility: {  }

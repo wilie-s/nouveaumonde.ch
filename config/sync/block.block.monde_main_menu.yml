@@ -1,4 +1,4 @@
-uuid: dba86bd5-e03c-46f3-af37-e5198baf7ad2
+uuid: b6a3bd43-2a35-44da-a39a-07084e925442
 langcode: fr
 status: true
 dependencies:
@@ -7,18 +7,18 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - monde
 _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: bartik_main_menu
-theme: bartik
-region: primary_menu
-weight: 0
+id: monde_main_menu
+theme: monde
+region: navigation_collapsible
+weight: -4
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: 'Navigation principale'
   provider: system
   label_display: '0'
   level: 1

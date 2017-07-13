@@ -1,17 +1,17 @@
-uuid: eb4638f7-7f6f-48f4-9fee-58c447d6959f
+uuid: 9f39bade-384f-466a-aafa-7415598a6d7e
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - bootstrap
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: bartik_messages
-theme: bartik
-region: highlighted
-weight: 0
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: bootstrap_messages
+theme: bootstrap
+region: header
+weight: -50
 provider: null
 plugin: system_messages_block
 settings:

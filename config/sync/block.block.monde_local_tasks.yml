@@ -1,20 +1,20 @@
-uuid: e944982c-e9c1-45df-b3c2-916e977e322c
+uuid: a16a9cd5-aff9-4a16-94e5-e86d98c90e0a
 langcode: fr
 status: true
 dependencies:
   theme:
-    - bartik
+    - monde
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: bartik_local_tasks
-theme: bartik
+id: monde_local_tasks
+theme: monde
 region: content
-weight: -40
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Tabs
+  label: Onglets
   provider: core
   label_display: '0'
   primary: true

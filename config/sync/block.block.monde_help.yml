@@ -1,22 +1,22 @@
-uuid: 18740bf4-8104-4b32-b914-490ba19eca54
+uuid: ab58cff8-a4a6-4653-8ab8-9740aa609fca
 langcode: fr
 status: true
 dependencies:
   module:
     - help
   theme:
-    - bartik
+    - monde
 _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
-id: bartik_help
-theme: bartik
+id: monde_help
+theme: monde
 region: content
-weight: -30
+weight: -5
 provider: null
 plugin: help_block
 settings:
   id: help_block
-  label: Help
+  label: Aide
   provider: help
   label_display: '0'
 visibility: {  }
