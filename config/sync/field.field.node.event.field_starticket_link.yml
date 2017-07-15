@@ -12,7 +12,7 @@ field_name: field_starticket_link
 entity_type: node
 bundle: event
 label: Starticket
-description: ''
+description: 'A link like https://www.starticket.ch/fr/tickets/cfm-us-support-tba-20170915-2130-espace-culturel-le-nouveau-monde-fribourg '
 required: false
 translatable: false
 default_value: {  }

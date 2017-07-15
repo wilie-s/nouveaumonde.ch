@@ -11,14 +11,16 @@ dependencies:
     - field.field.node.event.field_images
     - field.field.node.event.field_main_image
     - field.field.node.event.field_petzitickets_link
+    - field.field.node.event.field_prix
     - field.field.node.event.field_starticket_link
     - field.field.node.event.field_subtitle
     - node.type.event
+    - responsive_image.styles.wide
   module:
     - datetime
     - hms_field
-    - image
     - link
+    - responsive_image
     - text
     - user
 id: node.event.default
@@ -29,13 +31,13 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     region: content
   field_date:
-    weight: 102
-    label: above
+    weight: 4
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -43,8 +45,8 @@ content:
     type: datetime_default
     region: content
   field_doors_time:
-    weight: 103
-    label: above
+    weight: 5
+    label: inline
     settings:
       format: 'h:mm'
       leading_zero: true
@@ -52,42 +54,33 @@ content:
     type: hms_default_formatter
     region: content
   field_event_type:
-    weight: 104
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_genre:
-    weight: 108
-    label: above
+    weight: 6
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_images:
-    weight: 110
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_main_image:
-    weight: 109
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: wide
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_petzitickets_link:
-    weight: 105
-    label: above
+    weight: 8
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -97,9 +90,20 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_starticket_link:
-    weight: 106
+  field_prix:
+    weight: 10
     label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_starticket_link:
+    weight: 9
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -110,15 +114,18 @@ content:
     type: link
     region: content
   field_subtitle:
-    weight: 107
-    label: above
+    weight: 3
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   links:
-    weight: 100
+    weight: 1
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  field_images: true
   langcode: true

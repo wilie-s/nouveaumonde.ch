@@ -12,7 +12,7 @@ field_name: field_petzitickets_link
 entity_type: node
 bundle: event
 label: Petzitickets
-description: ''
+description: 'A link like https://www.petzitickets.ch/event_description.php?event_id=37706'
 required: false
 translatable: false
 default_value: {  }
