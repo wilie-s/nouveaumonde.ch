@@ -237,7 +237,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: events
+      path: programme
       menu:
         type: normal
         title: Programme
