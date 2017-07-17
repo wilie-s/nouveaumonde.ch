@@ -5,7 +5,7 @@ Official website of https://nouveaumonde.ch
 What is used:
 - drupal 8
 - bootstrap
-- less
+- sass
 - nodejs
 - yarn
 
