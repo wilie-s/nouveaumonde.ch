@@ -1,14 +1,37 @@
-/**
- * Default Variables.
- *
- * Modify this file to provide default Bootstrap Framework variables. The
- * Bootstrap Framework will not override any variables defined here because it
- * uses the `!default` flag which will only set their default if not already
- * defined here.
- *
- * You can copy existing variables directly from the following file:
- * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
- */
+@font-face {
+    font-family: 'AvenirNext-Regular';
+    src: url('../fonts/AvenirNext-Regular.eot');
+    src: url('../fonts/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNext-Regular.woff2') format('woff2'),
+         url('../fonts/AvenirNext-Regular.woff') format('woff'),
+         url('../fonts/AvenirNext-Regular.ttf') format('truetype'),
+         url('../fonts/AvenirNext-Regular.svg#AvenirNext-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNext-DemiBold';
+    src: url('../fonts/AvenirNext-DemiBold.eot');
+    src: url('../fonts/AvenirNext-DemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNext-DemiBold.woff2') format('woff2'),
+         url('../fonts/AvenirNext-DemiBold.woff') format('woff'),
+         url('../fonts/AvenirNext-DemiBold.ttf') format('truetype'),
+         url('../fonts/AvenirNext-DemiBold.svg#AvenirNext-DemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNext-Heavy';
+    src: url('../fonts/AvenirNext-Heavy.eot');
+    src: url('../fonts/AvenirNext-Heavy.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNext-Heavy.woff2') format('woff2'),
+         url('../fonts/AvenirNext-Heavy.woff') format('woff'),
+         url('../fonts/AvenirNext-Heavy.ttf') format('truetype'),
+         url('../fonts/AvenirNext-Heavy.svg#AvenirNext-Heavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 // Set the proper directory for the Bootstrap Glyphicon font.
 $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
@@ -31,14 +54,9 @@ $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
 
-//== Scaffolding
-//
-//## Settings for some of the most global styles.
 
-//** Background color for `<body>`.
-$body-bg:               #F9F9F9;
-//** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+
+
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -51,10 +69,10 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  "AvenirNext-Regular", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "AvenirNext-Regular", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-monospace:   Menlo, Monaco, Consolas, "AvenirNext-Regular", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          14px !default;
@@ -67,3 +85,28 @@ $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
 $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+/*---------------------------------------------------------------
+	GENERALS
+----------------------------------------------------------------*/
+//** Background color for `<body>`.
+$body-bg: #f7f7f7;
+
+//** Global text color on `<body>`.
+$text-color: #2b2828;
+
+
+
+/*---------------------------------------------------------------
+	HOME LISTE
+----------------------------------------------------------------*/
+article {
+	h2 {
+		font-family: 'AvenirNext-Heavy';
+		font-size: 30px;
+		a {
+			color: #2b2828;
+		}
+	}
+}
