@@ -1,15 +1,16 @@
-uuid: 4c58bf1b-bb23-4b73-9dbc-2d666e81ec29
-langcode: fr
+uuid: b621e2ef-4fab-4bb5-a105-10db317b81b9
+langcode: en
 status: true
 dependencies:
   module:
+    - link
     - node
-id: node.field_test
-field_name: field_test
+id: node.field_facebook_event
+field_name: field_facebook_event
 entity_type: node
-type: timestamp
+type: link
 settings: {  }
-module: core
+module: link
 locked: false
 cardinality: 1
 translatable: true

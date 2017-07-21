@@ -77,7 +77,9 @@ view_mode ? view_mode|clean_class,
 ]
 %}
 
-{% set concert_time = content.field_date.value|date('U')|format_date("cus‌​tom", "g:ia") %}
+{%
+set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
+%}
 
 <article{{ attributes.addClass(classes) }}>
 
@@ -88,7 +90,7 @@ view_mode ? view_mode|clean_class,
 
   <div class="col-sm-9">
 
-    {{ content.field_date }}
+    {{ content.field_date }} - {{ content.field_event_type }}
 
 
     {{ title_prefix }}
@@ -104,7 +106,7 @@ view_mode ? view_mode|clean_class,
     <a class="btn btn-default" href="{{ url }}">Plus d'info</a>
 
 
-    <a class="btn btn-default" href="">Acheter des billets</a>
+    <a class="btn btn-default" href="{{ ticket_url }}">Acheter billet {{ content.field_prix }}</a>
 
 
   </div>

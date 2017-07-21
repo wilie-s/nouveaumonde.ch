@@ -5,3 +5,18 @@
  *
  * Place your custom PHP code in this file.
  */
+
+
+function monde_preprocess_node(&$variables) {
+  $node = $variables['node'];
+
+  // Extract the hour from the field_date so we can easily display concert_time
+  if(!empty($node->field_date)){
+    $variables['concert_time'] = $node->field_date->view([
+      'type' => 'datetime_custom',
+      'label' => 'hidden',
+      'settings' => ['date_format' => 'H:i'],
+    ]);
+    
+  }
+}

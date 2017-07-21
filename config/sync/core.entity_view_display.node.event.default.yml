@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_doors_time
     - field.field.node.event.field_event_type
+    - field.field.node.event.field_facebook_event
     - field.field.node.event.field_genre
     - field.field.node.event.field_images
     - field.field.node.event.field_main_image
@@ -14,10 +15,10 @@ dependencies:
     - field.field.node.event.field_prix
     - field.field.node.event.field_starticket_link
     - field.field.node.event.field_subtitle
-    - field.field.node.event.field_test
     - node.type.event
     - responsive_image.styles.wide
   module:
+    - addtocalendar
     - datetime
     - hms_field
     - link
@@ -40,9 +41,40 @@ content:
     weight: 4
     label: hidden
     settings:
-      format_type: medium
       timezone_override: ''
-    third_party_settings: {  }
+      format_type: medium
+    third_party_settings:
+      addtocalendar:
+        addtocalendar_show: '1'
+        addtocalendar_settings:
+          style: '0'
+          display_text: 'Add to Calender'
+          atc_title:
+            field: title
+            tokenized: Title
+          atc_description:
+            field: body
+            tokenized: Description
+          atc_location:
+            field: token
+            tokenized: 'Esplanade de l''Ancienne Gare 3, 1700 Fribourg'
+          atc_organizer:
+            field: token
+            tokenized: 'Nouveau Monde'
+          atc_organizer_email:
+            field: token
+            tokenized: ''
+          atc_date_end:
+            field: field_date
+            tokenized: ''
+          atc_privacy: public
+          data_secure: auto
+          data_calendars:
+            iCalendar: iCalendar
+            'Google Calendar': 'Google Calendar'
+            Outlook: Outlook
+            'Outlook Online': 'Outlook Online'
+            'Yahoo! Calendar': 'Yahoo! Calendar'
     type: datetime_default
     region: content
   field_doors_time:
@@ -62,9 +94,21 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_facebook_event:
+    weight: 11
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_genre:
     weight: 6
-    label: inline
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -121,16 +165,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_test:
-    weight: 11
-    label: above
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
-    type: timestamp
     region: content
   links:
     weight: 1
