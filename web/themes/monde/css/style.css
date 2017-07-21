@@ -20,18 +20,6 @@
   font-weight: normal;
   font-style: normal; }
 
-/*---------------------------------------------------------------
-	GENERALS
-----------------------------------------------------------------*/
-/*---------------------------------------------------------------
-	HOME LISTE
-----------------------------------------------------------------*/
-article h2 {
-  font-family: 'AvenirNext-Heavy';
-  font-size: 30px; }
-  article h2 a {
-    color: #2b2828; }
-
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6399,3 +6387,12 @@ p:last-child,
   padding: 0; }
   .help-block:first-child, .control-group .help-inline:first-child {
     margin-top: 0; }
+
+/*---------------------------------------------------------------
+	HOME LISTE
+----------------------------------------------------------------*/
+article h2 {
+  font-family: 'AvenirNext-Heavy';
+  font-size: 30px; }
+  article h2 a {
+    color: #2b2828; }

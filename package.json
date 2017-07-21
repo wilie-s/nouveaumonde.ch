@@ -10,8 +10,8 @@
   },
   "scripts": {
     "sass": "node-sass web/themes/monde/scss/style.scss --output web/themes/monde/css",
-    "sass:watch": "yarn run sass -- --watch",
-    "start": "concurrently --kill-others --names SASS -p name -c bgBlue.bold,bgMagenta.bold \"yarn run sass:watch\"",
+    "sass:watch": "node-sass web/themes/monde/scss/style.scss --watch --output web/themes/monde/css",
+    "start": "yarn run sass:watch",
     "build": "yarn run sass"
   }
 }
