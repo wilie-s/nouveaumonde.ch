@@ -17,6 +17,5 @@ function monde_preprocess_node(&$variables) {
       'label' => 'hidden',
       'settings' => ['date_format' => 'H:i'],
     ]);
-    
   }
 }

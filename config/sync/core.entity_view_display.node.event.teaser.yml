@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_doors_time
     - field.field.node.event.field_event_type
+    - field.field.node.event.field_facebook_event
     - field.field.node.event.field_genre
     - field.field.node.event.field_images
     - field.field.node.event.field_main_image
@@ -18,6 +19,7 @@ dependencies:
     - node.type.event
     - responsive_image.styles.wide
   module:
+    - addtocalendar
     - datetime
     - hms_field
     - responsive_image
@@ -33,9 +35,40 @@ content:
     region: content
     label: hidden
     settings:
-      format_type: medium
       timezone_override: ''
-    third_party_settings: {  }
+      format_type: medium
+    third_party_settings:
+      addtocalendar:
+        addtocalendar_settings:
+          style: blue
+          display_text: 'Add to Calender'
+          atc_title:
+            field: token
+            tokenized: Title
+          atc_description:
+            field: token
+            tokenized: Description
+          atc_location:
+            field: token
+            tokenized: Location
+          atc_organizer:
+            field: token
+            tokenized: Drupal
+          atc_organizer_email:
+            field: token
+            tokenized: perdrisat@gmail.com
+          atc_date_end:
+            field: token
+            tokenized: ''
+          atc_privacy: public
+          data_secure: auto
+          data_calendars:
+            iCalendar: 0
+            'Google Calendar': 0
+            Outlook: 0
+            'Outlook Online': 0
+            'Yahoo! Calendar': 0
+        addtocalendar_show: 0
   field_doors_time:
     type: hms_default_formatter
     weight: 6
@@ -96,6 +129,7 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_facebook_event: true
   field_images: true
   field_petzitickets_link: true
   field_starticket_link: true
