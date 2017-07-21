@@ -7,6 +7,7 @@ dependencies:
     - node.type.event
     - system.menu.main
   module:
+    - datetime
     - node
     - user
 id: listing_events
@@ -69,6 +70,10 @@ display:
             next: ››
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -174,21 +179,19 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+        field_date_value:
+          id: field_date_value
+          table: node__field_date
+          field: field_date_value
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
           granularity: second
+          plugin_id: datetime
       title: Programme
       header: {  }
       footer: {  }

@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.event.field_prix
     - field.field.node.event.field_starticket_link
     - field.field.node.event.field_subtitle
+    - field.field.node.event.field_test
     - node.type.event
     - responsive_image.styles.wide
   module:
@@ -92,7 +93,7 @@ content:
     region: content
   field_prix:
     weight: 10
-    label: above
+    label: inline
     settings:
       thousand_separator: ''
       decimal_separator: .
@@ -120,6 +121,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_test:
+    weight: 11
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    type: timestamp
     region: content
   links:
     weight: 1

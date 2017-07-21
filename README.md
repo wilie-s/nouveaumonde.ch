@@ -35,14 +35,11 @@ Build sass (one time)
     
 ## Autorefresh (no cache)
 
-Enable twig debug and twig auto-rebuild you have change two variables in sites/default/services.yml. Follow https://www.drupal.org/docs/8/theming/twig/debugging-twig-templates
+In settings sites/default/settings.php uncomment:
 
-Disable CSS/JS aggregation by adding in sites/default/settings.php those line (remove those line in production!):
-
-    // ----  Devlopement ----
-    $config['system.performance']['css']['preprocess'] = FALSE;
-    $config['system.performance']['js']['preprocess'] = FALSE;
-
+      #  if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+      #     include $app_root . '/' . $site_path . '/settings.local.php';
+      #  }
 
 ## Git
 

@@ -65,7 +65,7 @@ content:
     type: responsive_image
     weight: 0
     region: content
-    label: visually_hidden
+    label: hidden
     settings:
       responsive_image_style: wide
       image_link: content
@@ -74,7 +74,7 @@ content:
     type: string
     weight: 2
     region: content
-    label: visually_hidden
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

@@ -1,0 +1,19 @@
+uuid: 6af076a6-5ffd-4059-978b-1874c9fb9a3e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - node.type.event
+id: node.event.field_test
+field_name: field_test
+entity_type: node
+bundle: event
+label: test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp
