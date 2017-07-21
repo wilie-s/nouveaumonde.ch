@@ -10,7 +10,7 @@ What is used:
 - yarn
 
 
-## Development
+## Theme Development
 
 nodejs and yarn is used to compile less to css.
 
@@ -32,6 +32,17 @@ Start watcher on less files (build on change)
 Build sass (one time)
 
     $ yarn run build
+    
+## Autorefresh (no cache)
+
+Enable twig debug and twig auto-rebuild you have change two variables in sites/default/services.yml. Follow https://www.drupal.org/docs/8/theming/twig/debugging-twig-templates
+
+Disable CSS/JS aggregation by adding in sites/default/settings.php those line (remove those line in production!):
+
+    // ----  Devlopement ----
+    $config['system.performance']['css']['preprocess'] = FALSE;
+    $config['system.performance']['js']['preprocess'] = FALSE;
+
 
 ## Git
 
