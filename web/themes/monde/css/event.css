@@ -1,12 +1,7 @@
 /*---------------------------------------------------------------
 	HOME LISTE
 ----------------------------------------------------------------*/
-article {
-  h2 {
-    font-family: 'AvenirNext-Heavy';
-    a {
-      color: #2b2828;
-    }
-  }
-}
-
+article h2 {
+  font-family: 'AvenirNext-Heavy'; }
+  article h2 a {
+    color: #2b2828; }
