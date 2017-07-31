@@ -84,13 +84,13 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
 <article{{ attributes.addClass(classes) }}>
 
 
-  <div class="col-sm-3">
+  <div class="col-sm-4">
     {{ content.field_main_image }}
   </div>
 
-  <div class="col-sm-9">
+  <div class="col-sm-8">
 
-    {{ content.field_date }} - {{ content.field_event_type }}
+    {{ content.field_date }} {{ content.field_event_type }}
 
 
     {{ title_prefix }}
@@ -101,7 +101,7 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
 
     {{ content.field_genre }}
 
-    {{ content.field_doors_time }} | <b>Heure</b> {{ concert_time }}
+    {{ content.field_doors_time }} | <b>Start</b> {{ concert_time }}
 
     <a class="btn btn-default" href="{{ url }}">Plus d'info</a>
 

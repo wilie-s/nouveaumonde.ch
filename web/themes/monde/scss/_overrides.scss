@@ -30,12 +30,57 @@ ol, ul {
   margin-top: 0;
 }
 
+// Main content.
+.main-container {
+  padding-top: 100px;
+}
+
 // Footer.
 .footer {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #E5E5E5;
+}
+
+// Navigation.
+.navbar-header {
+  a.logo {
+    img {
+      width: 320px;
+    }
+  }
+}
+.navbar-default .navbar-nav {
+  float: right;
+  >li {
+    margin-left: 20px;
+    >a {
+      font-family: 'AvenirNext-Regular';
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $gray-dark;
+      padding: 0;
+      padding-top: 12px;
+      &:hover,
+      &:focus {
+        font-family: 'AvenirNext-Regular';
+        border-top: 2px solid $gray-dark;
+        padding-top: 10px;
+        background: none;
+        color: $gray-dark;        
+      }
+    }
+    &.active > a,
+    &.active > a:hover,
+    &.active > a:focus {
+      font-family: 'AvenirNext-DemiBold';
+      border-top: 2px solid $gray-dark;
+      padding-top: 10px;
+      background: none;
+      color: $gray-dark;
+    }
+  }
 }
 
 // Paragraphs.

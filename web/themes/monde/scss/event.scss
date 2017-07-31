@@ -1,12 +1,127 @@
 /*---------------------------------------------------------------
-	HOME LISTE
+	LISTE
 ----------------------------------------------------------------*/
 article {
+  margin-bottom: 50px;
+  .field--name-field-date time{
+    float: left;
+    margin-bottom: 15px;
+  }
+  .field--name-field-event-type {
+    float: left;
+    margin-left: 15px;
+    text-transform: uppercase;
+    &:before {
+      content: '-';
+      display: inline-block;
+      background: $gray-dark;
+      line-height: 4px;
+      width: 8px;
+      height: 2px;
+      margin-right: 15px;
+      text-indent: -99999999em;
+    }
+  }
   h2 {
+    clear: both;
     font-family: 'AvenirNext-Heavy';
+    margin-bottom: 0;
+    padding-bottom: 2px;
     a {
-      color: #2b2828;
+      color: $gray-dark;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .field--name-field-genre {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .field--name-field-doors-time {
+    font-size: 16px;
+    float: left;
+    color: #ababab;
+    &>div {
+      display: inline-block;
+    }
+  }
+  .field--name-field-date {
+    //font-size: 16px;
+    //float: left;
+    //color: #ababab;
+    a.atcb-link {
+      color: $action-color;
+    }
+  }
+  a.btn {
+    padding: 14px 30px;
+    text-transform: uppercase;
+    background: white;
+    color: $gray-dark;
+    margin-right: 10px;
+    &:hover {
+      background: $action-color;
+      color: white;
+    }
+    .field--name-field-prix {
+      display: inline-block;
     }
   }
 }
+
+
+
+
+/*---------------------------------------------------------------
+  DETAIL
+----------------------------------------------------------------*/
+
+.region-content {
+  h1 {
+    font-family: 'AvenirNext-Heavy';
+    margin: 0;
+    padding-bottom: 2px;
+    color: $gray-dark;
+  }
+}
+
+article {
+  .col-sm-4 {
+    a.btn {
+      float: right;
+      text-align: center;
+      min-width: 280px;
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #EAEAEB;
+      border: #EAEAEB;
+      &:hover {
+        background: $action-color;
+        color: white;
+      }
+    }
+  }
+}
+//related content
+section.block-views-blockrelated-event-block-1 {
+  h2 {
+    font-family: 'AvenirNext-Heavy';
+    text-transform: uppercase;
+    border-top: 2px solid $gray-dark;
+    display: inline-block;
+    padding-top: 10px; 
+    margin-bottom: 50px;   
+  }
+  .view-related-event {
+
+  }
+}
+
+
+
+
+
+
 
