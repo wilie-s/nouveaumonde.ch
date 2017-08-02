@@ -1,4 +1,4 @@
-uuid: a1a367b5-c8a1-4e89-b4f2-18c843112ac4
+uuid: 8cc00ba3-f78e-4106-afc5-30c67c93f555
 langcode: fr
 status: true
 dependencies:
@@ -10,8 +10,8 @@ dependencies:
     - datetime
     - node
     - user
-id: listing_events
-label: 'Listing events'
+id: archive_events
+label: 'Archive events'
 module: views
 description: ''
 tag: ''
@@ -185,21 +185,21 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '>'
+          operator: '<'
           value:
             min: ''
             max: ''
-            value: '+5 hours'
+            value: now
             type: offset
           group: 1
           exposed: false
           expose:
-            operator_id: field_date_value_op
-            label: 'Date (field_date)'
-            description: null
+            operator_id: ''
+            label: ''
+            description: ''
             use_operator: false
-            operator: field_date_value_op
-            identifier: field_date_value
+            operator: ''
+            identifier: ''
             required: false
             remember: false
             multiple: false
@@ -226,13 +226,13 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''
           granularity: second
           plugin_id: datetime
-      title: Programme
+      title: Archives
       header: {  }
       footer: {  }
       empty: {  }
@@ -248,31 +248,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  feed_1:
-    display_plugin: feed
-    id: feed_1
-    display_title: Feed
-    position: 2
-    display_options:
-      display_extenders: {  }
-      row:
-        type: node_rss
-      pager:
-        type: some
-      style:
-        type: rss
-      path: listing-events.xml
-      displays:
-        default: default
-        page_1: page_1
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
   page_1:
     display_plugin: page
     id: page_1
@@ -280,12 +255,16 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: programme
+      path: archive
       menu:
         type: normal
-        title: Programme
+        title: Archives
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -46
+        context: '0'
         menu_name: main
-        weight: -49
     cache_metadata:
       max-age: -1
       contexts:
