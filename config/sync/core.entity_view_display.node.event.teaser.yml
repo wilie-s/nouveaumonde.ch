@@ -36,7 +36,7 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: long_date_no_time
     third_party_settings:
       addtocalendar:
         addtocalendar_settings:
@@ -73,7 +73,7 @@ content:
     type: hms_default_formatter
     weight: 6
     region: content
-    label: inline
+    label: above
     settings:
       format: 'h:mm'
       leading_zero: true

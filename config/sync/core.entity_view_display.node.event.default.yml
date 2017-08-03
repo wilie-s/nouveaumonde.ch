@@ -42,7 +42,7 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: long_date_no_time
     third_party_settings:
       addtocalendar:
         addtocalendar_show: '1'
@@ -51,10 +51,10 @@ content:
           display_text: 'Add to Calender'
           atc_title:
             field: title
-            tokenized: Title
+            tokenized: ''
           atc_description:
             field: body
-            tokenized: Description
+            tokenized: ''
           atc_location:
             field: token
             tokenized: 'Esplanade de l''Ancienne Gare 3, 1700 Fribourg'
@@ -137,7 +137,7 @@ content:
     region: content
   field_prix:
     weight: 10
-    label: inline
+    label: hidden
     settings:
       thousand_separator: ''
       decimal_separator: .

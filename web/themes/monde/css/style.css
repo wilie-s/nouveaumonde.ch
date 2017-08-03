@@ -6423,16 +6423,14 @@ p:last-child,
 /*---------------------------------------------------------------
 	LISTE
 ----------------------------------------------------------------*/
-article {
+article.event {
   margin-bottom: 50px; }
-  article .field--name-field-date time {
-    float: left;
+  article.event .field--name-field-date time {
     margin-bottom: 15px; }
-  article .field--name-field-event-type {
-    float: left;
+  article.event .field--name-field-event-type {
     margin-left: 15px;
     text-transform: uppercase; }
-    article .field--name-field-event-type:before {
+    article.event .field--name-field-event-type:before {
       content: '-';
       display: inline-block;
       background: #2b2828;
@@ -6441,37 +6439,34 @@ article {
       height: 2px;
       margin-right: 15px;
       text-indent: -99999999em; }
-  article h2 {
+  article.event h2 {
     clear: both;
     font-family: 'AvenirNext-Heavy';
     margin-bottom: 0;
     padding-bottom: 2px; }
-    article h2 a {
+    article.event h2 a {
       color: #2b2828; }
-      article h2 a:hover {
+      article.event h2 a:hover {
         text-decoration: none; }
-  article .field--name-field-genre {
+  article.event .field--name-field-genre {
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 20px; }
-  article .field--name-field-doors-time {
+  article.event .field--name-field-doors-time {
     font-size: 16px;
-    float: left;
     color: #ababab; }
-    article .field--name-field-doors-time > div {
-      display: inline-block; }
-  article .field--name-field-date a.atcb-link {
+  article.event .field--name-field-date a.atcb-link {
     color: #F73D37; }
-  article a.btn {
+  article.event a.btn {
     padding: 14px 30px;
     text-transform: uppercase;
     background: white;
     color: #2b2828;
     margin-right: 10px; }
-    article a.btn:hover {
+    article.event a.btn:hover {
       background: #F73D37;
       color: white; }
-    article a.btn .field--name-field-prix {
+    article.event a.btn .field--name-field-prix {
       display: inline-block; }
 
 /*---------------------------------------------------------------

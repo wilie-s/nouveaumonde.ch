@@ -1,14 +1,13 @@
 /*---------------------------------------------------------------
 	LISTE
 ----------------------------------------------------------------*/
-article {
+article.event {
+
   margin-bottom: 50px;
   .field--name-field-date time{
-    float: left;
     margin-bottom: 15px;
   }
   .field--name-field-event-type {
-    float: left;
     margin-left: 15px;
     text-transform: uppercase;
     &:before {
@@ -41,11 +40,7 @@ article {
   }
   .field--name-field-doors-time {
     font-size: 16px;
-    float: left;
     color: #ababab;
-    &>div {
-      display: inline-block;
-    }
   }
   .field--name-field-date {
     //font-size: 16px;
@@ -100,8 +95,8 @@ section.block-views-blockrelated-event-block-1 {
     text-transform: uppercase;
     border-top: 2px solid $gray-dark;
     display: inline-block;
-    padding-top: 10px; 
-    margin-bottom: 50px;   
+    padding-top: 10px;
+    margin-bottom: 50px;
   }
   .view-related-event {
 
