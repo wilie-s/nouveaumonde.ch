@@ -78,32 +78,21 @@ article {
   DETAIL
 ----------------------------------------------------------------*/
 
-.region-content {
-  h1 {
-    font-family: 'AvenirNext-Heavy';
-    margin: 0;
-    padding-bottom: 2px;
-    color: $gray-dark;
+
+a.btn-vertical {
+  float: right;
+  text-align: center;
+  min-width: 280px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #EAEAEB;
+  border: #EAEAEB;
+  &:hover {
+    background: $action-color;
+    color: white;
   }
 }
 
-article {
-  .col-sm-4 {
-    a.btn {
-      float: right;
-      text-align: center;
-      min-width: 280px;
-      margin-bottom: 20px;
-      padding: 20px;
-      background: #EAEAEB;
-      border: #EAEAEB;
-      &:hover {
-        background: $action-color;
-        color: white;
-      }
-    }
-  }
-}
 //related content
 section.block-views-blockrelated-event-block-1 {
   h2 {
