@@ -1,0 +1,76 @@
+/*---------------------------------------------------------------
+	HEADER
+----------------------------------------------------------------*/
+
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+    margin-top: 40px;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+//logo.
+.navbar-header {
+  a.logo {
+    margin-top: 0;
+    margin-bottom: 20px;
+    img {
+      width: 300px;
+    }
+  }
+}
+
+//navigation.
+.navbar-default .navbar-nav {
+  float: right;
+  >li {
+    margin-left: 25px;
+    >a {
+      font-family: 'AvenirNext-Regular';
+      font-size: 16px;
+      letter-spacing: -0.1px;
+      text-transform: uppercase;
+      color: $gray-dark;
+      padding: 0;
+      padding-top: 12px;
+      &:hover,
+      &:focus {
+        font-family: 'AvenirNext-Regular';
+        border-top: 2px solid $gray-dark;
+        padding-top: 10px;
+        background: none;
+        color: $gray-dark;        
+      }
+    }
+    &.active > a,
+    &.active > a:hover,
+    &.active > a:focus {
+      font-family: 'AvenirNext-DemiBold';
+      border-top: 2px solid $gray-dark;
+      padding-top: 10px;
+      background: none;
+      color: $gray-dark;
+    }
+  }
+}
+
+//Langue menu.
+#block-languageswitcher {
+  float: right;
+  ul {
+    li {
+      list-style: none;
+      display: inline;
+      margin-left: 15px;
+      font-size: 16px;
+      text-transform: uppercase;
+      &.is-active {
+        font-family: 'AvenirNext-DemiBold';
+      }
+    }
+  }
+}
+
+
