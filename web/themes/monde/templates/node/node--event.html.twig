@@ -81,10 +81,9 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
 %}
 
 
-{{ content.field_date }} - {{ content.field_event_type }}
-
-
 <article{{ attributes.addClass(classes) }}>
+  <div class="col-sm-12">
+    {{ content.field_date }} {{ content.field_event_type }}
 
     {{ title_prefix }}
     <h1{{ title_attributes }}>
@@ -93,19 +92,15 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
     {{ title_suffix }}
     {{ content.field_genre }}
 
+    <div class="event_time"> {{ content.field_doors_time }} | <b>{{ 'Concert'|trans }}</b> {{ concert_time }}</div>
+  </div>
+
   <div class="col-sm-8">
-
-    {{ content.field_doors_time }} | <b>Start</b> {{ concert_time }}
-
     {{ content.field_main_image }}
 
     {{ content.body }}
-
-
-
-
-
   </div>
+  
 
   <div class="col-sm-4">
     <a class="btn btn-default btn-vertical" href="{{ ticket_url }}">{{ 'Buy ticket'|trans }} {{ content.field_prix }}</a>

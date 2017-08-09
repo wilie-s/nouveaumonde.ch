@@ -72,7 +72,9 @@
         <div class="{{ container }}">
       {% endif %}
       <div class="navbar-header">
-        {{ page.navigation }}
+        <a class="logo navbar-btn pull-left" href="/fr" title="Accueil" rel="home">
+          <img src="{{ base_path ~ directory }}/images/logo.svg" alt="logo nouveaumonde" />
+        </a>        
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
         {% if page.navigation_collapsible %}
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
