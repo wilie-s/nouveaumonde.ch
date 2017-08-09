@@ -104,10 +104,15 @@ Restore
 First you need to authorise your ssh key on the server (you will need ozcf_admin password)
 
     $ ssh-copy-id ozcf_admin@ozcf.ftp.infomaniak.com
+    
+To check what is going to be deployed, without actually doing anythings (dry-run)
+
+    $ npm run deploy-dry-run
 
 Run the deployement script via npm
 
     $ npm run deploy
+    
     
 This will run deploy.sh and copy all the files using rsync from your directory to the server except files listed in
 rsync_excclude.txt.

@@ -13,6 +13,7 @@
     "sass:watch": "node-sass web/themes/monde/scss/style.scss --watch --output web/themes/monde/css",
     "start": "npm run sass:watch",
     "build": "npm run sass",
-    "deploy": "./deploy.sh production deploy"
+    "deploy": "./deploy.sh production deploy",
+    "deploy-dry-run": "./deploy.sh production"
   }
 }
