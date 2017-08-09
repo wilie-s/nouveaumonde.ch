@@ -7,31 +7,29 @@ What is used:
 - bootstrap
 - sass
 - nodejs
-- yarn
 
 
 ## Theme Development
 
-nodejs and yarn is used to compile less to css.
+nodejs is used to compile less to css.
 
 **Requirement for development**
 
 - **nodejs** https://nodejs.org/en/
--  **yarn** on your system [follow the instruction to install yarn](https://yarnpkg.com/lang/en/docs/install/).
 
 **Install project dependencies**
 
-    $ yarn install
+    $ npm install
 
 **Work with less**
 
 Start watcher on less files (build on change)
 
-    $ yarn run start
+    $ npm run start
 
 Build sass (one time)
 
-    $ yarn run build
+    $ npm run build
     
 ## Autorefresh (no cache)
 
@@ -100,3 +98,22 @@ Make a full backup (Backup your code, files, and database into a single file)
 Restore
 
     $ drush archive-restore
+
+## Deployment
+
+First you need to authorise your ssh key on the server (you will need ozcf_admin password)
+
+    $ ssh-copy-id ozcf_admin@ozcf.ftp.infomaniak.com
+
+Run the deployement script via npm
+
+    $ npm run deploy
+    
+This will run deploy.sh and copy all the files using rsync from your directory to the server except files listed in
+rsync_excclude.txt.
+
+Then go on the production to revert configuration and clear cash if needed.
+
+Notes: in case you don't need npm, you can run the script directly
+
+    $  ./deploy.sh production deploy

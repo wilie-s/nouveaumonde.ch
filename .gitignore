@@ -20,3 +20,7 @@ web/core/phpunit.xml
 node_modules
 nouveaumonde.sublime-project
 nouveaumonde.sublime-workspace
+
+## build folder
+
+/tmp/

@@ -1,0 +1,13 @@
+node_modules/
+tmp/
+config/
+.git/
+.gitignore
+package.json
+package-lock.json
+shipitfile.js
+.idea
+.DS_Store
+web/sites/default/settings.php
+web/sites/default/files
+private-files/

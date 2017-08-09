@@ -11,7 +11,8 @@
   "scripts": {
     "sass": "node-sass web/themes/monde/scss/style.scss --output web/themes/monde/css",
     "sass:watch": "node-sass web/themes/monde/scss/style.scss --watch --output web/themes/monde/css",
-    "start": "yarn run sass:watch",
-    "build": "yarn run sass"
+    "start": "npm run sass:watch",
+    "build": "npm run sass",
+    "deploy": "./deploy.sh production deploy"
   }
 }
