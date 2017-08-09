@@ -2,13 +2,11 @@
 	LISTE
 ----------------------------------------------------------------*/
 article.event {
+  margin-bottom: 30px;
 
-  margin-bottom: 50px;
-  .field--name-field-date time{
-    margin-bottom: 15px;
-  }
   .field--name-field-event-type {
-    margin-left: 15px;
+    position: relative;
+    margin-left: 10px;
     text-transform: uppercase;
     &:before {
       content: '-';
@@ -17,39 +15,77 @@ article.event {
       line-height: 4px;
       width: 8px;
       height: 2px;
-      margin-right: 15px;
+      margin-right: 10px;
       text-indent: -99999999em;
     }
   }
+
   h2 {
     clear: both;
     font-family: 'AvenirNext-Heavy';
     margin-bottom: 0;
-    padding-bottom: 2px;
+    //padding-bottom: 2px;
+    margin-top: 10px;
     a {
+      display: block;
       color: $gray-dark;
+      line-height: 30px;
       &:hover {
         text-decoration: none;
       }
     }
   }
+
+  h1 {
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
   .field--name-field-genre {
     font-size: 18px;
     text-transform: uppercase;
-    margin-bottom: 20px;
   }
-  .field--name-field-doors-time {
-    font-size: 16px;
+
+  .event_time {
+    font-size: 15px;
     color: #ababab;
-  }
-  .field--name-field-date {
-    //font-size: 16px;
-    //float: left;
-    //color: #ababab;
-    a.atcb-link {
-      color: $action-color;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    span.field {
+      padding-right: 3px;
+    }
+    b {
+      padding-left: 3px;
+    }
+    .addtocalendar {
+      margin-left: 15px;
+      a.atcb-link {
+        color: #ababab;
+        text-decoration: underline;
+        &:hover {
+          color: $action-color;
+        }
+      }
+      ul.atcb-list {
+        padding: 10px 20px;
+        li {
+          margin-bottom: 5px;
+          a:hover {
+            color: $action-color;
+          }
+        }
+      }
     }
   }
+
+  .field--name-field-main-image {
+    margin-bottom: 25px;
+  }
+
+  .field--name-body {
+    font-size: 16px;
+  }
+
   a.btn {
     padding: 14px 30px;
     text-transform: uppercase;
@@ -72,7 +108,16 @@ article.event {
 /*---------------------------------------------------------------
   DETAIL
 ----------------------------------------------------------------*/
-
+article.event {
+  .col-sm-12 {
+    .field--name-field-date .addtocalendar {
+      display: none;
+    }
+    .event_time {
+      margin-bottom: 25px;
+    }
+  }
+}
 
 a.btn-vertical {
   float: right;
