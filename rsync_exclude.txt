@@ -1,6 +1,5 @@
 node_modules/
 tmp/
-config/
 .git/
 .gitignore
 package.json
