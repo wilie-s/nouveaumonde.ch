@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_doors_time
     - field.field.node.event.field_event_type
     - field.field.node.event.field_facebook_event
+    - field.field.node.event.field_free
     - field.field.node.event.field_genre
     - field.field.node.event.field_images
     - field.field.node.event.field_main_image
@@ -66,12 +67,19 @@ content:
     type: options_buttons
     region: content
   field_facebook_event:
-    weight: 27
+    weight: 20
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_free:
+    weight: 19
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_genre:
     weight: 3
@@ -106,7 +114,7 @@ content:
     type: link_default
     region: content
   field_prix:
-    weight: 26
+    weight: 18
     settings:
       placeholder: ''
     third_party_settings: {  }

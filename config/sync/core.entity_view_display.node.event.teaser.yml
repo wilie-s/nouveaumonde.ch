@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_doors_time
     - field.field.node.event.field_event_type
     - field.field.node.event.field_facebook_event
+    - field.field.node.event.field_free
     - field.field.node.event.field_genre
     - field.field.node.event.field_images
     - field.field.node.event.field_main_image
@@ -85,6 +86,16 @@ content:
     label: hidden
     settings:
       link: false
+    third_party_settings: {  }
+  field_free:
+    type: boolean
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
     third_party_settings: {  }
   field_genre:
     type: string

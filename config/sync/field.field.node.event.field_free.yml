@@ -1,0 +1,23 @@
+uuid: f8cc97bb-0fc2-47e2-99a5-b2f83a465870
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_free
+    - node.type.event
+id: node.event.field_free
+field_name: field_free
+entity_type: node
+bundle: event
+label: 'Entrée libre'
+description: 'Masque le prix et le lien d''achat pour les tickets.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: gratuit
+  off_label: payant
+field_type: boolean

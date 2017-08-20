@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_doors_time
     - field.field.node.event.field_event_type
     - field.field.node.event.field_facebook_event
+    - field.field.node.event.field_free
     - field.field.node.event.field_genre
     - field.field.node.event.field_images
     - field.field.node.event.field_main_image
@@ -106,6 +107,16 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  field_free:
+    weight: 13
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_genre:
     weight: 6
     label: hidden
@@ -114,6 +125,15 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_images:
+    type: responsive_image
+    weight: 12
+    region: content
+    label: hidden
+    settings:
+      responsive_image_style: wide
+      image_link: ''
+    third_party_settings: {  }
   field_main_image:
     weight: 0
     label: hidden
@@ -172,5 +192,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_images: true
   langcode: true
