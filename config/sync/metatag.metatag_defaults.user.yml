@@ -1,0 +1,11 @@
+uuid: 7a1bb0c7-0ecb-47a6-8d85-8e7bc4dc48b7
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JONk1mhmB2Bpji-kyLf3JBBVro-w1dBtN2CuxmvEimU
+id: user
+label: User
+tags:
+  title: '[user:name] | [site:name]'
+  description: '[site:name]'
