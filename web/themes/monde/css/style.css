@@ -6434,27 +6434,37 @@ article.event {
   article.event .free {
     padding: 14px 30px;
     text-transform: uppercase;
-    background: #404040;
-    color: white;
-    margin-right: 10px; }
+    background: white;
+    color: #c3c3c5;
+    margin-right: 10px;
+    border: 1px solid #ececec; }
   article.event .event_time {
     font-size: 15px;
     color: #ababab;
-    margin-top: 15px;
-    margin-bottom: 20px; }
+    margin-top: 5px;
+    margin-bottom: 15px; }
+    @media only screen and (max-width: 420px) {
+      article.event .event_time {
+        margin-bottom: 0; } }
     article.event .event_time span.field {
       padding-right: 3px; }
     article.event .event_time b {
       padding-left: 3px; }
     article.event .event_time .addtocalendar {
       margin-left: 15px; }
+      @media only screen and (max-width: 420px) {
+        article.event .event_time .addtocalendar {
+          margin-left: 0;
+          padding-top: 5px;
+          display: block; } }
       article.event .event_time .addtocalendar a.atcb-link {
         color: #ababab;
         text-decoration: underline; }
         article.event .event_time .addtocalendar a.atcb-link:hover {
           color: #fb5353; }
       article.event .event_time .addtocalendar ul.atcb-list {
-        padding: 10px 20px; }
+        padding: 10px 20px;
+        border: 1px solid #ececec; }
         article.event .event_time .addtocalendar ul.atcb-list li {
           margin-bottom: 5px; }
           article.event .event_time .addtocalendar ul.atcb-list li a:hover {
@@ -6468,7 +6478,11 @@ article.event {
     text-transform: uppercase;
     background: white;
     color: #404040;
-    margin-right: 10px; }
+    font-size: 14px;
+    line-height: 19px;
+    margin-right: 10px;
+    border: 1px solid #ececec;
+    vertical-align: inherit; }
     article.event a.btn:hover {
       background: #fb5353;
       color: white; }
@@ -6478,32 +6492,67 @@ article.event {
 /*---------------------------------------------------------------
   DETAIL
 ----------------------------------------------------------------*/
-article.full .col-sm-12 .field--name-field-date .addtocalendar {
+article.full .col-md-12 .addtocalendar {
   display: none; }
 
-article.full .col-sm-12 .event_time {
-  margin-bottom: 25px; }
+article.full .col-md-12 .event_time .addtocalendar {
+  display: inline-block; }
+  @media only screen and (max-width: 420px) {
+    article.full .col-md-12 .event_time .addtocalendar {
+      margin-left: 0;
+      padding-top: 5px;
+      display: block; } }
 
-article.full a.btn-vertical {
-  float: right;
-  text-align: center;
-  min-width: 260px;
-  margin-bottom: 30px;
-  padding: 20px;
-  background: #EAEAEB;
-  border: #EAEAEB; }
-  article.full a.btn-vertical:hover {
-    background: #fb5353;
-    color: white; }
+article.full .col-md-12 .event_time span.field .field--item {
+  padding: 0; }
 
+article.full .field--name-body {
+  margin-bottom: 40px; }
+
+article.full a.btn-vertical,
 article.full .free {
   float: right;
   text-align: center;
   min-width: 260px;
+  margin-left: 0;
   margin-bottom: 30px;
   padding: 20px;
-  background: #404040;
-  color: white; }
+  background: white;
+  color: #404040;
+  border: 1px solid #ececec; }
+  article.full a.btn-vertical:hover,
+  article.full .free:hover {
+    background: #fb5353;
+    border: 1px solid #fb5353;
+    color: white; }
+  @media only screen and (max-width: 992px) {
+    article.full a.btn-vertical,
+    article.full .free {
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 15px;
+      min-width: 220px;
+      padding: 15px; } }
+  @media only screen and (max-width: 580px) {
+    article.full a.btn-vertical,
+    article.full .free {
+      min-width: inherit;
+      width: 100%; } }
+
+article.full a.whatsapp {
+  display: none; }
+  @media only screen and (max-width: 992px) {
+    article.full a.whatsapp {
+      display: block; } }
+
+article.full .free {
+  background: white;
+  color: #c3c3c5;
+  border: 1px solid #ececec; }
+  article.full .free:hover {
+    background: white;
+    color: #c3c3c5;
+    border: 1px solid #ececec; }
 
 section.block-views-blockrelated-event-block-1 h2 {
   font-family: 'AvenirNext-Heavy';

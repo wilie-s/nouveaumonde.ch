@@ -82,7 +82,7 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
 
 
 <article{{ attributes.addClass(classes) }}>
-  <div class="col-sm-12">
+  <div class="col-md-12">
     {{ content.field_date }} {{ content.field_event_type }}
 
     {{ title_prefix }}
@@ -92,17 +92,17 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
     {{ title_suffix }}
     {{ content.field_genre }}
 
-    <div class="event_time"> {{ content.field_doors_time }} | <b>{{ 'Début'|trans }}</b> {{ concert_time }}</div>
+    <div class="event_time"> {{ content.field_doors_time }} | <b>{{ 'Start'|trans }}</b> {{ concert_time }}</div>
   </div>
 
-  <div class="col-sm-8">
+  <div class="col-sm-12 col-md-8">
     {{ content.field_main_image }}
 
     {{ content.body }}
   </div>
 
 
-  <div class="col-sm-4">
+  <div class="col-sm-12 col-md-4">
     {% if node.field_free.value == '1' %}
       <span class="free">{{ 'Entrée libre'|trans }}</span>
     {% else %}
@@ -111,7 +111,7 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
     <a class="btn btn-default btn-vertical" href="{{ content.field_facebook_event[0]['#url'] }}">{{ 'Facebook event'|trans }}</a>
     <a class="btn btn-default btn-vertical" href="http://twitter.com/share?&url={{ url }}">{{ 'Share on twitter'|trans }}</a>
     <a class="btn btn-default btn-vertical" href="https://www.facebook.com/sharer/sharer.php?u=#{{ url }}" target="_blank">{{ 'Share on Facebook'|trans }}</a>
-    <a class="btn btn-default btn-vertical" href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">{{ 'Share on Whatsapp'|trans }}</a>
+    <a class="btn btn-default btn-vertical whatsapp" href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">{{ 'Share on Whatsapp'|trans }}</a>
   </div>
 
 </article>
