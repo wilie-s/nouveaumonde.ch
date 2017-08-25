@@ -45,7 +45,13 @@ article.event {
     font-size: 18px;
     text-transform: uppercase;
   }
-
+  .free {
+    padding: 14px 30px;
+    text-transform: uppercase;
+    background: #404040;
+    color: white;
+    margin-right: 10px;    
+  }
   .event_time {
     font-size: 15px;
     color: #ababab;
@@ -108,7 +114,7 @@ article.event {
 /*---------------------------------------------------------------
   DETAIL
 ----------------------------------------------------------------*/
-article.event {
+article.full {
   .col-sm-12 {
     .field--name-field-date .addtocalendar {
       display: none;
@@ -117,21 +123,31 @@ article.event {
       margin-bottom: 25px;
     }
   }
-}
-
-a.btn-vertical {
-  float: right;
-  text-align: center;
-  min-width: 280px;
-  margin-bottom: 20px;
-  padding: 20px;
-  background: #EAEAEB;
-  border: #EAEAEB;
-  &:hover {
-    background: $action-color;
+  a.btn-vertical {
+    float: right;
+    text-align: center;
+    min-width: 260px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #EAEAEB;
+    border: #EAEAEB;
+    &:hover {
+      background: $action-color;
+      color: white;
+    }
+  }
+  .free {
+    float: right;
+    text-align: center;
+    min-width: 260px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #404040;
     color: white;
   }
 }
+
+
 
 //related content
 section.block-views-blockrelated-event-block-1 {
