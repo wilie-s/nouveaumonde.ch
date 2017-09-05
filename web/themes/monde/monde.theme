@@ -11,12 +11,23 @@ function monde_preprocess_node(&$variables) {
   $node = $variables['node'];
 
   // Extract the hour from the field_date so we can easily display concert_time
-  if(!empty($node->field_date)){
+  if(!empty($node->field_date) && $node->bundle() == 'event'){
     $variables['concert_time'] = $node->field_date->view([
       'type' => 'datetime_custom',
       'label' => 'hidden',
       'settings' => ['date_format' => 'H:i'],
     ]);
+  }
+
+  // Check if the event is passed and set a archived boolean
+  if(!empty($node->field_date) && $node->bundle() == 'event'){
+    $variables['archived'] = false;
+    //kint($node->field_date->getValue()[0]['value']);
+    $eventDate = new dateTime($node->field_date->getValue()[0]['value']);
+    $now = new dateTime('now');
+    if($eventDate < $now){
+      $variables['archived'] = true;
+    }
   }
 }
 
