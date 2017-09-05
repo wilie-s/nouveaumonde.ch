@@ -1,0 +1,31 @@
+uuid: dd2bdbd9-53f7-4bae-85a1-7f58174a3fb4
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5293deda-8f24-4ad3-b907-fbbd455a43d6'
+  module:
+    - block_content
+    - system
+  theme:
+    - monde
+id: instagram
+theme: monde
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:5293deda-8f24-4ad3-b907-fbbd455a43d6'
+settings:
+  id: 'block_content:5293deda-8f24-4ad3-b907-fbbd455a43d6'
+  label: Instagram
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/archive/*\r\n/archive"
+    negate: false
+    context_mapping: {  }
