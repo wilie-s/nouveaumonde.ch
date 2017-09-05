@@ -362,7 +362,7 @@ display:
           expose:
             label: ''
           plugin_id: random
-      title: 'Comming Soon'
+      title: 'Coming soon'
       header: {  }
       footer: {  }
       empty: {  }
