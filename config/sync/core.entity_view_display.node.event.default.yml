@@ -20,6 +20,7 @@ dependencies:
     - responsive_image.styles.wide
   module:
     - addtocalendar
+    - blazy
     - datetime
     - hms_field
     - link
@@ -126,13 +127,59 @@ content:
     type: string
     region: content
   field_images:
-    type: responsive_image
+    type: blazy
     weight: 12
     region: content
     label: hidden
     settings:
+      style: ''
+      image_style: ''
+      thumbnail_style: ''
       responsive_image_style: wide
-      image_link: ''
+      media_switch: ''
+      ratio: ''
+      grid: null
+      grid_medium: null
+      grid_small: null
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        sm:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        md:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        lg:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        xl:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+      current_view_mode: default
+      background: false
+      caption:
+        title: '0'
+        alt: '0'
+      grid_header: ''
+      iframe_lazy: true
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      optionset: default
+      skin: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_style: ''
+      box_media_style: ''
     third_party_settings: {  }
   field_main_image:
     weight: 0
