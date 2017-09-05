@@ -1,9 +1,9 @@
-uuid: dd2bdbd9-53f7-4bae-85a1-7f58174a3fb4
-langcode: fr
+uuid: b6adaf84-26db-46e5-b81b-f1331b2d013f
+langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:5293deda-8f24-4ad3-b907-fbbd455a43d6'
+    - 'block_content:basic:d7f1dc53-8342-4ba8-b133-b839260b317a'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: monde
 region: sidebar_second
 weight: 0
 provider: null
-plugin: 'block_content:5293deda-8f24-4ad3-b907-fbbd455a43d6'
+plugin: 'block_content:d7f1dc53-8342-4ba8-b133-b839260b317a'
 settings:
-  id: 'block_content:5293deda-8f24-4ad3-b907-fbbd455a43d6'
+  id: 'block_content:d7f1dc53-8342-4ba8-b133-b839260b317a'
   label: Instagram
   provider: block_content
   label_display: visible
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/archive/*\r\n/archive"
+    pages: "/archive\r\n/archive/*"
     negate: false
     context_mapping: {  }
