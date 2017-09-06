@@ -6436,9 +6436,12 @@ article.event {
     text-transform: uppercase;
     color: #404040;
     margin-right: 10px; }
-    article.event .free:before {
-      content: ":)";
+    article.event .free:before, article.event .free:after {
+      content: "–";
       padding-right: 10px; }
+    article.event .free:after {
+      padding-left: 10px;
+      padding-right: 0; }
   article.event .event_time {
     font-size: 15px;
     color: #ababab;
@@ -6547,13 +6550,12 @@ article.full a.whatsapp {
       display: block; } }
 
 article.full .free {
-  background: white;
-  color: #c3c3c5;
-  border: 1px solid #ececec; }
+  background: none;
+  border: 0;
+  font-size: 19px; }
   article.full .free:hover {
-    background: white;
-    color: #c3c3c5;
-    border: 1px solid #ececec; }
+    background: none;
+    border: 0; }
 
 section.block-views-blockrelated-event-block-1 h2 {
   font-family: 'AvenirNext-Heavy';
@@ -6580,12 +6582,13 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image img
   margin-top: 0;
   margin-bottom: 20px; }
   .navbar-header a.logo img {
-    width: 300px; }
+    width: 280px; }
 
 .navbar-default .navbar-nav {
-  float: right; }
+  float: right;
+  margin-top: 38px; }
   .navbar-default .navbar-nav > li {
-    margin-left: 25px; }
+    margin-left: 22px; }
     .navbar-default .navbar-nav > li > a {
       font-family: 'AvenirNext-Regular';
       font-size: 16px;
@@ -6614,14 +6617,14 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image img
 
 #block-languageswitcher {
   position: absolute;
-  left: 0;
-  top: 90px; }
+  right: 0;
+  top: -2px; }
   #block-languageswitcher ul {
     padding: 0; }
     #block-languageswitcher ul li {
       list-style: none;
       display: inline;
-      margin-right: 15px;
+      margin-left: 15px;
       font-size: 16px;
       text-transform: uppercase; }
       #block-languageswitcher ul li.is-active {

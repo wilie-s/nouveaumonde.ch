@@ -50,9 +50,14 @@ article.event {
     text-transform: uppercase;
     color: #404040;
     margin-right: 10px;
-    &:before {
-      content:":)";
+    &:before,
+    &:after {
+      content:"–";
       padding-right:10px;
+    }
+    &:after {
+      padding-left: 10px;
+      padding-right:0;
     }
   }
   .event_time {
@@ -187,13 +192,12 @@ article.full {
     }
   }
   .free {
-    background: white;
-    color: #c3c3c5;
-    border: 1px solid #ececec;
+    background: none;
+    border: 0;
+    font-size: 19px;
     &:hover {
-      background: white;
-      color: #c3c3c5;
-      border: 1px solid #ececec;
+      background: none;
+        border: 0;
     }
   }
 }
