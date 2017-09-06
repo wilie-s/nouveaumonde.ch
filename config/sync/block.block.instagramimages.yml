@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:basic:91cb2079-303c-45e3-87e4-cf3540f49395'
   module:
     - block_content
+    - system
   theme:
     - monde
 id: instagramimages
@@ -22,4 +23,9 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/archive\r\n/archive/*"
+    negate: false
+    context_mapping: {  }
