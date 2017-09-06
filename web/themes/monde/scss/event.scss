@@ -48,10 +48,12 @@ article.event {
   .free {
     padding: 14px 30px;
     text-transform: uppercase;
-    background: white;
-    color: #c3c3c5;
+    color: #404040;
     margin-right: 10px;
-    border: 1px solid #ececec;
+    &:before {
+      content:":)";
+      padding-right:10px;
+    }
   }
   .event_time {
     font-size: 15px;
@@ -196,6 +198,16 @@ article.full {
   }
 }
 
+//galerie
+.blazy {
+  .field--item {
+    //width: 50%;
+  }
+  .media--blazy {
+    //min-height: 150px;
+  }
+}
+
 //related content
 section.block-views-blockrelated-event-block-1 {
   h2 {
@@ -208,6 +220,11 @@ section.block-views-blockrelated-event-block-1 {
   }
   .view-related-event {
 
+  }
+  .views-field-field-main-image {
+    img {
+      width: 100%;
+    }
   }
 }
 

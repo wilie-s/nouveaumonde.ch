@@ -6434,10 +6434,11 @@ article.event {
   article.event .free {
     padding: 14px 30px;
     text-transform: uppercase;
-    background: white;
-    color: #c3c3c5;
-    margin-right: 10px;
-    border: 1px solid #ececec; }
+    color: #404040;
+    margin-right: 10px; }
+    article.event .free:before {
+      content: ":)";
+      padding-right: 10px; }
   article.event .event_time {
     font-size: 15px;
     color: #ababab;
@@ -6561,6 +6562,9 @@ section.block-views-blockrelated-event-block-1 h2 {
   display: inline-block;
   padding-top: 10px;
   margin-bottom: 50px; }
+
+section.block-views-blockrelated-event-block-1 .views-field-field-main-image img {
+  width: 100%; }
 
 /*---------------------------------------------------------------
 	HEADER
