@@ -39,6 +39,7 @@ article.event {
   h1 {
     line-height: 30px;
     margin-top: 10px;
+    margin-bottom: 6px;
   }
 
   .field--name-field-genre {
@@ -155,10 +156,9 @@ article.full {
     }
   }
   .field--name-body {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
-  a.btn-vertical,
-  .free {
+  a.btn-vertical {
     float: right;
     text-align: center;
     min-width: 260px;
@@ -175,12 +175,16 @@ article.full {
     }
     @media only screen and (max-width: 992px) {
       float: left;
-      margin-right: 20px;
+      min-width: inherit;
+      width: 49%;
+      margin-right: 2%;
       margin-bottom: 15px;
-      min-width: 220px;
       padding: 15px;
+      &:nth-child(2n+1) {
+        margin-right: 0;
+      }
     }
-    @media only screen and (max-width: 580px) {
+    @media only screen and (max-width: 590px) {
       min-width: inherit;
       width: 100%;
     }
@@ -191,15 +195,93 @@ article.full {
       display: block;
     }
   }
-  .free {
-    background: none;
-    border: 0;
-    font-size: 19px;
-    &:hover {
-      background: none;
-        border: 0;
+  a.buy-aside {
+    display: block;
+    font-weight: bold;
+    @media only screen and (max-width: 992px) {
+      display: none;
     }
   }
+  a.buy-content {
+    display: none;
+    width: 49%;
+    padding: 15px;
+    margin-bottom: 40px;
+    margin-right: 0;
+    font-weight: bold;
+    float: right;
+    @media only screen and (max-width: 992px) {
+      display: inline-block;
+    }    
+    @media only screen and (max-width: 590px) {
+      min-width: inherit;
+      width: 100%;
+    }
+  }
+  .free.aside {
+    float: right;
+    text-align: center;
+    min-width: 260px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    font-size: 19px;
+    &:before,
+    &:after {
+      content: '-';
+      display: inline-block;
+      background: #404040;
+      line-height: 4px;
+      width: 22%;
+      height: 1px;
+      margin-right: 4%;
+      margin-left: 0;
+      text-indent: -99999999em;
+    }
+    &:after {
+      margin-right: 0;
+      margin-left: 4%;
+    }
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  .free.content {
+    display: none;
+    padding: 20px 0;
+    font-size: 19px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    &:before,
+    &:after {
+      content: '-';
+      display: inline-block;
+      background: #404040;
+      line-height: 4px;
+      width: 36%;
+      height: 1px;
+      margin-right: 5%;
+      margin-left: 0;
+      text-indent: -99999999em;
+    }
+    &:after {
+      margin-right: 0;
+      margin-left: 5%;
+    }
+    @media only screen and (max-width: 992px) {
+      display: inline-block;
+    }      
+  }
+}
+
+.col-share {
+    @media only screen and (max-width: 992px) {
+      //border-top: 1px solid #ababab;
+      //padding-top: 30px;
+      margin-top: 40px;
+    }
 }
 
 //galerie
@@ -220,7 +302,8 @@ section.block-views-blockrelated-event-block-1 {
     border-top: 2px solid $gray-dark;
     display: inline-block;
     padding-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 40px;
   }
   .view-related-event {
 
