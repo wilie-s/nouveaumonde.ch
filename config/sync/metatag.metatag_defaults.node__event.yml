@@ -6,6 +6,5 @@ id: node__event
 label: 'Content: Event'
 tags:
   og_image: '[node:field_main_image]'
-  og_type: event
   twitter_cards_image: '[node:field_main_image]'
   twitter_cards_type: summary_large_image
