@@ -99,6 +99,8 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
     </h2>
     {{ title_suffix }}
 
+    {{ content.field_subtitle }}
+
     {{ content.field_genre }}
 
     <div class="event_time"> {{ content.field_doors_time }} | <b>{{ 'Start'|trans }}</b> {{ concert_time }}</div>
