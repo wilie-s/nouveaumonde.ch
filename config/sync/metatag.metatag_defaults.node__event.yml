@@ -1,5 +1,5 @@
 uuid: 531ebfe6-29f0-4365-956c-4bf593dc7dc5
-langcode: fr
+langcode: en
 status: true
 dependencies: {  }
 id: node__event

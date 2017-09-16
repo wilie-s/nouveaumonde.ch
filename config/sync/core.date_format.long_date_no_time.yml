@@ -1,5 +1,5 @@
 uuid: 0d12b5ac-8343-4571-ba18-cb2a9bbba16e
-langcode: fr
+langcode: en
 status: true
 dependencies: {  }
 id: long_date_no_time
