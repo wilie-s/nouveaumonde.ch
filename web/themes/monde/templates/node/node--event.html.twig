@@ -102,7 +102,7 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
 
     {% if archived != 1 %}
       {% if node.field_free.value == '1' %}
-        <span class="free content">{{ 'Entrée libre'|trans }}</span>
+        <span class="free content">{{ 'Free'|trans }}</span>
       {% else %}
         <a class="btn btn-default buy-content" href="{{ ticket_url }}">{{ 'Buy ticket'|trans }} {{ content.field_prix }}</a>
       {% endif %}
@@ -116,7 +116,7 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
   <div class="col-sm-12 col-md-4 col-share">
     {% if archived != 1 %}
       {% if node.field_free.value == '1' %}
-        <span class="free aside">{{ 'Entrée libre'|trans }}</span>
+        <span class="free aside">{{ 'Free'|trans }}</span>
       {% else %}
         <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Buy ticket'|trans }} {{ content.field_prix }}</a>
       {% endif %}

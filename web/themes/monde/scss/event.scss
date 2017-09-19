@@ -30,6 +30,7 @@ article.event {
       display: block;
       color: $gray-dark;
       line-height: 30px;
+      text-transform: uppercase;
       &:hover {
         text-decoration: none;
       }
@@ -40,6 +41,7 @@ article.event {
     line-height: 30px;
     margin-top: 10px;
     margin-bottom: 6px;
+    text-transform: uppercase;
   }
 
   .field--name-field-genre {
@@ -173,7 +175,7 @@ article.full {
       border: 1px solid $action-color;
       color: white;
     }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 991px) {
       float: left;
       min-width: inherit;
       width: 49%;
@@ -191,14 +193,14 @@ article.full {
   }
   a.whatsapp {
     display: none;
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 991px) {
       display: block;
     }
   }
   a.buy-aside {
     display: block;
     font-weight: bold;
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 991px) {
       display: none;
     }
   }
@@ -210,7 +212,7 @@ article.full {
     margin-right: 0;
     font-weight: bold;
     float: right;
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 991px) {
       display: inline-block;
     }    
     @media only screen and (max-width: 590px) {
@@ -232,17 +234,17 @@ article.full {
       display: inline-block;
       background: #404040;
       line-height: 4px;
-      width: 22%;
+      width: 36%;
       height: 1px;
-      margin-right: 4%;
+      margin-right: 5%;
       margin-left: 0;
       text-indent: -99999999em;
     }
     &:after {
       margin-right: 0;
-      margin-left: 4%;
+      margin-left: 5%;
     }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 991px) {
       display: none;
     }
   }
@@ -260,24 +262,24 @@ article.full {
       display: inline-block;
       background: #404040;
       line-height: 4px;
-      width: 36%;
+      width: 34%;
       height: 1px;
-      margin-right: 5%;
+      margin-right: 5%
       margin-left: 0;
       text-indent: -99999999em;
     }
     &:after {
       margin-right: 0;
-      margin-left: 5%;
+      margin-left: 5%
     }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 991px) {
       display: inline-block;
     }      
   }
 }
 
 .col-share {
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 991px) {
       //border-top: 1px solid #ababab;
       //padding-top: 30px;
       margin-top: 40px;

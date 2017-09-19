@@ -6422,13 +6422,15 @@ article.event {
     article.event h2 a {
       display: block;
       color: #404040;
-      line-height: 30px; }
+      line-height: 30px;
+      text-transform: uppercase; }
       article.event h2 a:hover {
         text-decoration: none; }
   article.event h1 {
     line-height: 30px;
     margin-top: 10px;
-    margin-bottom: 6px; }
+    margin-bottom: 6px;
+    text-transform: uppercase; }
   article.event .field--name-field-genre {
     font-size: 18px;
     text-transform: uppercase; }
@@ -6528,7 +6530,7 @@ article.full a.btn-vertical {
     background: #fb5353;
     border: 1px solid #fb5353;
     color: white; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
     article.full a.btn-vertical {
       float: left;
       min-width: inherit;
@@ -6545,14 +6547,14 @@ article.full a.btn-vertical {
 
 article.full a.whatsapp {
   display: none; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
     article.full a.whatsapp {
       display: block; } }
 
 article.full a.buy-aside {
   display: block;
   font-weight: bold; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
     article.full a.buy-aside {
       display: none; } }
 
@@ -6564,7 +6566,7 @@ article.full a.buy-content {
   margin-right: 0;
   font-weight: bold;
   float: right; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
     article.full a.buy-content {
       display: inline-block; } }
   @media only screen and (max-width: 590px) {
@@ -6585,15 +6587,15 @@ article.full .free.aside {
     display: inline-block;
     background: #404040;
     line-height: 4px;
-    width: 22%;
+    width: 36%;
     height: 1px;
-    margin-right: 4%;
+    margin-right: 5%;
     margin-left: 0;
     text-indent: -99999999em; }
   article.full .free.aside:after {
     margin-right: 0;
-    margin-left: 4%; }
-  @media only screen and (max-width: 992px) {
+    margin-left: 5%; }
+  @media only screen and (max-width: 991px) {
     article.full .free.aside {
       display: none; } }
 
@@ -6610,19 +6612,19 @@ article.full .free.content {
     display: inline-block;
     background: #404040;
     line-height: 4px;
-    width: 36%;
+    width: 21vw;
     height: 1px;
-    margin-right: 5%;
+    margin-right: 4vw;
     margin-left: 0;
     text-indent: -99999999em; }
   article.full .free.content:after {
     margin-right: 0;
-    margin-left: 5%; }
-  @media only screen and (max-width: 992px) {
+    margin-left: 4vw; }
+  @media only screen and (max-width: 991px) {
     article.full .free.content {
       display: inline-block; } }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .col-share {
     margin-top: 40px; } }
 
