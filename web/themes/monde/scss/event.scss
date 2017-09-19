@@ -264,13 +264,13 @@ article.full {
       line-height: 4px;
       width: 34%;
       height: 1px;
-      margin-right: 5%
+      margin-right: 5%;
       margin-left: 0;
       text-indent: -99999999em;
     }
     &:after {
       margin-right: 0;
-      margin-left: 5%
+      margin-left: 5%;
     }
     @media only screen and (max-width: 991px) {
       display: inline-block;

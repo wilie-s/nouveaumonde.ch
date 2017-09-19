@@ -6468,14 +6468,14 @@ article.event {
         color: #ababab;
         text-decoration: underline; }
         article.event .event_time .addtocalendar a.atcb-link:hover {
-          color: #fb5353; }
+          color: #ea148c; }
       article.event .event_time .addtocalendar ul.atcb-list {
         padding: 10px 20px;
         border: 1px solid #ececec; }
         article.event .event_time .addtocalendar ul.atcb-list li {
           margin-bottom: 5px; }
           article.event .event_time .addtocalendar ul.atcb-list li a:hover {
-            color: #fb5353; }
+            color: #ea148c; }
   article.event .field--name-field-main-image {
     margin-bottom: 25px; }
   article.event .field--name-body {
@@ -6491,7 +6491,7 @@ article.event {
     border: 1px solid #ececec;
     vertical-align: inherit; }
     article.event a.btn:hover {
-      background: #fb5353;
+      background: #ea148c;
       color: white; }
     article.event a.btn .field--name-field-prix {
       display: inline-block; }
@@ -6527,8 +6527,8 @@ article.full a.btn-vertical {
   color: #404040;
   border: 1px solid #ececec; }
   article.full a.btn-vertical:hover {
-    background: #fb5353;
-    border: 1px solid #fb5353;
+    background: #ea148c;
+    border: 1px solid #ea148c;
     color: white; }
   @media only screen and (max-width: 991px) {
     article.full a.btn-vertical {
@@ -6612,14 +6612,14 @@ article.full .free.content {
     display: inline-block;
     background: #404040;
     line-height: 4px;
-    width: 21vw;
+    width: 34%;
     height: 1px;
-    margin-right: 4vw;
+    margin-right: 5%;
     margin-left: 0;
     text-indent: -99999999em; }
   article.full .free.content:after {
     margin-right: 0;
-    margin-left: 4vw; }
+    margin-left: 5%; }
   @media only screen and (max-width: 991px) {
     article.full .free.content {
       display: inline-block; } }

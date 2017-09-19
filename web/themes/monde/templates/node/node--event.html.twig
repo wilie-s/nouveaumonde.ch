@@ -112,8 +112,11 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
       {% endif %}
     {% endif %}
 
+    {% if content.field_images %}
     <h2>{{ 'Pictures'|trans }}</h2>
+    {% endif %}
     {{ content.field_images }}
+    
   </div>
 
 
