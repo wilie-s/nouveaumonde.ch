@@ -1,5 +1,5 @@
 uuid: c8ae0189-7750-478c-8a41-ab3243c2f754
-langcode: fr
+langcode: en
 status: true
 dependencies:
   config:
@@ -64,6 +64,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5

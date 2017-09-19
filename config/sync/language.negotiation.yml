@@ -6,11 +6,12 @@ url:
     en: en
     fr: fr
     de: de
+    '': null
   domains:
     en: ''
     fr: ''
     de: ''
-selected_langcode: site_default
+selected_langcode: fr
 _core:
   default_config_hash: uEePITI9tV6WqzmsTb7MfPCi5yPWXSxAN1xeLcYFQbM
-langcode: fr
+langcode: en
