@@ -98,12 +98,17 @@ class PathProcessorTest extends UnitTestCase {
       ->getMock();
 
     $system_path_map = [
-      // Set up one proper alias that can be resolved to a system path.
-      ['/foo', NULL, '/user/1'],
+      // Set up one proper alias for each language that can be resolved to a
+      // system path.
+      ['/foo', 'en', '/user/1'],
+      ['/foo', 'fr', '/user/1'],
       // Passing in anything else should return the same string.
-      ['/fr/foo', NULL, '/fr/foo'],
-      ['/fr', NULL, '/fr'],
-      ['/user/login', NULL, '/user/login'],
+      ['/fr/foo', 'en', '/fr/foo'],
+      ['/fr/foo', 'fr', '/fr/foo'],
+      ['/fr', 'en', '/fr'],
+      ['/fr', 'fr', '/fr'],
+      ['/user/login', 'en', '/user/login'],
+      ['/user/login', 'fr', '/user/login'],
     ];
 
     $alias_manager->expects($this->any())

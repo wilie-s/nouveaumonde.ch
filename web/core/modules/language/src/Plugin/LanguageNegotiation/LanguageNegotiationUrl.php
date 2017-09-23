@@ -110,9 +110,13 @@ class LanguageNegotiationUrl extends LanguageNegotiationMethodBase implements In
         if (isset($config['prefixes'][$language->getId()]) && $config['prefixes'][$language->getId()] == $prefix) {
           // Rebuild $path with the language removed.
           $path = '/' . implode('/', $parts);
+          $request->setLocale($language->getId());
           break;
         }
       }
+    }
+    elseif ($config['source'] == LanguageNegotiationUrl::CONFIG_DOMAIN) {
+      $request->setLocale($this->getLangcode($request));
     }
 
     return $path;
