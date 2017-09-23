@@ -6312,6 +6312,11 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
     body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tray, body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tray > .toolbar-lining:before {
       width: 240px; }
 
+body.toolbar-loading {
+  margin-top: 0; }
+  body.toolbar-loading.toolbar {
+    margin-bottom: 15px; }
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
