@@ -6539,6 +6539,21 @@ footer.footer {
   margin: 20px 0; }
 
 /*---------------------------------------------------------------
+  PAGE CARTE MEMBRE
+----------------------------------------------------------------*/
+.carte a.btn {
+  display: block;
+  min-width: 280px;
+  margin: 10px 0; }
+
+.carte img {
+  margin-bottom: 30px;
+  width: 100%; }
+
+.carte .col-sm-7 {
+  margin-bottom: 40px; }
+
+/*---------------------------------------------------------------
   PAGE BAR
 ----------------------------------------------------------------*/
 .bar img {
@@ -6550,10 +6565,18 @@ footer.footer {
 .bar .pictures {
   margin-bottom: 10px; }
 
+/*---------------------------------------------------------------
+  PAGE BENEVOLES
+----------------------------------------------------------------*/
 .benevoles {
   margin-bottom: 30px; }
-  .benevoles img {
-    width: 50%; }
+  .benevoles .col-sm-12 {
+    margin-top: 30px; }
+    .benevoles .col-sm-12 img {
+      width: 50%; }
+      @media only screen and (max-width: 480px) {
+        .benevoles .col-sm-12 img {
+          width: 100%; } }
 
 /*---------------------------------------------------------------
   CONTACT
