@@ -108,10 +108,17 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
       {% if node.field_free.value == '1' %}
         <span class="free content">{{ 'Free'|trans }}</span>
       {% else %}
-        <a class="btn btn-default buy-content" href="{{ ticket_url }}">{{ 'Buy ticket'|trans }} {{ content.field_prix }}</a>
+        <a class="btn btn-default buy-content" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
       {% endif %}
     {% endif %}
-    
+
+    {% if content.field_images|render|trim is not empty %}
+      <h2>{{ 'Pictures'|trans }}</h2>
+    {% endif %}
+
+    {{ content.field_images }}
+
+
   </div>
 
 
@@ -120,7 +127,7 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
       {% if node.field_free.value == '1' %}
         <span class="free aside">{{ 'Free'|trans }}</span>
       {% else %}
-        <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Buy ticket'|trans }} {{ content.field_prix }}</a>
+        <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
       {% endif %}
     {% endif %}
     <a class="btn btn-default btn-vertical" href="{{ content.field_facebook_event[0]['#url'] }}">{{ 'Facebook event'|trans }}</a>

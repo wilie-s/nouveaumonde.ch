@@ -139,7 +139,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a class="btn btn-default" href="{{ field_starticket_link__uri }}">StarTickets</a>'
+            text: '<a class="btn btn-default" href="{{ field_starticket_link__uri }}">StarTicket</a>'
             make_link: false
             path: ''
             absolute: false
