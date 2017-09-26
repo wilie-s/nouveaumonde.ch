@@ -42,8 +42,8 @@ class PathProcessorAliasTest extends UnitTestCase {
     $this->aliasManager->expects($this->exactly(2))
       ->method('getPathByAlias')
       ->will($this->returnValueMap([
-        ['urlalias', NULL, 'internal-url'],
-        ['url', NULL, 'url'],
+        ['urlalias', 'en', 'internal-url'],
+        ['url', 'en', 'url'],
       ]));
 
     $request = Request::create('/urlalias');

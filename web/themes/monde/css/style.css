@@ -6312,6 +6312,11 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
     body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tray, body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tray > .toolbar-lining:before {
       width: 240px; }
 
+body.toolbar-loading {
+  margin-top: 0; }
+  body.toolbar-loading.toolbar {
+    margin-bottom: 15px; }
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
@@ -6499,13 +6504,13 @@ footer.footer {
 .association .col-sm-4 h4 {
   margin: 20px 0; }
 
-s article.event {
+article.event {
   margin-bottom: 30px; }
-  s article.event .field--name-field-event-type {
+  article.event .field--name-field-event-type {
     position: relative;
     margin-left: 10px;
     text-transform: uppercase; }
-    s article.event .field--name-field-event-type:before {
+    article.event .field--name-field-event-type:before {
       content: '-';
       display: inline-block;
       background: #404040;
@@ -6514,73 +6519,73 @@ s article.event {
       height: 2px;
       margin-right: 10px;
       text-indent: -99999999em; }
-  s article.event h2 {
+  article.event h2 {
     clear: both;
     font-family: 'AvenirNext-Heavy';
     margin-bottom: 0;
     margin-top: 10px; }
-    s article.event h2 a {
+    article.event h2 a {
       display: block;
       color: #404040;
       line-height: 30px;
       text-transform: uppercase; }
-      s article.event h2 a:hover {
+      article.event h2 a:hover {
         text-decoration: none; }
-  s article.event h1 {
+  article.event h1 {
     line-height: 30px;
     margin-top: 10px;
     margin-bottom: 6px;
     text-transform: uppercase; }
-  s article.event .field--name-field-genre {
+  article.event .field--name-field-genre {
     font-size: 18px;
     text-transform: uppercase; }
-  s article.event .free {
+  article.event .free {
     padding: 14px 30px;
     text-transform: uppercase;
     color: #404040;
     margin-right: 10px; }
-    s article.event .free:before, s article.event .free:after {
+    article.event .free:before, article.event .free:after {
       content: "–";
       padding-right: 10px; }
-    s article.event .free:after {
+    article.event .free:after {
       padding-left: 10px;
       padding-right: 0; }
-  s article.event .event_time {
+  article.event .event_time {
     font-size: 15px;
     color: #ababab;
     margin-top: 5px;
     margin-bottom: 15px; }
     @media only screen and (max-width: 420px) {
-      s article.event .event_time {
+      article.event .event_time {
         margin-bottom: 0; } }
-    s article.event .event_time span.field {
+    article.event .event_time span.field {
       padding-right: 3px; }
-    s article.event .event_time b {
+    article.event .event_time b {
       padding-left: 3px; }
-    s article.event .event_time .addtocalendar {
+    article.event .event_time .addtocalendar {
       margin-left: 15px; }
       @media only screen and (max-width: 420px) {
-        s article.event .event_time .addtocalendar {
+        article.event .event_time .addtocalendar {
           margin-left: 0;
           padding-top: 5px;
           display: block; } }
-      s article.event .event_time .addtocalendar a.atcb-link {
+      article.event .event_time .addtocalendar a.atcb-link {
         color: #ababab;
         text-decoration: underline; }
-        s article.event .event_time .addtocalendar a.atcb-link:hover {
+        article.event .event_time .addtocalendar a.atcb-link:hover {
           color: #ea148c; }
-      s article.event .event_time .addtocalendar ul.atcb-list {
+      article.event .event_time .addtocalendar ul.atcb-list {
         padding: 10px 20px;
         border: 1px solid #ececec; }
-        s article.event .event_time .addtocalendar ul.atcb-list li {
+        article.event .event_time .addtocalendar ul.atcb-list li {
           margin-bottom: 5px; }
-          s article.event .event_time .addtocalendar ul.atcb-list li a:hover {
+          article.event .event_time .addtocalendar ul.atcb-list li a:hover {
             color: #ea148c; }
-  s article.event .field--name-field-main-image {
+  article.event .field--name-field-main-image {
     margin-bottom: 25px; }
-  s article.event .field--name-body {
+  article.event .field--name-body {
     font-size: 16px; }
-  s article.event a.btn {
+  article.event a.btn {
     padding: 14px 30px;
     text-transform: uppercase;
     background: white;
@@ -6590,10 +6595,10 @@ s article.event {
     margin-right: 10px;
     border: 1px solid #ececec;
     vertical-align: inherit; }
-    s article.event a.btn:hover {
+    article.event a.btn:hover {
       background: #ea148c;
       color: white; }
-    s article.event a.btn .field--name-field-prix {
+    article.event a.btn .field--name-field-prix {
       display: inline-block; }
 
 /*---------------------------------------------------------------
