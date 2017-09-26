@@ -263,7 +263,7 @@ footer.footer {
 .carte {
   a.btn {
     display: block;
-    min-width: 280px;
+    width: 280px;
     margin: 10px 0;
   }
   img {
@@ -272,6 +272,9 @@ footer.footer {
   }
   .col-sm-7 {
     margin-bottom: 40px;
+  }
+  li {
+    margin-bottom: 8px;
   }
 }
 
@@ -295,6 +298,10 @@ footer.footer {
 ----------------------------------------------------------------*/
 .benevoles {
   margin-bottom: 30px;
+  img {
+    width: 100%;
+    height: auto;
+  }
   .col-sm-12 {
     margin-top: 30px;
     img {
