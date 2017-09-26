@@ -6363,10 +6363,12 @@ ol, ul {
   .popover ol:last-child, .popover ul:last-child {
     margin-bottom: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #404040; }
+
 h1 {
   font-family: 'AvenirNext-Heavy';
-  margin: 0;
-  color: #404040; }
+  margin: 0; }
 
 .page-header {
   margin-top: 0; }
@@ -6404,6 +6406,26 @@ p:last-child,
 /*---------------------------------------------------------------
   GENERALS
 ----------------------------------------------------------------*/
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  text-transform: uppercase;
+  background: white;
+  color: #404040;
+  font-size: 14px;
+  line-height: 19px;
+  margin-right: 10px;
+  border: 1px solid #ececec;
+  vertical-align: inherit; }
+  .btn:hover {
+    background: #ea148c;
+    color: white; }
+  .btn:active, .btn:focus {
+    background: white;
+    color: #404040;
+    outline: 0;
+    border: 1px solid #ececec; }
+
 #socials ul {
   padding: 0;
   margin: 0;
@@ -6504,6 +6526,18 @@ footer.footer {
 .association .col-sm-4 h4 {
   margin: 20px 0; }
 
+/*---------------------------------------------------------------
+  CONTACT
+----------------------------------------------------------------*/
+.appart {
+  margin-top: 60px; }
+  .appart h2 {
+    font-family: 'AvenirNext-Heavy';
+    font-size: 36px;
+    padding-bottom: 20px; }
+  .appart a.btn {
+    min-width: 270px; }
+
 article.event {
   margin-bottom: 30px; }
   article.event .field--name-field-event-type {
@@ -6585,21 +6619,8 @@ article.event {
     margin-bottom: 25px; }
   article.event .field--name-body {
     font-size: 16px; }
-  article.event a.btn {
-    padding: 14px 30px;
-    text-transform: uppercase;
-    background: white;
-    color: #404040;
-    font-size: 14px;
-    line-height: 19px;
-    margin-right: 10px;
-    border: 1px solid #ececec;
-    vertical-align: inherit; }
-    article.event a.btn:hover {
-      background: #ea148c;
-      color: white; }
-    article.event a.btn .field--name-field-prix {
-      display: inline-block; }
+  article.event .field--name-field-prix {
+    display: inline-block; }
 
 /*---------------------------------------------------------------
   DETAIL
@@ -6742,8 +6763,16 @@ section.block-views-blockrelated-event-block-1 h2 {
   margin-bottom: 30px;
   margin-top: 40px; }
 
-section.block-views-blockrelated-event-block-1 .views-field-field-main-image img {
-  width: 100%; }
+section.block-views-blockrelated-event-block-1 h3 {
+  font-family: 'AvenirNext-Heavy';
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 5px; }
+
+section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
+  margin-bottom: 15px; }
+  section.block-views-blockrelated-event-block-1 .views-field-field-main-image img {
+    width: 100%; }
 
 /*---------------------------------------------------------------
 	HEADER

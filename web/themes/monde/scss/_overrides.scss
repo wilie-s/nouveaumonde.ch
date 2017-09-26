@@ -25,10 +25,13 @@ ol, ul {
   }
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
+  color: $gray-dark;
+}
+
+h1, {
   font-family: 'AvenirNext-Heavy';
   margin: 0;
-  color: $gray-dark;
 }
 
 // Page header.
@@ -82,6 +85,30 @@ p:last-child,
 /*---------------------------------------------------------------
   GENERALS
 ----------------------------------------------------------------*/
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  text-transform: uppercase;
+  background: white;
+  color: $gray-dark;
+  font-size: 14px;
+  line-height: 19px;
+  margin-right: 10px;
+  border: 1px solid #ececec;
+  vertical-align: inherit;
+  &:hover {
+    background: $action-color;
+    color: white;
+  }
+  &:active, &:focus {
+    background: white;
+    color: $gray-dark;
+    outline: 0;
+    border: 1px solid #ececec;
+  }
+
+}
+
 #socials {
   ul {
     padding:0;
@@ -212,5 +239,21 @@ footer.footer {
     h4 {
       margin: 20px 0;
     }
+  }
+}
+
+/*---------------------------------------------------------------
+  CONTACT
+----------------------------------------------------------------*/
+//L'attente
+.appart {
+  margin-top: 60px;
+  h2 {
+    font-family: 'AvenirNext-Heavy';
+    font-size: 36px;
+    padding-bottom:20px;
+  }
+  a.btn {
+    min-width: 270px;
   }
 }
