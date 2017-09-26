@@ -45,6 +45,9 @@ img.50 {
 
 .column {
   column-count: 2;
+  @media only screen and (max-width: 580px) {
+    column-count: 1;
+  }
 }
 
 // Page header.
@@ -259,11 +262,13 @@ footer.footer {
 ----------------------------------------------------------------*/
 .bar {
   img {
-    float: left;
     width: 50%;
   }
   .column {
     margin-bottom: 20px;
+  }
+  .pictures {
+    margin-bottom: 10px;
   }
 }
 

@@ -6379,6 +6379,9 @@ img.50 {
 
 .column {
   column-count: 2; }
+  @media only screen and (max-width: 580px) {
+    .column {
+      column-count: 1; } }
 
 .page-header {
   margin-top: 0; }
@@ -6539,11 +6542,13 @@ footer.footer {
   PAGE BAR
 ----------------------------------------------------------------*/
 .bar img {
-  float: left;
   width: 50%; }
 
 .bar .column {
   margin-bottom: 20px; }
+
+.bar .pictures {
+  margin-bottom: 10px; }
 
 /*---------------------------------------------------------------
   CONTACT
