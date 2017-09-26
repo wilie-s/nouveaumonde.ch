@@ -111,7 +111,14 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
         <a class="btn btn-default buy-content" href="{{ ticket_url }}">{{ 'Buy ticket'|trans }} {{ content.field_prix }}</a>
       {% endif %}
     {% endif %}
+
+    {% if content.field_images|render|trim is not empty %}
+      <h2>{{ 'Pictures'|trans }}</h2>
+    {% endif %}
+
+    {{ content.field_images }}
     
+
   </div>
 
 
