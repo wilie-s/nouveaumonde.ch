@@ -197,10 +197,10 @@ article.full {
     float: right;
     @media only screen and (max-width: 991px) {
       display: inline-block;
+      width: 100%;
     }    
     @media only screen and (max-width: 590px) {
       min-width: inherit;
-      width: 100%;
     }
   }
   .free.aside {

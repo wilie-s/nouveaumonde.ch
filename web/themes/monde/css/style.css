@@ -6752,11 +6752,11 @@ article.full a.buy-content {
   float: right; }
   @media only screen and (max-width: 991px) {
     article.full a.buy-content {
-      display: inline-block; } }
+      display: inline-block;
+      width: 100%; } }
   @media only screen and (max-width: 590px) {
     article.full a.buy-content {
-      min-width: inherit;
-      width: 100%; } }
+      min-width: inherit; } }
 
 article.full .free.aside {
   float: right;

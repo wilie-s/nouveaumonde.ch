@@ -102,8 +102,6 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
   <div class="col-sm-12 col-md-8">
     {{ content.field_main_image }}
 
-    {{ content.body }}
-
     {% if archived != 1 %}
       {% if node.field_free.value == '1' %}
         <span class="free content">{{ 'Free'|trans }}</span>
@@ -115,6 +113,8 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
     {% if content.field_images|render|trim is not empty %}
       <h2>{{ 'Pictures'|trans }}</h2>
     {% endif %}
+
+    {{ content.body }}
 
     {{ content.field_images }}
 
