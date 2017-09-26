@@ -78,3 +78,139 @@ p:last-child,
     margin-top: 0;
   }
 }
+
+/*---------------------------------------------------------------
+  GENERALS
+----------------------------------------------------------------*/
+#socials {
+  ul {
+    padding:0;
+    margin: 0;
+    margin-top: 32px;
+  }
+  li {
+    display: inline-block;
+    margin-right: 8px;
+    img {
+      width: 34px;
+      height: auto;
+    }
+  }
+}
+
+//footer
+footer.footer {
+  padding: 0;
+  border: 0;
+  .col-sm-4 {
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #eaeaea;
+      }    
+  }
+  .infos {
+    background-color: white;
+    padding: 45px 0;
+    img.logo {
+      width: 210px;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    h3 {
+      margin-bottom: 30px;
+      margin-top: 0;
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
+    .relations {
+      a {
+        display: inline-block;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        &.last {
+          margin-bottom: 0;
+        }
+        @media only screen and (max-width: 768px) {
+          margin-bottom: 0;
+        }
+        @media only screen and (max-width: 480px) {
+          margin-right: 20px;
+        }
+      }      
+    }
+  }
+
+  .partenaires {
+    background-color: #212121;
+    padding: 40px 0;
+    .col {
+      float: left;
+      width: 6.66%;
+      padding: 0 0.4%;      
+      @media only screen and (max-width: 992px) {
+        width: 20%;
+      }
+      a {
+        display: inline-block;
+        cursor: pointer;
+      }
+      img {
+          width: 100%;
+          height: auto;
+      }
+    }
+  }
+
+  .credits {
+    background-color: #f7f7f7;
+    padding: 25px 0 15px 0;
+    p, span {
+      font-size: 13px;
+      float: left;
+    }
+    span {
+      float: right;
+    }
+    a {
+      img {
+        width: 53px;
+        margin-left: 3px;
+        vertical-align: top;
+        padding-top: 3px;
+      }
+    }
+  }
+}
+
+/*---------------------------------------------------------------
+  ASSOCIATION
+----------------------------------------------------------------*/
+.association {
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .step {
+    margin-bottom: 40px;
+  }
+  strong {
+    display: block;
+    font-family: 'AvenirNext-DemiBold';
+  }
+  .col-sm-8 {
+    padding-right: 4%;
+  }
+  .col-sm-4 {
+    p {
+      margin-bottom: 20px;
+    }
+    h4 {
+      margin: 20px 0;
+    }
+  }
+}

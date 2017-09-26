@@ -6397,15 +6397,115 @@ p:last-child,
     margin-top: 0; }
 
 /*---------------------------------------------------------------
-	LISTE
+  GENERALS
 ----------------------------------------------------------------*/
-article.event {
+#socials ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 32px; }
+
+#socials li {
+  display: inline-block;
+  margin-right: 8px; }
+  #socials li img {
+    width: 34px;
+    height: auto; }
+
+footer.footer {
+  padding: 0;
+  border: 0; }
+  @media only screen and (max-width: 768px) {
+    footer.footer .col-sm-4 {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #eaeaea; } }
+  footer.footer .infos {
+    background-color: white;
+    padding: 45px 0; }
+    footer.footer .infos img.logo {
+      width: 210px;
+      margin-bottom: 30px; }
+    footer.footer .infos p {
+      margin-bottom: 20px; }
+    footer.footer .infos h3 {
+      margin-bottom: 30px;
+      margin-top: 0; }
+      @media only screen and (max-width: 768px) {
+        footer.footer .infos h3 {
+          margin-bottom: 15px; } }
+    footer.footer .infos .relations a {
+      display: inline-block;
+      margin-right: 30px;
+      margin-bottom: 20px; }
+      footer.footer .infos .relations a.last {
+        margin-bottom: 0; }
+      @media only screen and (max-width: 768px) {
+        footer.footer .infos .relations a {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 480px) {
+        footer.footer .infos .relations a {
+          margin-right: 20px; } }
+  footer.footer .partenaires {
+    background-color: #212121;
+    padding: 40px 0; }
+    footer.footer .partenaires .col {
+      float: left;
+      width: 6.66%;
+      padding: 0 0.4%; }
+      @media only screen and (max-width: 992px) {
+        footer.footer .partenaires .col {
+          width: 20%; } }
+      footer.footer .partenaires .col a {
+        display: inline-block;
+        cursor: pointer; }
+      footer.footer .partenaires .col img {
+        width: 100%;
+        height: auto; }
+  footer.footer .credits {
+    background-color: #f7f7f7;
+    padding: 25px 0 15px 0; }
+    footer.footer .credits p, footer.footer .credits span {
+      font-size: 13px;
+      float: left; }
+    footer.footer .credits span {
+      float: right; }
+    footer.footer .credits a img {
+      width: 53px;
+      margin-left: 3px;
+      vertical-align: top;
+      padding-top: 3px; }
+
+/*---------------------------------------------------------------
+  ASSOCIATION
+----------------------------------------------------------------*/
+.association img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px; }
+
+.association .step {
+  margin-bottom: 40px; }
+
+.association strong {
+  display: block;
+  font-family: 'AvenirNext-DemiBold'; }
+
+.association .col-sm-8 {
+  padding-right: 4%; }
+
+.association .col-sm-4 p {
+  margin-bottom: 20px; }
+
+.association .col-sm-4 h4 {
+  margin: 20px 0; }
+
+s article.event {
   margin-bottom: 30px; }
-  article.event .field--name-field-event-type {
+  s article.event .field--name-field-event-type {
     position: relative;
     margin-left: 10px;
     text-transform: uppercase; }
-    article.event .field--name-field-event-type:before {
+    s article.event .field--name-field-event-type:before {
       content: '-';
       display: inline-block;
       background: #404040;
@@ -6414,73 +6514,73 @@ article.event {
       height: 2px;
       margin-right: 10px;
       text-indent: -99999999em; }
-  article.event h2 {
+  s article.event h2 {
     clear: both;
     font-family: 'AvenirNext-Heavy';
     margin-bottom: 0;
     margin-top: 10px; }
-    article.event h2 a {
+    s article.event h2 a {
       display: block;
       color: #404040;
       line-height: 30px;
       text-transform: uppercase; }
-      article.event h2 a:hover {
+      s article.event h2 a:hover {
         text-decoration: none; }
-  article.event h1 {
+  s article.event h1 {
     line-height: 30px;
     margin-top: 10px;
     margin-bottom: 6px;
     text-transform: uppercase; }
-  article.event .field--name-field-genre {
+  s article.event .field--name-field-genre {
     font-size: 18px;
     text-transform: uppercase; }
-  article.event .free {
+  s article.event .free {
     padding: 14px 30px;
     text-transform: uppercase;
     color: #404040;
     margin-right: 10px; }
-    article.event .free:before, article.event .free:after {
+    s article.event .free:before, s article.event .free:after {
       content: "–";
       padding-right: 10px; }
-    article.event .free:after {
+    s article.event .free:after {
       padding-left: 10px;
       padding-right: 0; }
-  article.event .event_time {
+  s article.event .event_time {
     font-size: 15px;
     color: #ababab;
     margin-top: 5px;
     margin-bottom: 15px; }
     @media only screen and (max-width: 420px) {
-      article.event .event_time {
+      s article.event .event_time {
         margin-bottom: 0; } }
-    article.event .event_time span.field {
+    s article.event .event_time span.field {
       padding-right: 3px; }
-    article.event .event_time b {
+    s article.event .event_time b {
       padding-left: 3px; }
-    article.event .event_time .addtocalendar {
+    s article.event .event_time .addtocalendar {
       margin-left: 15px; }
       @media only screen and (max-width: 420px) {
-        article.event .event_time .addtocalendar {
+        s article.event .event_time .addtocalendar {
           margin-left: 0;
           padding-top: 5px;
           display: block; } }
-      article.event .event_time .addtocalendar a.atcb-link {
+      s article.event .event_time .addtocalendar a.atcb-link {
         color: #ababab;
         text-decoration: underline; }
-        article.event .event_time .addtocalendar a.atcb-link:hover {
+        s article.event .event_time .addtocalendar a.atcb-link:hover {
           color: #ea148c; }
-      article.event .event_time .addtocalendar ul.atcb-list {
+      s article.event .event_time .addtocalendar ul.atcb-list {
         padding: 10px 20px;
         border: 1px solid #ececec; }
-        article.event .event_time .addtocalendar ul.atcb-list li {
+        s article.event .event_time .addtocalendar ul.atcb-list li {
           margin-bottom: 5px; }
-          article.event .event_time .addtocalendar ul.atcb-list li a:hover {
+          s article.event .event_time .addtocalendar ul.atcb-list li a:hover {
             color: #ea148c; }
-  article.event .field--name-field-main-image {
+  s article.event .field--name-field-main-image {
     margin-bottom: 25px; }
-  article.event .field--name-body {
+  s article.event .field--name-body {
     font-size: 16px; }
-  article.event a.btn {
+  s article.event a.btn {
     padding: 14px 30px;
     text-transform: uppercase;
     background: white;
@@ -6490,10 +6590,10 @@ article.event {
     margin-right: 10px;
     border: 1px solid #ececec;
     vertical-align: inherit; }
-    article.event a.btn:hover {
+    s article.event a.btn:hover {
       background: #ea148c;
       color: white; }
-    article.event a.btn .field--name-field-prix {
+    s article.event a.btn .field--name-field-prix {
       display: inline-block; }
 
 /*---------------------------------------------------------------
@@ -6587,7 +6687,7 @@ article.full .free.aside {
     display: inline-block;
     background: #404040;
     line-height: 4px;
-    width: 36%;
+    width: 18%;
     height: 1px;
     margin-right: 5%;
     margin-left: 0;
@@ -6653,13 +6753,13 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image img
 .navbar-header a.logo {
   margin-top: 0;
   margin-bottom: 20px;
-  padding-top: 4px; }
+  padding-top: 15px; }
   .navbar-header a.logo img {
     width: 280px; }
 
 .navbar-default .navbar-nav {
   float: right;
-  margin-top: 38px; }
+  margin-top: 48px; }
   @media only screen and (max-width: 1199px) {
     .navbar-default .navbar-nav {
       float: left;
@@ -6711,3 +6811,5 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image img
       text-transform: uppercase; }
       #block-languageswitcher ul li.is-active {
         font-family: 'AvenirNext-DemiBold'; }
+      #block-languageswitcher ul li.en {
+        display: none; }

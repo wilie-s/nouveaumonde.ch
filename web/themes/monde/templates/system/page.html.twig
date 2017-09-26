@@ -182,8 +182,184 @@
 
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
+    <footer class="footer" role="contentinfo">
+      <div class="container-fluid infos">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-sm-4">
+              <img class="logo" src="/themes/monde/images/logo.svg" alt="logo nouveaumonde">
+              <div>
+                <p>Esplanade de l'Ancienne-Gare 3<br>
+                Case postale 1066<br>
+                1701 Fribourg</p>
+                <p>T 026 322 57 67<br>
+                F 026 322 57 90<br>
+                info@nouveaumonde.ch
+                </p>
+              </div>
+              <div id="socials">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/nouveaumonde.fribourg" title="Facebook" target="_blank">
+                      <img src="/themes/monde/images/ico-facebook.svg" alt="facebook">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/user/lenouveaumonde" title="YouTube" target="_blank">
+                      <img src="/themes/monde/images/ico-youtube.svg" alt="youtube">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/nouveaumonde" title="Instagram" target="_blank">
+                      <img src="/themes/monde/images/ico-instagram.svg" alt="instagram">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/NM_FR" title="Twitter" target="_blank">
+                      <img src="/themes/monde/images/ico-twitter.svg" alt="twitter">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/shows.xml" title="Flux RSS" target="_blank">
+                      <i class="fa fa-rss"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-4 relations">
+              <h3>In an open relationship with</h3>
+              <a href="http://belluard.ch/" target="_blank">
+                <img src="/themes/monde/images/partenaires/00-bellu.png" width="108" height="76" alt="">
+              </a>
+              <a href="http://www.cafeanciennegare.ch/" target="_blank">
+                <img src="/themes/monde/images/partenaires/00-ancienne-gare.svg" width="108" height="115" alt="">
+              </a>
+              <a class="last" href="http://www.fiff.ch/" target="_blank">
+                <img src="/themes/monde/images/partenaires/00-fiff.svg" width="220" height="86" alt="">
+              </a>
+            </div>  
+
+            <div class="col-sm-4">
+              <h3>Newsletter</h3>
+              <div class="nav-footer">
+                  <div id="navbar-collapse" class="navbar-collapse collapse">
+                    {{ page.navigation_collapsible }}
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {# end row #}
+      </div>
+      {# end container #}
+
+      <div class="container-fluid partenaires">
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/01-agglo.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/02-lotterie.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/03-ernst.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/04-bcf.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/05-freiburger.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/06-laliberte.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/07-rtscouleur3.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/08-radiofr.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/09-oxima.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/10-copy.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/11-fribourg.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/12-petzi.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/13-starticket.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/14-greenwalt.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="#" target="_blank">
+            <img src="/themes/monde/images/partenaires/15-tpf.png" width="210" height="140" alt="">
+          </a>
+        </div>
+
+      </div>    
+
+      <div class="container-fluid credits">
+        <div class="container">
+          <p>© copyright 2017 Le Nouveau Monde Fribourg</p>
+          <span>Création
+            <a href="http://www.oxima.ch" target="_blank">
+              <img src="/themes/monde/images/logo-oxima-b.svg" alt="logo oxima">
+            </a>
+          </span>
+        </div>
+      </div>
+      {# {{ page.footer }} #}
     </footer>
   {% endblock %}
 {% endif %}

@@ -105,7 +105,7 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
 
     <div class="event_time"> {{ content.field_doors_time }} | <b>{{ 'Start'|trans }}</b> {{ concert_time }}</div>
 
-    <a class="btn btn-default" href="{{ url }}">Plus d'info</a>
+    <a class="btn btn-default" href="{{ url }}">{{ 'More infos'|trans }}</a>
 
 
     {% if archived != 1 %}
