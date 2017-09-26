@@ -38,6 +38,15 @@ strong {
   font-family: 'AvenirNext-DemiBold';
 }
 
+img.50 {
+  width: 50%;
+  float: left;
+}
+
+.column {
+  column-count: 2;
+}
+
 // Page header.
 .page-header {
   margin-top: 0;
@@ -242,6 +251,19 @@ footer.footer {
     h4 {
       margin: 20px 0;
     }
+  }
+}
+
+/*---------------------------------------------------------------
+  PAGE BAR
+----------------------------------------------------------------*/
+.bar {
+  img {
+    float: left;
+    width: 50%;
+  }
+  .column {
+    margin-bottom: 20px;
   }
 }
 

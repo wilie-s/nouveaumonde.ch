@@ -6373,6 +6373,13 @@ h1 {
 strong {
   font-family: 'AvenirNext-DemiBold'; }
 
+img.50 {
+  width: 50%;
+  float: left; }
+
+.column {
+  column-count: 2; }
+
 .page-header {
   margin-top: 0; }
 
@@ -6527,6 +6534,16 @@ footer.footer {
 
 .association .col-sm-4 h4 {
   margin: 20px 0; }
+
+/*---------------------------------------------------------------
+  PAGE BAR
+----------------------------------------------------------------*/
+.bar img {
+  float: left;
+  width: 50%; }
+
+.bar .column {
+  margin-bottom: 20px; }
 
 /*---------------------------------------------------------------
   CONTACT
@@ -6775,6 +6792,19 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
   margin-bottom: 15px; }
   section.block-views-blockrelated-event-block-1 .views-field-field-main-image img {
     width: 100%; }
+
+/*---------------------------------------------------------------
+  PAGE BILLET
+----------------------------------------------------------------*/
+.view-event-ticket .views-field-title {
+  margin-bottom: 20px; }
+
+.view-event-ticket strong {
+  max-width: 420px;
+  display: block; }
+
+#block-cartesabo {
+  margin-top: 38px; }
 
 /*---------------------------------------------------------------
 	HEADER
