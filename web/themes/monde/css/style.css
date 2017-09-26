@@ -6370,9 +6370,8 @@ h1 {
   font-family: 'AvenirNext-Heavy';
   margin: 0; }
 
-img {
-  width: 100%;
-  height: auto; }
+strong {
+  font-family: 'AvenirNext-DemiBold'; }
 
 .page-header {
   margin-top: 0; }
@@ -6518,8 +6517,7 @@ footer.footer {
   margin-bottom: 40px; }
 
 .association strong {
-  display: block;
-  font-family: 'AvenirNext-DemiBold'; }
+  display: block; }
 
 .association .col-sm-8 {
   padding-right: 4%; }
