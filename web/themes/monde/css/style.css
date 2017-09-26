@@ -6370,6 +6370,10 @@ h1 {
   font-family: 'AvenirNext-Heavy';
   margin: 0; }
 
+img {
+  width: 100%;
+  height: auto; }
+
 .page-header {
   margin-top: 0; }
 
