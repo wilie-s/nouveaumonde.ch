@@ -6550,6 +6550,11 @@ footer.footer {
 .bar .pictures {
   margin-bottom: 10px; }
 
+.benevoles {
+  margin-bottom: 30px; }
+  .benevoles img {
+    width: 50%; }
+
 /*---------------------------------------------------------------
   CONTACT
 ----------------------------------------------------------------*/
