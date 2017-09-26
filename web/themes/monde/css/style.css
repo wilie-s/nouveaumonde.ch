@@ -6580,7 +6580,7 @@ footer.footer {
     margin-top: 30px; }
     .benevoles .col-sm-12 img {
       width: 50%; }
-      @media only screen and (max-width: 480px) {
+      @media only screen and (max-width: 580px) {
         .benevoles .col-sm-12 img {
           width: 100%; } }
 
@@ -6835,12 +6835,15 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
 /*---------------------------------------------------------------
   PAGE BILLET
 ----------------------------------------------------------------*/
-.view-event-ticket .views-field-title {
-  margin-bottom: 20px; }
+.view-event-ticket .views-field {
+  margin: 10px 0; }
 
 .view-event-ticket strong {
   max-width: 420px;
   display: block; }
+
+.view-event-ticket .views-field-field-prix {
+  font-size: 20px; }
 
 #block-cartesabo {
   margin-top: 38px; }

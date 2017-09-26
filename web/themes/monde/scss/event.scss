@@ -309,12 +309,15 @@ section.block-views-blockrelated-event-block-1 {
   PAGE BILLET
 ----------------------------------------------------------------*/
 .view-event-ticket {
-  .views-field-title {
-    margin-bottom: 20px;
+  .views-field {
+    margin: 10px 0;
   }
   strong {
     max-width: 420px;
     display: block;
+  }
+  .views-field-field-prix {
+    font-size: 20px;
   }
 }
 #block-cartesabo {
