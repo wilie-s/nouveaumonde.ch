@@ -6588,7 +6588,8 @@ footer.footer {
 
 .bar img {
   width: 49%;
-  margin-right: 1%; }
+  margin-right: 1%;
+  margin-bottom: 1%; }
 
 .bar .column {
   margin-bottom: 20px; }
@@ -6608,7 +6609,8 @@ footer.footer {
     margin-top: 30px; }
     .benevoles .col-sm-12 img {
       width: 49%;
-      margin-right: 1%; }
+      margin-right: 1%;
+      margin-bottom: 1%; }
       @media only screen and (max-width: 580px) {
         .benevoles .col-sm-12 img {
           width: 100%; } }
