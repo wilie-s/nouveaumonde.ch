@@ -4,11 +4,18 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://nouveaumonde.ch.dev/themes/monde/favicon.ico'
+  url: 'http://ozcfjbjz.preview.infomaniak.website/themes/monde/favicon.ico'
   use_default: true
 schemas:
   bootstrap: 8000
   monde: 8000
+breadcrumb: '2'
+navbar_position: static-top
+table_responsive: '-1'
+modal_enabled: 0
+popover_enabled: 0
+tooltip_enabled: 0
+table: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -18,11 +25,13 @@ logo:
   path: ''
   url: ''
   use_default: true
-breadcrumb: '2'
-navbar_position: static-top
-table_responsive: '-1'
-modal_enabled: 0
-popover_enabled: 0
-tooltip_enabled: 0
-table: ''
-langcode: en
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''

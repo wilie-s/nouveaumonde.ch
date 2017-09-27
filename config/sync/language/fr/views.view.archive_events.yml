@@ -1,0 +1,9 @@
+label: 'Archives events'
+display:
+  default:
+    display_options:
+      title: Archives
+  page_1:
+    display_options:
+      menu:
+        title: Archives

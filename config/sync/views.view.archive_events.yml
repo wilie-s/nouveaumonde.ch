@@ -232,7 +232,7 @@ display:
             label: ''
           granularity: second
           plugin_id: datetime
-      title: Archives
+      title: Archive
       header: {  }
       footer: {  }
       empty: {  }
@@ -258,7 +258,7 @@ display:
       path: archive
       menu:
         type: normal
-        title: Archives
+        title: Archive
         description: ''
         expanded: false
         parent: ''

@@ -1,31 +1,31 @@
-uuid: 9e3fcc4c-f6c2-467d-b008-e35d3b673401
+uuid: 38068ecc-6067-40c1-abdd-caff08d8eeea
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:91cb2079-303c-45e3-87e4-cf3540f49395'
+    - 'block_content:basic:518d2100-cad4-443c-ac6d-b549694abbfe'
   module:
     - block_content
     - system
   theme:
     - monde
-id: instagramimages
+id: cartesabo
 theme: monde
 region: sidebar_second
 weight: 0
 provider: null
-plugin: 'block_content:91cb2079-303c-45e3-87e4-cf3540f49395'
+plugin: 'block_content:518d2100-cad4-443c-ac6d-b549694abbfe'
 settings:
-  id: 'block_content:91cb2079-303c-45e3-87e4-cf3540f49395'
-  label: Instagram
+  id: 'block_content:518d2100-cad4-443c-ac6d-b549694abbfe'
+  label: 'Cartes de réduction et abonnement'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/archive\r\n/archive/*"
+    pages: '/event/*/ticket'
     negate: false
     context_mapping: {  }
