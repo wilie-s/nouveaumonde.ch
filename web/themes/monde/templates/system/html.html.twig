@@ -30,14 +30,16 @@
 <head>
 	<head-placeholder token="{{ placeholder_token }}">
 		<title>{{ head_title|safe_join(' | ') }}</title>
+    <meta name="application-name" content="Nouveau Monde">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path ~ directory }}/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ base_path ~ directory }}/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ base_path ~ directory }}/icon/favicon-16x16.png">
+    <link rel="manifest" href="{{ base_path ~ directory }}/icon/manifest.json">
+    <link rel="mask-icon" href="{{ base_path ~ directory }}/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-config" content="{{ base_path ~ directory }}/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff">
 		<css-placeholder token="{{ placeholder_token }}">
-		  	<js-placeholder token="{{ placeholder_token }}">
-			<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-			<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-			<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-			<link rel="manifest" href="/manifest.json">
-			<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-			<meta name="theme-color" content="#ffffff">
+    <js-placeholder token="{{ placeholder_token }}">
 	</head>
 <body{{ attributes }}>
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
