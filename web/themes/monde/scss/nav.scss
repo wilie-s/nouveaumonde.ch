@@ -6,9 +6,15 @@
 .navbar {
   position: relative;
   min-height: 50px;
-    margin-top: 40px;
+  margin-top: 40px;
   margin-bottom: 20px;
   border: 0;
+  @media only screen and (max-width: 991px) {
+    margin-top: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 0px;
+  }
 }
 
 //logo.
@@ -19,6 +25,9 @@
     padding-top: 15px;
     img {
       width: 280px;
+      @media only screen and (max-width: 480px) {
+        width: 200px;
+      }
     }
   }
 }
@@ -29,10 +38,19 @@
   margin-top: 48px;
   @media only screen and (max-width: 1199px) {
     float: left;
-    margin-top: 0;
+    margin-top: 30px;
+  }
+  @media only screen and (max-width: 991px) {
+    margin-top: 40px;
+  }
+  @media only screen and (max-width: 768px) {
+    padding-left: 15px;
   }
   >li {
     margin-right: 22px;
+    @media only screen and (max-width: 991px) {
+      clear: both;
+    }
     &:last-child {
       margin-right: 0; 
     }
@@ -51,6 +69,11 @@
         padding-top: 10px;
         background: none;
         color: $gray-dark;        
+        @media only screen and (max-width: 991px) {
+          border: 0;
+          font-family: 'AvenirNext-DemiBold';
+          padding-top: 12px;
+        }
       }
     }
     &.active > a,
@@ -61,19 +84,52 @@
       padding-top: 10px;
       background: none;
       color: $gray-dark;
+      @media only screen and (max-width: 991px) {
+        border: 0;
+        font-family: 'AvenirNext-DemiBold';
+        padding-top: 12px;
+      }
     }
   }
 }
 .region-navigation-collapsible {
   position: relative;
 }
+
+//Menu hamburger
+.navbar-toggle {
+  margin-top: 22px;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+    display:block !important;
+  }
+  .navbar-header {
+    float: none;
+  }
+}
+
+
+
 //Langue menu.
 #block-languageswitcher {
   position: absolute;
   right: 0;
   top: 0;
-  @media only screen and (max-width: 1200px) {
-    top: 108px;
+  @media only screen and (max-width: 1199px) {
+    top: 138px;
+  }
+  @media only screen and (max-width: 991px) {
+    left: -15px;
+    top: 0;
   }
   ul {
     padding: 0;
@@ -92,5 +148,16 @@
     }
   }
 }
+
+
+// @media (max-width: 992px){
+//   .navbar-toggle {
+//     display: none;
+//   }
+//   .navbar-collapse.collapse {
+//     display: block;
+//   }
+// }
+
 
 
