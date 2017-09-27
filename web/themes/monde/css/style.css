@@ -6896,6 +6896,9 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
 .view-event-ticket .views-field-field-prix {
   font-size: 20px; }
 
+.view-event-ticket .views-field-view-node {
+  margin-top: 20px; }
+
 #block-cartesabo {
   margin-top: 38px; }
 
@@ -6986,6 +6989,9 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
 .navbar-toggle {
   margin-top: 22px;
   margin-right: 0; }
+  @media only screen and (max-width: 768px) {
+    .navbar-toggle {
+      margin-right: 15px; } }
 
 @media only screen and (max-width: 991px) {
   .navbar-collapse.collapse {
