@@ -34,13 +34,12 @@ h1, {
   margin: 0;
 }
 
-strong {
-  font-family: 'AvenirNext-DemiBold';
+.field--label, b {
+    font-weight: normal;
 }
 
-img.50 {
-  width: 50%;
-  float: left;
+strong {
+  font-family: 'AvenirNext-DemiBold';
 }
 
 .column {

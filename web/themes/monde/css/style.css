@@ -6370,12 +6370,11 @@ h1 {
   font-family: 'AvenirNext-Heavy';
   margin: 0; }
 
+.field--label, b {
+  font-weight: normal; }
+
 strong {
   font-family: 'AvenirNext-DemiBold'; }
-
-img.50 {
-  width: 50%;
-  float: left; }
 
 .column {
   column-count: 2; }
@@ -6706,6 +6705,12 @@ article.event {
     display: inline-block; }
 
 /*---------------------------------------------------------------
+  ARCHIVES  
+----------------------------------------------------------------*/
+#block-instagramimages h2 {
+  margin-top: 0; }
+
+/*---------------------------------------------------------------
   DETAIL
 ----------------------------------------------------------------*/
 article.full .col-md-12 .addtocalendar {
@@ -6931,9 +6936,9 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
   position: absolute;
   right: 0;
   top: 0; }
-  @media only screen and (max-width: 1199px) {
+  @media only screen and (max-width: 1200px) {
     #block-languageswitcher {
-      top: 97px; } }
+      top: 108px; } }
   #block-languageswitcher ul {
     padding: 0; }
     #block-languageswitcher ul li {
