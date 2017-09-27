@@ -9,4 +9,5 @@ shipitfile.js
 .DS_Store
 web/sites/default/settings.php
 web/sites/default/files
+web/.htaccess
 private-files/
