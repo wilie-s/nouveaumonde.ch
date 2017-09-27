@@ -6539,13 +6539,20 @@ footer.footer {
     footer.footer .credits p, footer.footer .credits span {
       font-size: 13px;
       float: left; }
+      @media only screen and (max-width: 480px) {
+        footer.footer .credits p, footer.footer .credits span {
+          float: none; } }
     footer.footer .credits span {
       float: right; }
+      @media only screen and (max-width: 480px) {
+        footer.footer .credits span {
+          float: none;
+          margin-bottom: 5px; } }
     footer.footer .credits a img {
-      width: 53px;
+      width: 54px;
       margin-left: 3px;
       vertical-align: top;
-      padding-top: 3px; }
+      padding-top: 4px; }
 
 /*---------------------------------------------------------------
   ASSOCIATION
@@ -6642,6 +6649,9 @@ footer.footer {
 
 article.event {
   margin-bottom: 30px; }
+  @media only screen and (max-width: 991px) {
+    article.event {
+      margin-bottom: 50px; } }
   article.event .field--name-field-event-type {
     position: relative;
     margin-left: 10px;
@@ -6675,11 +6685,19 @@ article.event {
   article.event .field--name-field-genre {
     font-size: 18px;
     text-transform: uppercase; }
+  @media only screen and (max-width: 480px) {
+    article.event .btn {
+      margin-bottom: 10px;
+      display: block; } }
   article.event .free {
     padding: 14px 30px;
     text-transform: uppercase;
     color: #404040;
     margin-right: 10px; }
+    @media only screen and (max-width: 480px) {
+      article.event .free {
+        display: block;
+        text-align: center; } }
     article.event .free:before, article.event .free:after {
       content: "–";
       padding-right: 10px; }
@@ -6892,6 +6910,11 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
 .view-event-ticket strong {
   max-width: 420px;
   display: block; }
+
+@media only screen and (max-width: 380px) {
+  .view-event-ticket a.btn {
+    display: block;
+    margin-bottom: 10px; } }
 
 .view-event-ticket .views-field-field-prix {
   font-size: 20px; }

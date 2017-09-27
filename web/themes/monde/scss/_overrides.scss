@@ -252,16 +252,23 @@ footer.footer {
     p, span {
       font-size: 13px;
       float: left;
+      @media only screen and (max-width: 480px) {
+        float: none;
+      }
     }
     span {
       float: right;
+      @media only screen and (max-width: 480px) {
+        float: none;
+        margin-bottom: 5px;
+      }
     }
     a {
       img {
-        width: 53px;
+        width: 54px;
         margin-left: 3px;
         vertical-align: top;
-        padding-top: 3px;
+        padding-top: 4px;
       }
     }
   }

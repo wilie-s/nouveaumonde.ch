@@ -1,6 +1,8 @@
 article.event {
   margin-bottom: 30px;
-
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 50px;
+  }
   .field--name-field-event-type {
     position: relative;
     margin-left: 10px;
@@ -45,11 +47,23 @@ article.event {
     font-size: 18px;
     text-transform: uppercase;
   }
+
+  .btn {
+    @media only screen and (max-width: 480px) {
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+
   .free {
     padding: 14px 30px;
     text-transform: uppercase;
     color: #404040;
     margin-right: 10px;
+    @media only screen and (max-width: 480px) {
+      display: block;
+      text-align: center; 
+    }   
     &:before,
     &:after {
       content:"–";
@@ -322,6 +336,12 @@ section.block-views-blockrelated-event-block-1 {
   strong {
     max-width: 420px;
     display: block;
+  }
+  a.btn {
+    @media only screen and (max-width: 380px) {
+          display: block;
+          margin-bottom: 10px;
+    }
   }
   .views-field-field-prix {
     font-size: 20px;
