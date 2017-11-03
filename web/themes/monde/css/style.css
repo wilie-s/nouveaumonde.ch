@@ -6436,7 +6436,7 @@ p:last-child,
   border: 1px solid #ececec;
   vertical-align: inherit; }
   .btn:hover {
-    background: #ea148c;
+    background: #00afec;
     color: white; }
   .btn:active, .btn:focus {
     background: white;
@@ -6549,10 +6549,10 @@ footer.footer {
           float: none;
           margin-bottom: 5px; } }
     footer.footer .credits a img {
-      width: 54px;
+      width: 53px;
       margin-left: 3px;
       vertical-align: top;
-      padding-top: 4px; }
+      padding-top: 3px; }
 
 /*---------------------------------------------------------------
   ASSOCIATION
@@ -6727,14 +6727,14 @@ article.event {
         color: #ababab;
         text-decoration: underline; }
         article.event .event_time .addtocalendar a.atcb-link:hover {
-          color: #ea148c; }
+          color: #00afec; }
       article.event .event_time .addtocalendar ul.atcb-list {
         padding: 10px 20px;
         border: 1px solid #ececec; }
         article.event .event_time .addtocalendar ul.atcb-list li {
           margin-bottom: 5px; }
           article.event .event_time .addtocalendar ul.atcb-list li a:hover {
-            color: #ea148c; }
+            color: #00afec; }
   article.event .field--name-field-main-image {
     margin-bottom: 25px; }
   article.event .field--name-body {
@@ -6780,8 +6780,8 @@ article.full a.btn-vertical {
   color: #404040;
   border: 1px solid #ececec; }
   article.full a.btn-vertical:hover {
-    background: #ea148c;
-    border: 1px solid #ea148c;
+    background: #00afec;
+    border: 1px solid #00afec;
     color: white; }
   @media only screen and (max-width: 991px) {
     article.full a.btn-vertical {
