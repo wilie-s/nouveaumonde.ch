@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      fields:
+        nothing_1:
+          alter:
+            text: '<strong>Ticketverkauf: direkt an der Abendkasse im Nouveau Monde oder im Vorverkauf im Tourismusbüro Freiburg, bei Coop, Manor, der SBB und der Post.</strong>'
+        view_node:
+          text: 'Zurück zur Veranstaltung'
