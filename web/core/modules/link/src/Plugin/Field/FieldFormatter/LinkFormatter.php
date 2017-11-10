@@ -173,14 +173,10 @@ class LinkFormatter extends FormatterBase implements ContainerFactoryPluginInter
     $element = [];
     $entity = $items->getEntity();
     $settings = $this->getSettings();
-    $language = \Drupal::languageManager()->getLanguage($langcode);
 
     foreach ($items as $delta => $item) {
       // By default use the full URL as the link text.
       $url = $this->buildUrl($item);
-      if (!$item->getFieldDefinition()->isTranslatable()) {
-        $url->setOption('language', $language);
-      }
       $link_title = $url->toString();
 
       // If the title field value is available, use it for the link text.

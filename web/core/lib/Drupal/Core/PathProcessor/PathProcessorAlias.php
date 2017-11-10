@@ -32,7 +32,7 @@ class PathProcessorAlias implements InboundPathProcessorInterface, OutboundPathP
    * {@inheritdoc}
    */
   public function processInbound($path, Request $request) {
-    $path = $this->aliasManager->getPathByAlias($path, $request->getLocale());
+    $path = $this->aliasManager->getPathByAlias($path);
     return $path;
   }
 

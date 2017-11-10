@@ -7,6 +7,7 @@
 
 use Drupal\Core\Entity\Entity\EntityViewDisplay;
 use Drupal\Core\Datetime\DrupalDateTime;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
 
 /**
  * Helper function to preprocess datetime field.
@@ -30,7 +31,7 @@ function _addtocalendar_preprocess_field(&$variables) {
     if ($settings['addtocalendar_show']) {
       $token_service = \Drupal::token();
       $token_options = ['langcode' => $entity->language()->getId(), 'callback' => '', 'clear' => TRUE];
-      $timeZone = date_default_timezone_get();
+      $timeZone = (!empty($field_display['settings']['timezone_override'])) ? $field_display['settings']['timezone_override'] : date_default_timezone_get();
       $values = $entity->{$field_name}->getValue();
       $delta = !empty($settings['addtocalendar_settings']['delta']) ? $settings['addtocalendar_settings']['delta'] : 0;
       if (empty($values[$delta]['value'])) {
@@ -44,10 +45,21 @@ function _addtocalendar_preprocess_field(&$variables) {
         $values = [$delta => $temp];
         unset($temp);
       }
+
+      $display_text = new TranslatableMarkup($settings['addtocalendar_settings']['display_text']);
+      $build['addtocalendar_button'] = [
+        '#type' => 'html_tag',
+        '#tag' => 'a',
+        '#value' => $display_text->__toString(),
+        '#attributes' => [
+          'class' => 'atcb-link',
+        ],
+      ];
+
       foreach ($values as $index => $date_val) {
-        $date = new DrupalDateTime(preg_replace('/T/', ' ', $values[$index]['value']), 'UTC');
+        $date = new DrupalDateTime(preg_replace('/T/', ' ', $values[$index]['value']), $timeZone);
         if (!empty($values[$index]['end_value']) && isset($values[$index]['end_value'])) {
-          $end_date = new DrupalDateTime(preg_replace('/T/', ' ', $values[$index]['end_value']), 'UTC');
+          $end_date = new DrupalDateTime(preg_replace('/T/', ' ', $values[$index]['end_value']), $timeZone);
         }
 
         $build['addtocalendar'][$index]['atc_date_start'] = [
@@ -85,7 +97,7 @@ function _addtocalendar_preprocess_field(&$variables) {
                 $class_value = strip_tags($entity->{$field}->end_value);
               }
               else {
-                $class_value = strip_tags($entity->{$field}->value);
+                $class_value = strip_tags(render($entity->get($field)->view(['label' => 'hidden'])));
               }
               break;
           }
@@ -132,7 +144,7 @@ function _addtocalendar_preprocess_field(&$variables) {
         $build['addtocalendar'][$index] = [
           '#type' => 'html_tag',
           '#tag' => 'span',
-          '#value' => '<var class="atc_event">' . render($build['addtocalendar'][$index]) . '</var>',
+          '#value' => render($build['addtocalendar_button']) . '<var class="atc_event">' .render($build['addtocalendar'][$index]) . '</var>',
           '#attributes' => [
             'class' => [
               'addtocalendar',

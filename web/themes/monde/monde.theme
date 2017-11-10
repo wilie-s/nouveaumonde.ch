@@ -22,7 +22,6 @@ function monde_preprocess_node(&$variables) {
   // Check if the event is passed and set a archived boolean
   if(!empty($node->field_date) && $node->bundle() == 'event'){
     $variables['archived'] = false;
-    //kint($node->field_date->getValue()[0]['value']);
     $eventDate = new dateTime($node->field_date->getValue()[0]['value']);
     $now = new dateTime('now');
     if($eventDate < $now){

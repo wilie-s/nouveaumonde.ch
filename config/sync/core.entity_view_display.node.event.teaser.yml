@@ -20,7 +20,6 @@ dependencies:
     - node.type.event
     - responsive_image.styles.wide
   module:
-    - addtocalendar
     - datetime
     - hms_field
     - responsive_image
@@ -38,38 +37,7 @@ content:
     settings:
       timezone_override: ''
       format_type: long_date_no_time
-    third_party_settings:
-      addtocalendar:
-        addtocalendar_settings:
-          style: blue
-          display_text: 'Add to Calender'
-          atc_title:
-            field: token
-            tokenized: Title
-          atc_description:
-            field: token
-            tokenized: Description
-          atc_location:
-            field: token
-            tokenized: Location
-          atc_organizer:
-            field: token
-            tokenized: Drupal
-          atc_organizer_email:
-            field: token
-            tokenized: perdrisat@gmail.com
-          atc_date_end:
-            field: token
-            tokenized: ''
-          atc_privacy: public
-          data_secure: auto
-          data_calendars:
-            iCalendar: 0
-            'Google Calendar': 0
-            Outlook: 0
-            'Outlook Online': 0
-            'Yahoo! Calendar': 0
-        addtocalendar_show: 0
+    third_party_settings: {  }
   field_doors_time:
     type: hms_default_formatter
     weight: 6

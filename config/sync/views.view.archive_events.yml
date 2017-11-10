@@ -11,7 +11,7 @@ dependencies:
     - node
     - user
 id: archive_events
-label: 'Archive events'
+label: 'Archives events'
 module: views
 description: ''
 tag: ''
@@ -232,7 +232,7 @@ display:
             label: ''
           granularity: second
           plugin_id: datetime
-      title: Archive
+      title: Archives
       header: {  }
       footer: {  }
       empty: {  }
@@ -258,7 +258,7 @@ display:
       path: archive
       menu:
         type: normal
-        title: Archive
+        title: Archives
         description: ''
         expanded: false
         parent: ''

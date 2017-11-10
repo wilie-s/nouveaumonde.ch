@@ -19,7 +19,6 @@ dependencies:
     - node.type.event
     - responsive_image.styles.wide
   module:
-    - addtocalendar
     - blazy
     - datetime
     - hms_field
@@ -45,38 +44,7 @@ content:
     settings:
       timezone_override: ''
       format_type: long_date_no_time
-    third_party_settings:
-      addtocalendar:
-        addtocalendar_show: '1'
-        addtocalendar_settings:
-          style: '0'
-          display_text: 'Add to Calender'
-          atc_title:
-            field: title
-            tokenized: ''
-          atc_description:
-            field: body
-            tokenized: ''
-          atc_location:
-            field: token
-            tokenized: 'Esplanade de l''Ancienne Gare 3, 1700 Fribourg'
-          atc_organizer:
-            field: token
-            tokenized: 'Nouveau Monde'
-          atc_organizer_email:
-            field: token
-            tokenized: ''
-          atc_date_end:
-            field: field_date
-            tokenized: ''
-          atc_privacy: public
-          data_secure: auto
-          data_calendars:
-            iCalendar: iCalendar
-            'Google Calendar': 'Google Calendar'
-            Outlook: Outlook
-            'Outlook Online': 'Outlook Online'
-            'Yahoo! Calendar': 'Yahoo! Calendar'
+    third_party_settings: {  }
     type: datetime_default
     region: content
   field_doors_time:

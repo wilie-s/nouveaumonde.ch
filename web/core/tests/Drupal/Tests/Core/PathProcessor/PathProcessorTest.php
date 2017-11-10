@@ -98,17 +98,12 @@ class PathProcessorTest extends UnitTestCase {
       ->getMock();
 
     $system_path_map = [
-      // Set up one proper alias for each language that can be resolved to a
-      // system path.
-      ['/foo', 'en', '/user/1'],
-      ['/foo', 'fr', '/user/1'],
+      // Set up one proper alias that can be resolved to a system path.
+      ['/foo', NULL, '/user/1'],
       // Passing in anything else should return the same string.
-      ['/fr/foo', 'en', '/fr/foo'],
-      ['/fr/foo', 'fr', '/fr/foo'],
-      ['/fr', 'en', '/fr'],
-      ['/fr', 'fr', '/fr'],
-      ['/user/login', 'en', '/user/login'],
-      ['/user/login', 'fr', '/user/login'],
+      ['/fr/foo', NULL, '/fr/foo'],
+      ['/fr', NULL, '/fr'],
+      ['/user/login', NULL, '/user/login'],
     ];
 
     $alias_manager->expects($this->any())
@@ -136,10 +131,12 @@ class PathProcessorTest extends UnitTestCase {
       ->getMock();
     $negotiator->expects($this->any())
       ->method('getNegotiationMethods')
-      ->will($this->returnValue([LanguageNegotiationUrl::METHOD_ID => [
-        'class' => 'Drupal\language\Plugin\LanguageNegotiation\LanguageNegotiationUrl',
-        'weight' => 9,
-        ]]));
+      ->will($this->returnValue([
+        LanguageNegotiationUrl::METHOD_ID => [
+          'class' => 'Drupal\language\Plugin\LanguageNegotiation\LanguageNegotiationUrl',
+          'weight' => 9,
+        ],
+      ]));
     $method = new LanguageNegotiationUrl();
     $method->setConfig($config_factory_stub);
     $method->setLanguageManager($this->languageManager);
