@@ -194,7 +194,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '+5 hours'
+            value: '-5 hours'
             type: offset
           group: 1
           exposed: false
