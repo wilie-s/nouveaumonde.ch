@@ -434,8 +434,16 @@ class Schema extends DatabaseSchema {
         ->execute();
     }
     if (isset($spec['initial_from_field'])) {
+      if (is_array($spec['initial_from_field'])) {
+        $expression = 'COALESCE(' . $spec['initial_from_field']['field_name'] . ', :default_initial_value)';
+        $arguments = [':default_initial_value' => $spec['initial_from_field']['default_value']];
+      }
+      else {
+        $expression = $spec['initial_from_field'];
+        $arguments = [];
+      }
       $this->connection->update($table)
-        ->expression($field, $spec['initial_from_field'])
+        ->expression($field, $expression, $arguments)
         ->execute();
     }
     if ($fixnull) {

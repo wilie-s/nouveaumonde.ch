@@ -568,8 +568,16 @@ EOD;
         ->execute();
     }
     if (isset($spec['initial_from_field'])) {
+      if (is_array($spec['initial_from_field'])) {
+        $expression = 'COALESCE(' . $spec['initial_from_field']['field_name'] . ', :default_initial_value)';
+        $arguments = [':default_initial_value' => $spec['initial_from_field']['default_value']];
+      }
+      else {
+        $expression = $spec['initial_from_field'];
+        $arguments = [];
+      }
       $this->connection->update($table)
-        ->expression($field, $spec['initial_from_field'])
+        ->expression($field, $expression, $arguments)
         ->execute();
     }
     if ($fixnull) {
@@ -626,6 +634,15 @@ EOD;
     }
 
     $this->connection->query('ALTER TABLE {' . $table . '} ALTER COLUMN "' . $field . '" DROP DEFAULT');
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function fieldExists($table, $column) {
+    $prefixInfo = $this->getPrefixInfo($table);
+
+    return (bool) $this->connection->query("SELECT 1 FROM pg_attribute WHERE attrelid = :key::regclass AND attname = :column AND NOT attisdropped AND attnum > 0", [':key' => $prefixInfo['schema'] . '.' . $prefixInfo['table'], ':column' => $column])->fetchField();
   }
 
   /**
