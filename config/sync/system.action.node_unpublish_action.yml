@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: gGQXiSspwGl0lyOS6w_HCPpvGAPDciqDNLFwWOydVtI
 id: node_unpublish_action
-label: 'Dépublier un contenu'
+label: 'Unpublish content'
 type: node
 plugin: 'entity:unpublish_action:node'
 configuration: {  }

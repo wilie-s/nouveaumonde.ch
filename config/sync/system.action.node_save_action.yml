@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: U9HspszLxcw6pZmRacFa6yDbbheyMN-We4fPbrWWHGg
 id: node_save_action
-label: 'Enregistrer un contenu'
+label: 'Save content'
 type: node
 plugin: 'entity:save_action:node'
 configuration: {  }
