@@ -475,6 +475,8 @@ display:
           text: 'Revenir à l''événement'
           entity_type: node
           plugin_id: entity_link
+          output_url_as_text: false
+          absolute: false
       filters:
         status:
           value: '1'
