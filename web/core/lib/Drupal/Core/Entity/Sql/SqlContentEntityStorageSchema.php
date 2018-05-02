@@ -1829,12 +1829,7 @@ class SqlContentEntityStorageSchema implements DynamicallyFieldableEntityStorage
         $initial_value = reset($initial_storage_value);
       }
 
-      if ($initial_value_from_field = $storage_definition->getInitialValueFromField()) {
-        $initial_value_field_name = $initial_value_from_field['field_name'];
-        // @todo Implement initial default value support for multi-value fields
-        //   in https://www.drupal.org/node/2883851.
-        $initial_default_value = reset($initial_value_from_field['default_value']);
-
+      if ($initial_value_field_name = $storage_definition->getInitialValueFromField()) {
         // Check that the field used for populating initial values is valid. We
         // must use the last installed version of that, as the new field might
         // be created in an update function and the storage definition of the
@@ -1852,10 +1847,7 @@ class SqlContentEntityStorageSchema implements DynamicallyFieldableEntityStorage
           throw new FieldException("Illegal initial value definition on {$storage_definition->getName()}: Both fields have to be stored in the shared entity tables.");
         }
 
-        $initial_value_from_field = [
-          'field_name' => $table_mapping->getColumnNames($initial_value_from_field['field_name']),
-          'default_value' => $initial_default_value,
-        ];
+        $initial_value_from_field = $table_mapping->getColumnNames($initial_value_field_name);
       }
     }
 
@@ -1890,12 +1882,7 @@ class SqlContentEntityStorageSchema implements DynamicallyFieldableEntityStorage
         $schema['fields'][$schema_field_name]['initial'] = drupal_schema_get_field_value($column_schema, $initial_value[$field_column_name]);
       }
       elseif (!empty($initial_value_from_field)) {
-        $schema['fields'][$schema_field_name]['initial_from_field'] = [
-          'field_name' => $initial_value_from_field['field_name'][$field_column_name],
-          'default_value' => $initial_value_from_field['default_value']
-            ? drupal_schema_get_field_value($column_schema, $initial_value_from_field['default_value'][$field_column_name])
-            : NULL,
-        ];
+        $schema['fields'][$schema_field_name]['initial_from_field'] = $initial_value_from_field[$field_column_name];
       }
     }
 

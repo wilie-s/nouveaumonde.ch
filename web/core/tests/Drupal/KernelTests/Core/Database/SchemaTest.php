@@ -528,13 +528,6 @@ class SchemaTest extends KernelTestBase {
           ['not null' => TRUE, 'initial' => 1],
           ['not null' => TRUE, 'initial' => 1, 'default' => 7],
           ['not null' => TRUE, 'initial_from_field' => 'serial_column'],
-          [
-            'not null' => TRUE,
-            'initial_from_field' => [
-              'field_name' => 'test_nullable_field',
-              'default_value' => 100,
-            ],
-          ],
         ];
 
         foreach ($variations as $variation) {
@@ -588,7 +581,6 @@ class SchemaTest extends KernelTestBase {
     $table_spec = [
       'fields' => [
         'serial_column' => ['type' => 'serial', 'unsigned' => TRUE, 'not null' => TRUE],
-        'test_nullable_field' => ['type' => 'int', 'not null' => FALSE],
         'test_field' => $field_spec,
       ],
       'primary key' => ['serial_column'],
@@ -607,7 +599,6 @@ class SchemaTest extends KernelTestBase {
     $table_spec = [
       'fields' => [
         'serial_column' => ['type' => 'serial', 'unsigned' => TRUE, 'not null' => TRUE],
-        'test_nullable_field' => ['type' => 'int', 'not null' => FALSE],
       ],
       'primary key' => ['serial_column'],
     ];
@@ -618,14 +609,8 @@ class SchemaTest extends KernelTestBase {
     for ($i = 0; $i < 3; $i++) {
       db_insert($table_name)
         ->useDefaults(['serial_column'])
-        ->fields(['test_nullable_field' => 100])
         ->execute();
     }
-
-    // Add another row with no value for the 'test_nullable_field' column.
-    db_insert($table_name)
-      ->useDefaults(['serial_column'])
-      ->execute();
 
     db_add_field($table_name, 'test_field', $field_spec);
     $this->pass(format_string('Column %column created.', ['%column' => 'test_field']));
@@ -660,7 +645,7 @@ class SchemaTest extends KernelTestBase {
     }
 
     // Check that the initial value from another field has been registered.
-    if (isset($field_spec['initial_from_field']) && !is_array($field_spec['initial_from_field'])) {
+    if (isset($field_spec['initial_from_field'])) {
       // There should be no row with a value different than
       // $field_spec['initial_from_field'].
       $count = db_select($table_name)
@@ -670,16 +655,6 @@ class SchemaTest extends KernelTestBase {
         ->execute()
         ->fetchField();
       $this->assertEqual($count, 0, 'Initial values from another field filled out.');
-    }
-    elseif (isset($field_spec['initial_from_field']) && is_array($field_spec['initial_from_field'])) {
-      // There should be no row with a value different than '100'.
-      $count = db_select($table_name)
-        ->fields($table_name, ['serial_column'])
-        ->where($table_name . '.' . $field_name . ' <> 100')
-        ->countQuery()
-        ->execute()
-        ->fetchField();
-      $this->assertEqual($count, 0, 'Initial values from another field or a default value filled out.');
     }
 
     // Check that the default value has been registered.

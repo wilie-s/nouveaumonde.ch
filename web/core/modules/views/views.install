@@ -383,9 +383,6 @@ function views_update_8500() {
   $entity_field_manager = \Drupal::service('entity_field.manager');
   $table_update_info = [];
 
-  // Avoid exceptions related to missing entity keys.
-  $entity_type_manager->clearCachedDefinitions();
-
   foreach ($entity_type_manager->getDefinitions() as $entity_type_id => $entity_type) {
     if ($entity_type->hasHandlerClass('views_data')) {
       $base_field_definitions = $entity_field_manager->getBaseFieldDefinitions($entity_type_id);

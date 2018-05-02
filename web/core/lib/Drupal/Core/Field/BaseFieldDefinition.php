@@ -570,11 +570,11 @@ class BaseFieldDefinition extends ListDataDefinition implements FieldDefinitionI
   /**
    * Returns the name of the field that will be used for getting initial values.
    *
-   * @return array
-   *   An array containing the name of the field and a default value.
+   * @return string|null
+   *   The field name.
    */
   public function getInitialValueFromField() {
-    return isset($this->definition['initial_value_from_field']) ? $this->definition['initial_value_from_field'] : [];
+    return isset($this->definition['initial_value_from_field']) ? $this->definition['initial_value_from_field'] : NULL;
   }
 
   /**
@@ -582,39 +582,11 @@ class BaseFieldDefinition extends ListDataDefinition implements FieldDefinitionI
    *
    * @param string $field_name
    *   The name of the field that will be used for getting initial values.
-   * @param mixed $default_value
-   *   (optional) The default value for the field, in case the inherited value
-   *   is NULL. This can be either:
-   *   - a literal, in which case it will be assigned to the first property of
-   *     the first item;
-   *   - a numerically indexed array of items, each item being a property/value
-   *     array;
-   *   - a non-numerically indexed array, in which case the array is assumed to
-   *     be a property/value array and used as the first item;
-   *   - an empty array for no initial value.
-   *   If the field being added is required or an entity key, it is recommended
-   *   to provide a default value.
    *
    * @return $this
    */
-  public function setInitialValueFromField($field_name, $default_value = NULL) {
-    if ($default_value === NULL) {
-      $default_value = [];
-    }
-    // Unless the default value is an empty array, we may need to transform it.
-    if (!is_array($default_value) || !empty($default_value)) {
-      if (!is_array($default_value)) {
-        $default_value = [[$this->getMainPropertyName() => $default_value]];
-      }
-      elseif (is_array($default_value) && !is_numeric(array_keys($default_value)[0])) {
-        $default_value = [0 => $default_value];
-      }
-    }
-
-    $this->definition['initial_value_from_field'] = [
-      'field_name' => $field_name,
-      'default_value' => $default_value,
-    ];
+  public function setInitialValueFromField($field_name) {
+    $this->definition['initial_value_from_field'] = $field_name;
 
     return $this;
   }
