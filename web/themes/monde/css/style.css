@@ -6566,11 +6566,11 @@ footer.footer {
     padding: 40px 0; }
     footer.footer .partenaires .col {
       float: left;
-      width: 6.66%;
+      width: 6.25%;
       padding: 0 0.4%; }
       @media only screen and (max-width: 992px) {
         footer.footer .partenaires .col {
-          width: 20%; } }
+          width: 12.5%; } }
       footer.footer .partenaires .col a {
         display: inline-block;
         cursor: pointer; }
@@ -6593,10 +6593,10 @@ footer.footer {
           float: none;
           margin-bottom: 5px; } }
     footer.footer .credits a img {
-      width: 53px;
+      width: 51px;
       margin-left: 3px;
       vertical-align: top;
-      padding-top: 3px; }
+      margin-top: -1px; }
 
 /*---------------------------------------------------------------
   ASSOCIATION
@@ -7094,5 +7094,3 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
       text-transform: uppercase; }
       #block-languageswitcher ul li.is-active {
         font-family: 'AvenirNext-DemiBold'; }
-      #block-languageswitcher ul li.en {
-        display: none; }
