@@ -1,11 +1,7 @@
-label: 'Page d''accueil'
-description: 'Tout le contenu promu en page d''accueil.'
 display:
   default:
+    display_title: Master
     display_options:
-      empty:
-        title:
-          title: 'Bienvenue sur [site:name]'
       exposed_form:
         options:
           submit_button: Apply
@@ -19,13 +15,21 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'
             offset_label: Offset
-          tags:
-            previous: '‹ Précédent'
-            next: 'Suivant ›'
-            first: '« Premier'
-            last: 'Dernier »'
-    display_title: Master
-  feed_1:
-    display_title: Flux
+      fields:
+        redirect_source__path:
+          label: From
+          separator: ', '
+        created:
+          label: Created
+      filters:
+        redirect_source__path:
+          expose:
+            label: From
+        redirect_redirect__uri:
+          expose:
+            label: To
+        language:
+          expose:
+            label: 'Original language'
   page_1:
     display_title: Page

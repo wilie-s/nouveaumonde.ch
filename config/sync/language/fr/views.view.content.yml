@@ -1,4 +1,4 @@
-label: Contenu
+label: Content
 description: 'Trouver et gérer le contenu.'
 display:
   default:
@@ -6,8 +6,8 @@ display:
       exposed_form:
         options:
           submit_button: Filtrer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -54,16 +54,16 @@ display:
         langcode:
           expose:
             label: Langue
-      title: Contenu
+      title: Content
       empty:
         area_text_custom:
           content: 'Aucun contenu disponible.'
-    display_title: Maître
+    display_title: Master
   page_1:
     display_options:
       menu:
-        title: Contenu
+        title: Content
       tab_options:
-        title: Contenu
+        title: Content
         description: 'Trouver et gérer le contenu'
     display_title: Page
