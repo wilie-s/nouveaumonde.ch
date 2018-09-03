@@ -1,0 +1,19 @@
+uuid: 94e907dd-97fa-439b-8166-8656d3529ea7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_weezevent
+field_name: field_weezevent
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -64,6 +64,7 @@ permissions:
   - 'translate page node'
   - 'update content translations'
   - 'use text format basic_html'
+  - 'use text format full_raw_html_no_editor_'
   - 'view all revisions'
   - 'view article revisions'
   - 'view event revisions'

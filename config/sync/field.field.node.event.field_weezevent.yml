@@ -1,0 +1,28 @@
+uuid: 54899efd-ae1f-47de-8355-91422b8b8d8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weezevent
+    - node.type.event
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_raw_html_no_editor_: full_raw_html_no_editor_
+    basic_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: node.event.field_weezevent
+field_name: field_weezevent
+entity_type: node
+bundle: event
+label: Weezevent
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

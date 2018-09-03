@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.event.field_prix
     - field.field.node.event.field_starticket_link
     - field.field.node.event.field_subtitle
+    - field.field.node.event.field_weezevent
     - node.type.event
     - responsive_image.styles.wide
   module:
@@ -200,6 +201,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_weezevent:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   links:
     weight: 1

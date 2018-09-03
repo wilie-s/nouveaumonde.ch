@@ -1,0 +1,32 @@
+uuid: 568ccfe3-0f9c-4818-a109-db8830acbadd
+langcode: en
+status: true
+dependencies:
+  module:
+    - inline_responsive_images
+name: 'Full Raw HTML (no editor)'
+format: full_raw_html_no_editor_
+weight: 0
+filters:
+  filter_imagestyle:
+    id: filter_imagestyle
+    provider: inline_responsive_images
+    status: false
+    weight: 0
+    settings:
+      image_style_large: '0'
+      image_style_max_1300x1300: '0'
+      image_style_max_2600x2600: '0'
+      image_style_max_325x325: '0'
+      image_style_max_650x650: '0'
+      image_style_medium: '0'
+      image_style_thumbnail: '0'
+      image_style_video_embed_wysiwyg_preview: '0'
+  filter_responsive_image_style:
+    id: filter_responsive_image_style
+    provider: inline_responsive_images
+    status: false
+    weight: 0
+    settings:
+      responsive_style_narrow: '0'
+      responsive_style_wide: '0'
