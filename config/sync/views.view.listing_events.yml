@@ -335,9 +335,13 @@ display:
       path: programme
       menu:
         type: normal
-        title: Programme
-        menu_name: main
+        title: Program
+        description: ''
+        expanded: false
+        parent: ''
         weight: -49
+        context: '0'
+        menu_name: main
       rendering_language: '***LANGUAGE_language_interface***'
       title: Program
       defaults:
