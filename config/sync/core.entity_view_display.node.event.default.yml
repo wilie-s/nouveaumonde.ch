@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.event.field_main_image
     - field.field.node.event.field_petzitickets_link
     - field.field.node.event.field_prix
+    - field.field.node.event.field_sold_out
     - field.field.node.event.field_starticket_link
     - field.field.node.event.field_subtitle
     - field.field.node.event.field_weezevent
@@ -181,6 +182,16 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
+    region: content
+  field_sold_out:
+    weight: 15
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_starticket_link:
     weight: 9
