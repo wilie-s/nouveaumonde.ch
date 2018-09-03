@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.event.field_sold_out
     - field.field.node.event.field_starticket_link
     - field.field.node.event.field_subtitle
+    - field.field.node.event.field_ticket_instructions
     - field.field.node.event.field_weezevent
     - node.type.event
     - responsive_image.styles.wide
@@ -212,6 +213,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_ticket_instructions:
+    weight: 16
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   field_weezevent:
     weight: 14

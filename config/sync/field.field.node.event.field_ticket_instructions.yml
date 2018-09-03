@@ -1,0 +1,19 @@
+uuid: c61c9b20-dad8-4f10-8101-ff55d836a9fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ticket_instructions
+    - node.type.event
+id: node.event.field_ticket_instructions
+field_name: field_ticket_instructions
+entity_type: node
+bundle: event
+label: 'Ticket Instructions'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

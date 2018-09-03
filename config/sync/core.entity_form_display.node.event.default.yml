@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.event.field_sold_out
     - field.field.node.event.field_starticket_link
     - field.field.node.event.field_subtitle
+    - field.field.node.event.field_ticket_instructions
     - field.field.node.event.field_weezevent
     - image.style.thumbnail
     - node.type.event
@@ -70,7 +71,7 @@ content:
     type: options_buttons
     region: content
   field_facebook_event:
-    weight: 22
+    weight: 23
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -146,6 +147,14 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_ticket_instructions:
+    weight: 22
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
   field_weezevent:
     weight: 17
     settings:
@@ -181,7 +190,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 24
+    weight: 25
     third_party_settings: {  }
     region: content
   sticky:
@@ -214,7 +223,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 23
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }

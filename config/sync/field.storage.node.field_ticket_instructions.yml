@@ -1,0 +1,19 @@
+uuid: c5cd5d56-0a70-4c4c-97cd-ba46aa09d6c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ticket_instructions
+field_name: field_ticket_instructions
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
