@@ -14,7 +14,7 @@ tags:
   schema_event_type: Event
   schema_event_start_date: '[node:field_date:date:html_datetime]'
   schema_event_end_date: '[node:field_date:date:html_datetime]'
-  schema_event_offers: 'a:6:{s:5:"@type";s:5:"Offer";s:3:"@id";s:10:"[node:url]";s:5:"price";s:17:"[node:field_prix]";s:13:"priceCurrency";s:3:"CHF";s:3:"url";s:10:"[node:url]";s:12:"availability";s:21:"[node:field_sold_out]";}'
-  schema_event_location: 'a:6:{s:5:"@type";s:5:"Place";s:4:"name";s:13:"Nouveau Monde";s:3:"url";s:23:"https://nouveaumonde.ch";s:7:"address";a:6:{s:5:"@type";s:13:"PostalAddress";s:13:"streetAddress";s:30:"Esplanade de l''Ancienne-Gare 3";s:15:"addressLocality";s:8:"Fribourg";s:13:"addressRegion";s:8:"Fribourg";s:10:"postalCode";s:4:"1700";s:14:"addressCountry";s:2:"CH";}s:3:"geo";a:3:{s:5:"@type";s:14:"GeoCoordinates";s:8:"latitude";s:10:"46.802021 ";s:9:"longitude";s:8:"7.150301";}s:7:"country";a:2:{s:5:"@type";s:7:"Country";s:4:"name";s:2:"CH";}}'
+  schema_event_offers: 'a:6:{s:5:"@type";s:5:"Offer";s:3:"@id";s:10:"[node:url]";s:5:"price";s:23:"[node:field_prix:value]";s:13:"priceCurrency";s:3:"CHF";s:3:"url";s:10:"[node:url]";s:12:"availability";s:25:"http://schema.org/InStock";}'
+  schema_event_location: 'a:5:{s:5:"@type";s:5:"Place";s:4:"name";s:13:"Nouveau Monde";s:3:"url";s:23:"https://nouveaumonde.ch";s:7:"address";a:6:{s:5:"@type";s:13:"PostalAddress";s:13:"streetAddress";s:30:"Esplanade de l''Ancienne-Gare 3";s:15:"addressLocality";s:8:"Fribourg";s:13:"addressRegion";s:8:"Fribourg";s:10:"postalCode";s:4:"1700";s:14:"addressCountry";s:2:"CH";}s:3:"geo";a:3:{s:5:"@type";s:14:"GeoCoordinates";s:8:"latitude";s:10:"46.802021 ";s:9:"longitude";s:8:"7.150301";}}'
   schema_event_description: '[node:summary]'
   schema_event_id: '[node:url]'
