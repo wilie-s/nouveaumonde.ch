@@ -1,0 +1,86 @@
+uuid: 371c393e-63d8-4962-bacd-2fdfec137bee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.event.body
+    - field.field.node.event.field_date
+    - field.field.node.event.field_doors_time
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_facebook_event
+    - field.field.node.event.field_free
+    - field.field.node.event.field_genre
+    - field.field.node.event.field_images
+    - field.field.node.event.field_main_image
+    - field.field.node.event.field_petzitickets_link
+    - field.field.node.event.field_prix
+    - field.field.node.event.field_sold_out
+    - field.field.node.event.field_starticket_link
+    - field.field.node.event.field_subtitle
+    - field.field.node.event.field_ticket_instructions
+    - field.field.node.event.field_weezevent
+    - node.type.event
+  module:
+    - datetime
+    - text
+    - user
+id: node.event.search_index
+targetEntityType: node
+bundle: event
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long_date_no_time
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_type:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_genre:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_doors_time: true
+  field_facebook_event: true
+  field_free: true
+  field_images: true
+  field_main_image: true
+  field_petzitickets_link: true
+  field_prix: true
+  field_sold_out: true
+  field_starticket_link: true
+  field_ticket_instructions: true
+  field_weezevent: true
+  langcode: true
+  links: true
