@@ -7007,7 +7007,7 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
       margin-top: 30px; } }
   @media only screen and (max-width: 991px) {
     .navbar-default .navbar-nav {
-      margin-top: 40px; } }
+      margin-top: 90px; } }
   @media only screen and (max-width: 768px) {
     .navbar-default .navbar-nav {
       padding-left: 15px; } }
@@ -7083,7 +7083,7 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
   @media only screen and (max-width: 991px) {
     #block-languageswitcher {
       left: -15px;
-      top: 0; } }
+      top: 15px; } }
   #block-languageswitcher ul {
     padding: 0; }
     #block-languageswitcher ul li {
@@ -7094,3 +7094,54 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
       text-transform: uppercase; }
       #block-languageswitcher ul li.is-active {
         font-family: 'AvenirNext-DemiBold'; }
+
+.search-form .input-group-btn,
+.search-form .search-help-link {
+  display: none; }
+
+.search-form .input-group {
+  width: 50%; }
+  @media only screen and (max-width: 991px) {
+    .search-form .input-group {
+      width: 100%; } }
+
+#block-searchform {
+  position: absolute;
+  right: 130px;
+  top: -6px; }
+  @media only screen and (max-width: 1199px) {
+    #block-searchform {
+      top: 42px;
+      right: 0; } }
+  @media only screen and (max-width: 991px) {
+    #block-searchform {
+      left: 0;
+      top: 50px; } }
+  #block-searchform .input-group-btn {
+    display: none; }
+  #block-searchform .description.help-block {
+    display: none; }
+  #block-searchform .form-control {
+    border: 1px solid #ececec;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 14px 17px 14px; }
+    @media only screen and (max-width: 991px) {
+      #block-searchform .form-control {
+        border: 1px solid #d2d2d2; } }
+    #block-searchform .form-control::-webkit-input-placeholder {
+      opacity: .6; }
+    #block-searchform .form-control:-ms-input-placeholder {
+      opacity: .6; }
+    #block-searchform .form-control::-ms-input-placeholder {
+      opacity: .6; }
+    #block-searchform .form-control::placeholder {
+      opacity: .6; }
+    #block-searchform .form-control:focus::-webkit-input-placeholder {
+      opacity: 1; }
+    #block-searchform .form-control:focus:-ms-input-placeholder {
+      opacity: 1; }
+    #block-searchform .form-control:focus::-ms-input-placeholder {
+      opacity: 1; }
+    #block-searchform .form-control:focus::placeholder {
+      opacity: 1; }

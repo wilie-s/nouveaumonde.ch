@@ -1,0 +1,20 @@
+uuid: 3425df94-64e7-4c25-a9f3-8a8c0b6513d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - monde
+id: searchform
+theme: monde
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+visibility: {  }
