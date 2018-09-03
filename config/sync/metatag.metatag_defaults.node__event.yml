@@ -10,7 +10,7 @@ tags:
   twitter_cards_type: summary_large_image
   schema_event_door_time: '[node:field_doors_time:value]'
   schema_event_name: '[node:title] '
-  schema_event_image: 'a:3:{s:5:"@type";s:11:"ImageObject";s:20:"representativeOfPage";s:4:"True";s:3:"url";s:41:"[node:field_main_image:max_2600x2600:url]";}'
+  schema_event_image: 'a:5:{s:5:"@type";s:11:"ImageObject";s:20:"representativeOfPage";s:4:"True";s:3:"url";s:41:"[node:field_main_image:max_1300x1300:url]";s:5:"width";s:43:"[node:field_main_image:max_1300x1300:width]";s:6:"height";s:44:"[node:field_main_image:max_1300x1300:height]";}'
   schema_event_type: Event
   schema_event_start_date: '[node:field_date:date:html_datetime]'
   schema_event_end_date: '[node:field_date:date:html_datetime]'
