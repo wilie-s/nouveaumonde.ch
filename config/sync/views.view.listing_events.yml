@@ -339,6 +339,9 @@ display:
         menu_name: main
         weight: -49
       rendering_language: '***LANGUAGE_language_interface***'
+      title: Program
+      defaults:
+        title: false
     cache_metadata:
       max-age: -1
       contexts:
