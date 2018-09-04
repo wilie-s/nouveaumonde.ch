@@ -1,0 +1,13 @@
+settings:
+  default_submit_button_label: Soumettre
+  default_reset_button_label: Reset
+  default_wizard_start_label: Début
+  default_preview_next_button_label: Aperçu
+  default_preview_label: Aperçu
+  dialog_options:
+    narrow:
+      title: Narrow
+    wide:
+      title: Wide
+element:
+  default_more_title: Plus
