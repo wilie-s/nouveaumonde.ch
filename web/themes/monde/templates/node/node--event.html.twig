@@ -72,6 +72,7 @@
     node.isPromoted() ? 'is-promoted',
     node.isSticky() ? 'is-sticky',
     not node.isPublished() ? 'is-unpublished',
+    node.field_sold_out.value ? 'is-soldout',
     view_mode ? view_mode|clean_class,
     'clearfix',
   ]
@@ -125,7 +126,17 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
       {% if node.field_free.value == '1' %}
         <span class="free aside">{{ 'Free'|trans }}</span>
       {% else %}
-        <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
+
+        {% if node.field_sold_out.value == '1' %}
+          <div class="btn btn-default btn-vertical aside disable">
+            {{ 'Ticket'|trans }}
+            {{ content.field_prix }}
+            {{ content.field_sold_out }}
+          </div>
+        {% else %}
+          <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
+        {% endif %}
+
       {% endif %}
     {% endif %}
 

@@ -15,8 +15,11 @@ dependencies:
     - field.field.node.event.field_main_image
     - field.field.node.event.field_petzitickets_link
     - field.field.node.event.field_prix
+    - field.field.node.event.field_sold_out
     - field.field.node.event.field_starticket_link
     - field.field.node.event.field_subtitle
+    - field.field.node.event.field_ticket_instructions
+    - field.field.node.event.field_weezevent
     - node.type.event
     - responsive_image.styles.wide
   module:
@@ -93,6 +96,16 @@ content:
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
+  field_sold_out:
+    type: boolean
+    weight: 9
+    region: content
+    label: hidden
+    settings:
+      format: default
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
   field_subtitle:
     type: string
     weight: 2
@@ -112,4 +125,6 @@ hidden:
   field_images: true
   field_petzitickets_link: true
   field_starticket_link: true
+  field_ticket_instructions: true
+  field_weezevent: true
   langcode: true

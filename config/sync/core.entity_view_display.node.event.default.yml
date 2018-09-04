@@ -186,7 +186,7 @@ content:
     region: content
   field_sold_out:
     weight: 15
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
