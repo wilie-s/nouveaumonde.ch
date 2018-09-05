@@ -6488,6 +6488,56 @@ p:last-child,
     outline: 0;
     border: 1px solid #ececec; }
 
+.btn.disable {
+  background: transparent;
+  border: 0;
+  font-weight: 700;
+  position: relative;
+  padding: 14px 10px;
+  margin-left: 20px; }
+  @media only screen and (max-width: 480px) {
+    .btn.disable {
+      width: 62%;
+      margin: 0 auto; } }
+  .btn.disable .field--name-field-sold-out {
+    display: inline-block;
+    padding-left: 5px;
+    font-weight: 700; }
+  .btn.disable .field--name-field-prix {
+    font-weight: 700;
+    position: relative; }
+    .btn.disable .field--name-field-prix::after {
+      border-bottom: 0.1em solid #404040;
+      content: "";
+      left: 0;
+      line-height: 1em;
+      margin-top: calc(0.125em / 2 * -1);
+      position: absolute;
+      right: 0;
+      top: 50%; }
+  .btn.disable:hover {
+    color: inherit; }
+  .btn.disable:active, .btn.disable:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent; }
+  .btn.disable.btn-vertical {
+    float: right;
+    text-align: center;
+    min-width: 260px;
+    margin-bottom: 20px;
+    font-size: 16px; }
+    @media only screen and (max-width: 991px) {
+      .btn.disable.btn-vertical {
+        display: none; } }
+  @media only screen and (max-width: 991px) {
+    .btn.disable.buy-content {
+      font-size: 16px;
+      margin: 0 auto;
+      min-width: inherit;
+      width: 100%;
+      margin-bottom: 15px; } }
+
 #socials ul {
   padding: 0;
   margin: 0;
