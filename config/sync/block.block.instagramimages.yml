@@ -12,7 +12,7 @@ dependencies:
 id: instagramimages
 theme: monde
 region: sidebar_second
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:91cb2079-303c-45e3-87e4-cf3540f49395'
 settings:
