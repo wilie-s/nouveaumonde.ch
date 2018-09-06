@@ -6530,13 +6530,16 @@ p:last-child,
     @media only screen and (max-width: 991px) {
       .btn.disable.btn-vertical {
         display: none; } }
-  @media only screen and (max-width: 991px) {
-    .btn.disable.buy-content {
-      font-size: 16px;
-      margin: 0 auto;
-      min-width: inherit;
-      width: 100%;
-      margin-bottom: 15px; } }
+  .btn.disable.buy-content {
+    display: none; }
+    @media only screen and (max-width: 991px) {
+      .btn.disable.buy-content {
+        display: block;
+        font-size: 16px;
+        margin: 0 auto;
+        min-width: inherit;
+        width: 100%;
+        margin-bottom: 15px; } }
 
 #socials ul {
   padding: 0;
