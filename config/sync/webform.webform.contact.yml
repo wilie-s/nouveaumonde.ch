@@ -1,12 +1,9 @@
-uuid: 09df7582-a234-4248-adcf-c30bc2aae848
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform
-_core:
-  default_config_hash: 8_e5tEg0UK5VWZOLfDMcaRmbBxWYtI801Qq461Dyyk4
 open: null
 close: null
 weight: 0
@@ -48,14 +45,20 @@ settings:
   form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
-  form_login: false
-  form_login_message: ''
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
   submission_label: ''
   submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false
-  submission_login: false
-  submission_login_message: ''
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
   submission_exception_message: ''
   submission_locked_message: ''
   previous_submission_message: ''
@@ -187,6 +190,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+      theme: ''
   email_notification:
     id: email
     label: 'Email notification'
@@ -220,3 +224,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+      theme: ''
+uuid: 09df7582-a234-4248-adcf-c30bc2aae848
+_core:
+  default_config_hash: 8_e5tEg0UK5VWZOLfDMcaRmbBxWYtI801Qq461Dyyk4
