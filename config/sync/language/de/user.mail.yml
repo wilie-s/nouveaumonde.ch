@@ -11,7 +11,6 @@ register_no_approval_required:
   body: "[user:display-name],\n\nvielen Dank für die Registrierung auf [site:name]. Sie können sich jetzt mit einem Klick auf den folgenden Link anmelden oder diesen alternativ in Ihren Browser kopieren:\n\n[user:one-time-login-url]\n\nDieser Link kann nur einmal verwendet werden und leitet Sie auf eine Seite, auf der Sie Ihr Passwort festlegen können.\n\nNachdem Sie Ihr Passwort festgelegt haben, können Sie sich zukünftig mit folgenden Zugangsdaten bei [site:login-url] anmelden:\n\nBenutzername: [user:name]\nPasswort: Ihr Passwort\n\nViele Grüße\nDas Team von [site:name]"
   subject: 'Kontodetails für [user:display-name] auf [site:name]'
 register_pending_approval:
-  body: "[user:display-name],\n\nvielen Dank für die Registrierung auf [site:name]. Ihr Antrag für ein Benutzerkonto wird aktuell geprüft. Sobald eine Freigabe erfolgt ist, erhalten Sie eine weitere E-Mail mit Informationen zum Login, Setzen Ihres Passwortes sowie weitere Details.\n\nViele Grüße\nDas Team von [site:name]"
   subject: 'Kontendetails für [user:display-name] auf [site:name] (Genehmigung ausstehend)'
 register_pending_approval_admin:
   body: "[user:display-name] hat einen Antrag auf ein Benutzerkonto gestellt.\r\n\r\n[user:edit-url]"
