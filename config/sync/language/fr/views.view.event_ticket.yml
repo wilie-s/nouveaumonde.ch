@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_starticket_link:
+          alter:
+            text: 'StarTicket <small>(frais de service supplémentaires)</small>'

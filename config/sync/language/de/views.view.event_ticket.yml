@@ -4,3 +4,6 @@ display:
       fields:
         view_node:
           text: 'Zurück zur Veranstaltung'
+        field_starticket_link:
+          alter:
+            text: 'StarTicket <small>(Zusätzliche Servicekosten)</small>'
