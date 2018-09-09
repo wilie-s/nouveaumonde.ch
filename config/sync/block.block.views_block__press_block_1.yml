@@ -1,0 +1,30 @@
+uuid: 9698eb56-9de1-41d4-ac33-87afb97082c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.press
+  module:
+    - system
+    - views
+  theme:
+    - monde
+id: views_block__press_block_1
+theme: monde
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:press-block_1'
+settings:
+  id: 'views_block:press-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /archive
+    negate: false
+    context_mapping: {  }

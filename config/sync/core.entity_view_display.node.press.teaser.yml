@@ -5,8 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.press.body
+    - field.field.node.press.field_date_only
+    - field.field.node.press.field_pdf
     - node.type.press
   module:
+    - datetime
+    - pdf
     - text
     - user
 id: node.press.teaser
@@ -17,15 +21,34 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
-      trim_length: 600
+      trim_length: 300
     third_party_settings: {  }
     region: content
+  field_date_only:
+    type: datetime_default
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: long_date_no_time
+    third_party_settings: {  }
+  field_pdf:
+    type: pdf_thumbnail
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      scale: '1'
+      width: 300px
+      height: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true

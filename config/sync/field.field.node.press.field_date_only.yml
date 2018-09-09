@@ -11,7 +11,7 @@ id: node.press.field_date_only
 field_name: field_date_only
 entity_type: node
 bundle: press
-label: 'Publication Date'
+label: Date
 description: 'The publication date of the press article'
 required: true
 translatable: false

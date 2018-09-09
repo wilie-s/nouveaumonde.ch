@@ -9,7 +9,7 @@ dependencies:
     - node.type.press
   module:
     - datetime
-    - file
+    - pdf
     - text
     - user
 id: node.press.default
@@ -20,31 +20,37 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_date_only:
-    weight: 103
-    label: above
+    weight: 1
+    label: inline
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: long_date_no_time
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_pdf:
-    weight: 102
-    label: above
+    weight: 3
+    label: hidden
     settings:
-      use_description_as_link_text: true
+      keep_pdfjs: '1'
+      width: 100%
+      height: 1000px
+      page: ''
+      zoom: ''
+      custom_zoom: ''
+      pagemode: ''
     third_party_settings: {  }
-    type: file_default
+    type: pdf_default
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true
