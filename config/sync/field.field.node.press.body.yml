@@ -1,0 +1,29 @@
+uuid: 2f9e11c3-6b0c-4dcb-a086-987767f71816
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.press
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_raw_html_no_editor_: '0'
+    full_html: '0'
+    plain_text: '0'
+id: node.press.body
+field_name: body
+entity_type: node
+bundle: press
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

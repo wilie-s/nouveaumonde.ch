@@ -1,0 +1,24 @@
+uuid: 3ac4fa6c-401d-402e-951a-8f597bf1ce98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_only
+    - node.type.press
+  module:
+    - datetime
+id: node.press.field_date_only
+field_name: field_date_only
+entity_type: node
+bundle: press
+label: 'Publication Date'
+description: 'The publication date of the press article'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,16 @@
+uuid: 54c16728-d655-48d2-9114-95748298e18a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.press
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.press
+target_entity_type_id: node
+target_bundle: press
+default_langcode: site_default
+language_alterable: true

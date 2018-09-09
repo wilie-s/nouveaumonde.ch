@@ -1,0 +1,50 @@
+uuid: 25474819-061b-4c8f-9901-f94c531bd257
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.press.body
+    - field.field.node.press.field_date_only
+    - field.field.node.press.field_pdf
+    - node.type.press
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.press.default
+targetEntityType: node
+bundle: press
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date_only:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_pdf:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
