@@ -7013,10 +7013,15 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
   max-width: 420px;
   display: block; }
 
-@media only screen and (max-width: 380px) {
-  .view-event-ticket a.btn {
-    display: block;
-    margin-bottom: 10px; } }
+.view-event-ticket a.btn {
+  margin-bottom: 10px; }
+  @media only screen and (max-width: 580px) {
+    .view-event-ticket a.btn {
+      display: block;
+      margin-right: 0; } }
+  @media only screen and (max-width: 480px) {
+    .view-event-ticket a.btn small {
+      display: block; } }
 
 .view-event-ticket .views-field-field-prix {
   font-size: 20px; }

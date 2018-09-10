@@ -341,9 +341,15 @@ section.block-views-blockrelated-event-block-1 {
     display: block;
   }
   a.btn {
-    @media only screen and (max-width: 380px) {
-          display: block;
-          margin-bottom: 10px;
+    margin-bottom: 10px;
+    @media only screen and (max-width: 580px) {
+      display: block;
+      margin-right: 0;
+    }
+    small {
+      @media only screen and (max-width: 480px) {
+        display: block;
+      }
     }
   }
   .views-field-field-prix {
