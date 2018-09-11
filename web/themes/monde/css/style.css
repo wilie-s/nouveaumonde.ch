@@ -6848,6 +6848,18 @@ article.event {
   margin-top: 0;
   text-transform: uppercase; }
 
+#block-views-block-press-block-1 h2 {
+  margin-top: 0;
+  margin-bottom: 25px; }
+
+#block-views-block-press-block-1 .views-row {
+  margin-bottom: 25px; }
+  #block-views-block-press-block-1 .views-row h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 0 8px 0; }
+
 /*---------------------------------------------------------------
   DETAIL
 ----------------------------------------------------------------*/
