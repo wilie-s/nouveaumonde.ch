@@ -6848,6 +6848,18 @@ article.event {
   margin-top: 0;
   text-transform: uppercase; }
 
+#block-views-block-press-block-1 h2 {
+  margin-top: 0;
+  margin-bottom: 25px; }
+
+#block-views-block-press-block-1 .views-row {
+  margin-bottom: 25px; }
+  #block-views-block-press-block-1 .views-row h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 0 8px 0; }
+
 /*---------------------------------------------------------------
   DETAIL
 ----------------------------------------------------------------*/
@@ -7013,10 +7025,15 @@ section.block-views-blockrelated-event-block-1 .views-field-field-main-image {
   max-width: 420px;
   display: block; }
 
-@media only screen and (max-width: 380px) {
-  .view-event-ticket a.btn {
-    display: block;
-    margin-bottom: 10px; } }
+.view-event-ticket a.btn {
+  margin-bottom: 10px; }
+  @media only screen and (max-width: 580px) {
+    .view-event-ticket a.btn {
+      display: block;
+      margin-right: 0; } }
+  @media only screen and (max-width: 480px) {
+    .view-event-ticket a.btn small {
+      display: block; } }
 
 .view-event-ticket .views-field-field-prix {
   font-size: 20px; }
