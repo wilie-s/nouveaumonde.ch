@@ -6853,12 +6853,14 @@ article.event {
   margin-bottom: 25px; }
 
 #block-views-block-press-block-1 .views-row {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e3e3e3; }
   #block-views-block-press-block-1 .views-row h3 {
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
-    margin: 0 0 8px 0; }
+    margin: 0 0 5px 0; }
 
 /*---------------------------------------------------------------
   DETAIL

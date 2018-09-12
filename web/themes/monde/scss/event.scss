@@ -147,11 +147,13 @@ article.event {
   }
   .views-row {
     margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e3e3e3;    
     h3 {
       font-size: 16px;
       font-weight: 600;
       line-height: 20px;
-      margin: 0 0 8px 0;
+      margin: 0 0 5px 0;
     }
   }
 }
