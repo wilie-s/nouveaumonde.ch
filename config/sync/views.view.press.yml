@@ -151,27 +151,27 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''
-          granularity: second
+          granularity: hour
           plugin_id: datetime
         created:
           id: created
           table: node_field_data
           field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
           granularity: second
+          entity_type: node
+          entity_field: created
+          plugin_id: date
       title: Press
       header: {  }
       footer: {  }
@@ -215,7 +215,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 10
+          items_per_page: 50
           offset: 0
       fields:
         title:

@@ -20,7 +20,7 @@ default_value_callback: ''
 settings:
   file_directory: 'press/[date:custom:Y]'
   file_extensions: pdf
-  max_filesize: '2 MB'
+  max_filesize: '5 MB'
   description_field: false
   handler: 'default:file'
   handler_settings: {  }
