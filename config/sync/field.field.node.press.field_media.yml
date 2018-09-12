@@ -1,0 +1,29 @@
+uuid: dc3ddf99-6a2b-4839-ae26-2dd80ef56018
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - node.type.press
+    - taxonomy.vocabulary.media
+id: node.press.field_media
+field_name: field_media
+entity_type: node
+bundle: press
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      media: media
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

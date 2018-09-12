@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.press.body
     - field.field.node.press.field_date_only
+    - field.field.node.press.field_media
     - field.field.node.press.field_pdf
     - node.type.press
   module:
@@ -51,4 +52,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_media: true
   langcode: true

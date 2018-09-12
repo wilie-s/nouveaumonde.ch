@@ -333,7 +333,7 @@ display:
           type: datetime_default
           settings:
             timezone_override: ''
-            format_type: short
+            format_type: long_date_no_time
           group_column: value
           group_columns: {  }
           group_rows: true
