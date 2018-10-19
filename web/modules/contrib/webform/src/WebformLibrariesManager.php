@@ -102,6 +102,12 @@ class WebformLibrariesManager implements WebformLibrariesManagerInterface {
     ];
 
     foreach ($libraries as $library_name => $library) {
+      // Excluded.
+      if ($this->isExcluded($library_name)) {
+        $stats['@excluded']++;
+        continue;
+      }
+
       $library_path = '/libraries/' . $library_name;
       $library_exists = (file_exists(DRUPAL_ROOT . $library_path)) ? TRUE : FALSE;
 
@@ -117,19 +123,7 @@ class WebformLibrariesManager implements WebformLibrariesManagerInterface {
         ':settings_elements_href' => Url::fromRoute('webform.config.elements')->toString(),
       ];
 
-      if ($this->isExcluded($library_name)) {
-        // Excluded.
-        $stats['@excluded']++;
-        $title = $this->t('<strong>@title</strong> (Excluded)', $t_args);
-        if (!empty($library['elements']) && $this->areElementsExcluded($library['elements'])) {
-          $t_args['@element_type'] = implode('; ', $library['elements']);
-          $description = $this->t('The <a href=":homepage_href">@title</a> library is excluded because required element types (@element_type) are <a href=":settings_elements_href">excluded</a>.', $t_args);
-        }
-        else {
-          $description = $this->t('The <a href=":homepage_href">@title</a> library is <a href=":settings_libraries_href">excluded</a>.', $t_args);
-        }
-      }
-      elseif ($library_exists) {
+      if ($library_exists) {
         // Installed.
         $stats['@installed']++;
         $title = $this->t('<strong>@title @version</strong> (Installed)', $t_args);
@@ -317,19 +311,19 @@ class WebformLibrariesManager implements WebformLibrariesManagerInterface {
       'description' => $this->t('Provides syntax highlighting for the CKEditor with the CodeMirror Plugin.'),
       'notes' => $this->t('Makes it easier to edit the HTML source.'),
       'homepage_url' => Url::fromUri('https://github.com/w8tcha/CKEditor-CodeMirror-Plugin'),
-      'download_url' => Url::fromUri('https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.5/CKEditor-CodeMirror-Plugin.zip'),
+      'download_url' => Url::fromUri('https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.7/CKEditor-CodeMirror-Plugin.zip'),
       'plugin_path' => 'libraries/ckeditor.codemirror/codemirror/',
-      'plugin_url' => "https://cdn.rawgit.com/w8tcha/CKEditor-CodeMirror-Plugin/v1.17.5/codemirror/",
-      'version' => 'v1.17.5',
+      'plugin_url' => "https://cdn.rawgit.com/w8tcha/CKEditor-CodeMirror-Plugin/v1.17.7/codemirror/",
+      'version' => 'v1.17.7',
     ];
     $libraries['codemirror'] = [
       'title' => $this->t('Code Mirror'),
       'description' => $this->t('Code Mirror is a versatile text editor implemented in JavaScript for the browser.'),
       'notes' => $this->t('Code Mirror is used to provide a text editor for YAML, HTML, CSS, and JavaScript configuration settings and messages.'),
       'homepage_url' => Url::fromUri('http://codemirror.net/'),
-      'download_url' => Url::fromUri('https://github.com/components/codemirror/archive/5.39.2.zip'),
+      'download_url' => Url::fromUri('https://github.com/components/codemirror/archive/5.40.0.zip'),
       'issues_url' => Url::fromUri('https://github.com/codemirror/codemirror/issues'),
-      'version' => '5.39.2',
+      'version' => '5.40.0',
     ];
     $libraries['algolia.places'] = [
       'title' => $this->t('Algolia Places'),
@@ -340,8 +334,8 @@ class WebformLibrariesManager implements WebformLibrariesManagerInterface {
       // NOTE: Using NPM/JsDelivr because it contains the '/dist/cdn/' directory.
       // @see https://asset-packagist.org/package/detail?fullname=npm-asset/places.js
       // @see https://www.jsdelivr.com/package/npm/places.js
-      'download_url' => Url::fromUri('https://registry.npmjs.org/places.js/-/places.js-1.9.0.tgz'),
-      'version' => '1.9.0',
+      'download_url' => Url::fromUri('https://registry.npmjs.org/places.js/-/places.js-1.10.0.tgz'),
+      'version' => '1.10.0',
       'elements' => ['webform_location_places'],
     ];
     $libraries['jquery.geocomplete'] = [

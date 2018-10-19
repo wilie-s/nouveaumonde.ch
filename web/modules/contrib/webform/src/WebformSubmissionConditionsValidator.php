@@ -3,7 +3,6 @@
 namespace Drupal\webform;
 
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Render\Element;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\webform\Plugin\WebformElement\WebformElement;
 use Drupal\webform\Plugin\WebformElementManagerInterface;
@@ -164,7 +163,7 @@ class WebformSubmissionConditionsValidator implements WebformSubmissionCondition
    */
   protected function validateFormRecursive(array $form, FormStateInterface $form_state) {
     foreach ($form as $key => $element) {
-      if (!Element::child($key) || !is_array($element)) {
+      if (!WebformElementHelper::isElement($element, $key)) {
         continue;
       }
 
@@ -262,15 +261,20 @@ class WebformSubmissionConditionsValidator implements WebformSubmissionCondition
    */
   protected function submitFormRecursive(array $elements, WebformSubmissionInterface $webform_submission, array &$data, $visible = TRUE) {
     foreach ($elements as $key => &$element) {
-      if (Element::property($key) || !is_array($element)) {
+      if (!WebformElementHelper::isElement($element, $key)) {
         continue;
       }
 
-      // Deterine if the element is visible.
+      // Skip if element's #states_clear is FALSE.
+      if (isset($element['#states_clear']) && $element['#states_clear'] === FALSE) {
+        continue;
+      }
+
+      // Determine if the element is visible.
       $element_visible = ($visible && $this->isElementVisible($element, $webform_submission)) ? TRUE : FALSE;
 
-      // Set data to empty array or string for any element that is hidden.
-      if (!$element_visible && isset($data[$key])) {
+      // Set data to empty array or string for any webform element that is hidden.
+      if (!$element_visible && !empty($element['#webform_key']) && isset($data[$key])) {
         $data[$key] = (is_array($data[$key])) ? [] : '';
       }
 
@@ -597,7 +601,7 @@ class WebformSubmissionConditionsValidator implements WebformSubmissionCondition
    */
   protected function getBuildElementsRecusive(array &$elements, array &$form, array $parent_states = []) {
     foreach ($form as $key => &$element) {
-      if (Element::property($key) || !is_array($element)) {
+      if (!WebformElementHelper::isElement($element, $key)) {
         continue;
       }
 

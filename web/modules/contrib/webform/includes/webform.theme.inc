@@ -119,6 +119,9 @@ function webform_theme() {
       'variables' => ['element' => [], 'value' => NULL, 'webform_submission' => NULL, 'options' => [], 'file' => NULL],
     ],
 
+    'webform_email_html' => [
+      'variables' => ['subject' => '', 'body' => ''],
+    ],
     'webform_email_message_html' => [
       'variables' => ['message' => '', 'webform_submission' => NULL, 'handler' => NULL],
     ],
@@ -464,6 +467,17 @@ function webform_preprocess_file_managed_file(&$variables) {
 
   // Attach library.
   $element['#attached']['library'][] = 'webform/webform.element.file.button';
+}
+
+
+/**
+ * Prepares variables for file upload help text templates.
+ */
+function webform_preprocess_file_upload_help(&$variables) {
+  $upload_validators = $variables['upload_validators'];
+  if (isset($upload_validators['webform_file_limit']) && $upload_validators['webform_file_limit'][0]) {
+    $variables['descriptions'][] = t('@size limit per form.', ['@size' => format_size($upload_validators['webform_file_limit'][0])]);
+  }
 }
 
 /**
