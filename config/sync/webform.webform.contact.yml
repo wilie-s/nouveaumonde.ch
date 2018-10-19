@@ -190,7 +190,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      theme: ''
+      theme_name: ''
   email_notification:
     id: email
     label: 'Email notification'
@@ -224,7 +224,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      theme: ''
+      theme_name: ''
 uuid: 09df7582-a234-4248-adcf-c30bc2aae848
 _core:
   default_config_hash: 8_e5tEg0UK5VWZOLfDMcaRmbBxWYtI801Qq461Dyyk4
