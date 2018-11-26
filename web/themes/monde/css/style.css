@@ -6480,7 +6480,7 @@ p:last-child,
   border: 1px solid #ececec;
   vertical-align: inherit; }
   .btn:hover {
-    background: #ea258e;
+    background: #000000;
     color: white; }
   .btn:active, .btn:focus {
     background: white;
@@ -6826,14 +6826,14 @@ article.event {
         color: #ababab;
         text-decoration: underline; }
         article.event .event_time .addtocalendar a.atcb-link:hover {
-          color: #ea258e; }
+          color: #000000; }
       article.event .event_time .addtocalendar ul.atcb-list {
         padding: 10px 20px;
         border: 1px solid #ececec; }
         article.event .event_time .addtocalendar ul.atcb-list li {
           margin-bottom: 5px; }
           article.event .event_time .addtocalendar ul.atcb-list li a:hover {
-            color: #ea258e; }
+            color: #000000; }
   article.event .field--name-field-main-image {
     margin-bottom: 25px; }
   article.event .field--name-body {
@@ -6893,8 +6893,8 @@ article.full a.btn-vertical {
   color: #404040;
   border: 1px solid #ececec; }
   article.full a.btn-vertical:hover {
-    background: #ea258e;
-    border: 1px solid #ea258e;
+    background: #000000;
+    border: 1px solid #000000;
     color: white; }
   @media only screen and (max-width: 991px) {
     article.full a.btn-vertical {
