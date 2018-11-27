@@ -62,7 +62,7 @@ class ProcessManager extends PluginManager {
     if ($e->hasClass('container-inline')) {
       $e->replaceClass('container-inline', 'form-inline');
     }
-    if ($e->isType(['color', 'date', 'number', 'range', 'tel', 'weight'])) {
+    if ($e->isType(['color', 'date', 'number', 'range', 'weight'])) {
       $e->addClass('form-inline', 'wrapper_attributes');
     }
 
