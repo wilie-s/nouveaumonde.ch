@@ -6652,6 +6652,15 @@ footer.footer {
       margin-top: -1px; }
 
 /*---------------------------------------------------------------
+  PAGE FORMULAIRE INSCRIPTION
+----------------------------------------------------------------*/
+.webform-submission-form {
+  width: 550px; }
+  @media only screen and (max-width: 768px) {
+    .webform-submission-form {
+      width: 100%; } }
+
+/*---------------------------------------------------------------
   ASSOCIATION
 ----------------------------------------------------------------*/
 .association img {
