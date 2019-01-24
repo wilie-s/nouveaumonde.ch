@@ -6412,6 +6412,11 @@ h1 {
   font-family: 'AvenirNext-Heavy';
   margin: 0; }
 
+img {
+  border: 0;
+  width: 100%;
+  height: auto; }
+
 .field--label, b {
   font-weight: normal; }
 
