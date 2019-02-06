@@ -7,8 +7,7 @@ package-lock.json
 shipitfile.js
 .idea
 .DS_Store
-web/sites/default/settings.php
-web/sites/default/settings.local.php
+.env
 web/sites/default/files
 web/.htaccess
 private-files/

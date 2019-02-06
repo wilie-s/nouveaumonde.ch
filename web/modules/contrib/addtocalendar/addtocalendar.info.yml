@@ -6,8 +6,8 @@ description: 'Add to calendar button to be used for event page.'
 dependencies:
   - datetime
 
-# Information added by Drupal.org packaging script on 2017-10-24
-version: '8.x-3.0-alpha1'
+# Information added by Drupal.org packaging script on 2017-11-29
+version: '8.x-3.1'
 core: '8.x'
 project: 'addtocalendar'
-datestamp: 1508852047
+datestamp: 1511952793

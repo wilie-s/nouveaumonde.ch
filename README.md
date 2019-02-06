@@ -6,8 +6,25 @@ What is used:
 - drupal 8
 - bootstrap
 - sass
+- composer
 - nodejs
 
+## Composer
+composer is used to manage dependencies (drupal core, modules, theme, ..)
+
+**Install a new module**
+   
+       composer requiere install
+       
+**Check if their is update**
+        
+        composer outdated drupal/*
+        
+**Update**
+
+        composer update drupal/core --with-dependencies
+        drush updatedb
+        drush cr
 
 ## Theme Development
 
@@ -87,7 +104,6 @@ Import/Export configuration
     
 Manage module
 
-    $ drush pm-download 
     $ drush pm-enable
     $ drush pm-disable
    
