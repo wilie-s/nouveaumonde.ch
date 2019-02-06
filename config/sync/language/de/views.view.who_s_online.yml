@@ -19,10 +19,10 @@ display:
       title: 'Wer ist online'
       header:
         result:
-          content: 'Derzeit sind @total Benutzer online.'
+          content: 'Momentan sind @total Benutzer online.'
       empty:
         area_text_custom:
-          content: 'Derzeit sind 0 Benutzer online.'
+          content: 'Momentan sind keine Benutzer online.'
   who_s_online_block:
     display_title: 'Wer ist online'
     display_options:

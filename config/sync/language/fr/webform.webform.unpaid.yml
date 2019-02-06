@@ -1,1 +1,1 @@
-elements: "name:\n  '#title': Nom\ntelephone:\n  '#title': Téléphone\naddress:\n  '#title': Addresse\n"
+elements: "name:\n  '#title': Nom\n  '#first__title': Prénom\n  '#last__title': Nom\ntelephone:\n  '#title': Téléphone\nbirthday:\n  '#title': 'Date de naissance'\naddress:\n  '#title': Addresse\n  '#address__title': Addresse\n  '#city__title': Ville\n  '#postal_code__title': NPA\n  '#country__title': Pays\n"

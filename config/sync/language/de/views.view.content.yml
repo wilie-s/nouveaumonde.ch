@@ -13,7 +13,7 @@ display:
       pager:
         options:
           tags:
-            previous: '< Zurück'
+            previous: '‹ Zurück'
             next: 'Weiter >'
             first: '« Anfang'
             last: 'Ende »'
@@ -29,11 +29,11 @@ display:
           label: Status
           settings:
             format_custom_true: Veröffentlicht
-            format_custom_false: Unveröffentlicht
+            format_custom_false: 'Nicht veröffentlicht'
         changed:
           label: Aktualisiert
         operations:
-          label: Operationen
+          label: Aktionen
       filters:
         title:
           expose:
@@ -45,12 +45,12 @@ display:
           expose:
             label: Status
           group_info:
-            label: 'Status „veröffentlicht“'
+            label: 'Status veröffentlicht'
             group_items:
               1:
                 title: Veröffentlicht
               2:
-                title: Unveröffentlicht
+                title: 'Nicht veröffentlicht'
         langcode:
           expose:
             label: Sprache
@@ -65,5 +65,5 @@ display:
         title: Inhalt
       tab_options:
         title: Inhalt
-        description: 'Inhalt finden und verwalten'
+        description: 'Inhalte finden und verwalten'
     display_title: Page

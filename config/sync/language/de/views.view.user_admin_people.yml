@@ -14,14 +14,14 @@ display:
       pager:
         options:
           tags:
-            previous: '< Zurück'
+            previous: '‹ Zurück'
             next: 'Weiter >'
             first: '« Anfang'
             last: 'Ende »'
           expose:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+            offset_label: Versatz
       fields:
         user_bulk_form:
           label: Massenaktualisierung
@@ -39,7 +39,7 @@ display:
         access:
           label: 'Letzter Zugriff'
         operations:
-          label: Operationen
+          label: Aktionen
         mail:
           separator: ', '
       filters:

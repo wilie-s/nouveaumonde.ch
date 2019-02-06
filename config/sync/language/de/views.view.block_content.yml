@@ -14,30 +14,30 @@ display:
       pager:
         options:
           tags:
-            previous: '< Zurück'
+            previous: '‹ Zurück'
             next: 'Weiter >'
           expose:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+            offset_label: Versatz
       fields:
         info:
-          label: Block-Beschreibung
+          label: Blockbeschreibung
           separator: ', '
         type:
-          label: Block-Typ
+          label: Blocktyp
           separator: ', '
         changed:
           label: Aktualisiert
         operations:
-          label: Operationen
+          label: Aktionen
       filters:
         info:
           expose:
-            label: Block-Beschreibung
+            label: Blockbeschreibung
         type:
           expose:
-            label: Block-Typ
+            label: Blocktyp
       title: 'Bibliothek benutzerdefinierter Blöcke'
   page_1:
     display_title: Page
