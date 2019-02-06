@@ -18,3 +18,9 @@
 
 # Ignore .env files as they are personal
 /.env
+
+# Ignore node_module
+/node_modules/
+
+# Ignore tmp
+/tmp/
