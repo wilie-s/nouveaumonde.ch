@@ -10,7 +10,7 @@ What is used:
 - nodejs
 
 ## Composer
-composer is used to manage dependencies (drupal core, modules, theme, ..)
+Composer is used to manage dependencies (drupal core, modules, theme, ..)
 
 **Download all require dependency for the project**
 
@@ -34,6 +34,42 @@ composer is used to manage dependencies (drupal core, modules, theme, ..)
 
 ## Drush
 
+Drush is a command line tools for drupal. Drush is installed with composer automatically.
+
+
+List all the command
+
+    ./vendor/bin/drush
+    
+run DB update
+    
+     ./vendor/bin/drush updatedb
+            
+Check security update
+    
+     ./vendor/bin/drush pm:security
+
+Rebuild all cache (first things to do in case of strange bugs)
+
+    ./vendor/bin/drush cache-rebuild
+    
+Import/Export configuration
+
+    ./vendor/bin/drush config-import
+    ./vendor/bin/drush config-export
+    
+Manage module
+
+    ./vendor/bin/drush pm-enable
+    ./vendor/bin/drush pm-disable
+   
+Make a full backup (Backup your code, files, and database into a single file)
+
+    ./vendor/bin/drush archive-dump
+   
+Restore
+
+    ./vendor/bin/drush archive-restore
 
         
 ## Theme Development
@@ -75,45 +111,6 @@ _default-variables.scss, Bootstrap Framework Source Files and the overrides.scss
  (note the same file name, using a different extension of course).
 
 
-## Drush
-
-Drush is a command line tools for drupal. Drush is installed with composer automatically.
-
-**Some basic command:**
-
-List all the command
-
-    ./vendor/bin/drush
-    
-run DB update
-    
-     ./vendor/bin/drush updatedb
-            
-Check security update
-    
-     ./vendor/bin/drush pm:security
-
-Rebuild all cache (first things to do in case of strange bugs)
-
-    ./vendor/bin/drush cache-rebuild
-    
-Import/Export configuration
-
-    ./vendor/bin/drush config-import
-    ./vendor/bin/drush config-export
-    
-Manage module
-
-    ./vendor/bin/drush pm-enable
-    ./vendor/bin/drush pm-disable
-   
-Make a full backup (Backup your code, files, and database into a single file)
-
-    ./vendor/bin/drush archive-dump
-   
-Restore
-
-    ./vendor/bin/drush archive-restore
 
 ## Deployment
 
