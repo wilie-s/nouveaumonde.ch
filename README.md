@@ -12,20 +12,30 @@ What is used:
 ## Composer
 composer is used to manage dependencies (drupal core, modules, theme, ..)
 
+**Download all require dependency for the project**
+
+    composer install
+   
 **Install a new module**
    
-       composer requiere install
+    composer requiere install
        
 **Check if their is update**
         
-        composer outdated drupal/*
+    composer outdated drupal/*
         
-**Update**
+**Update core**
 
-        composer update drupal/core --with-dependencies
-        drush updatedb
-        drush cr
+    composer update drupal/core --with-dependencies
 
+**Update a module**
+
+    composer update drupal/modulename --with-dependencies
+
+## Drush
+
+
+        
 ## Theme Development
 
 nodejs is used to compile less to css.
@@ -36,33 +46,17 @@ nodejs is used to compile less to css.
 
 **Install project dependencies**
 
-    $ npm install
+    npm install
 
 **Work with less**
 
 Start watcher on less files (build on change)
 
-    $ npm run start
+    npm run start
 
 Build sass (one time)
 
-    $ npm run build
-    
-## Autorefresh (no cache)
-
-In settings sites/default/settings.php uncomment:
-
-      #  if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-      #     include $app_root . '/' . $site_path . '/settings.local.php';
-      #  }
-
-## Git
-
-Git version control system is used for this project.
-
-Good GUI
- - https://www.sourcetreeapp.com (stable and complete)
- -  https://desktop.github.com (minimalistic of focused on github)
+    npm run build
  
 ## Theme
 
@@ -81,53 +75,59 @@ _default-variables.scss, Bootstrap Framework Source Files and the overrides.scss
  (note the same file name, using a different extension of course).
 
 
-## drush
+## Drush
 
-Drush is a command line tools for drupal. You can download it from http://www.drush.org/en/master/
-
-Go in the drupal folder (in the web folder) to launch command.
+Drush is a command line tools for drupal. Drush is installed with composer automatically.
 
 **Some basic command:**
 
 List all the command
 
-    $ drush
+    ./vendor/bin/drush
+    
+run DB update
+    
+     ./vendor/bin/drush updatedb
+            
+Check security update
+    
+     ./vendor/bin/drush pm:security
 
 Rebuild all cache (first things to do in case of strange bugs)
 
-    $ drush cache-rebuild
+    ./vendor/bin/drush cache-rebuild
     
 Import/Export configuration
 
-    $ drush config-import
-    $ drush config-export
+    ./vendor/bin/drush config-import
+    ./vendor/bin/drush config-export
     
 Manage module
 
-    $ drush pm-enable
-    $ drush pm-disable
+    ./vendor/bin/drush pm-enable
+    ./vendor/bin/drush pm-disable
    
 Make a full backup (Backup your code, files, and database into a single file)
 
-    $ drush archive-dump
+    ./vendor/bin/drush archive-dump
    
 Restore
 
-    $ drush archive-restore
+    ./vendor/bin/drush archive-restore
 
 ## Deployment
 
 First you need to authorise your ssh key on the server (you will need ozcf_admin password)
 
-    $ ssh-copy-id ozcf_admin@ozcf.ftp.infomaniak.com
+    ssh-copy-id ozcf_admin@ozcf.ftp.infomaniak.com
     
 To check what is going to be deployed, without actually doing anythings (dry-run)
 
-    $ npm run deploy-dry-run
+    npm run deploy-dry-run
 
 Run the deployement script via npm
 
-    $ npm run deploy
+    npm run deploy
     
     
 This will run deploy.sh and copy all the files using rsync from your directory to the server except files listed in
@@ -137,4 +137,4 @@ Then go on the production to revert configuration and clear cash if needed.
 
 Notes: in case you don't need npm, you can run the script directly
 
-    $  ./deploy.sh production deploy
+    ./deploy.sh production deploy
