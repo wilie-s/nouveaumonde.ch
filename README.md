@@ -22,11 +22,11 @@ Composer is used to manage dependencies (drupal core, modules, theme, ..)
        
 **Check if their is update**
         
-    composer outdated drupal/*
+    composer outdated "drupal/*"
         
 **Update core**
 
-    composer update drupal/core --with-dependencies
+    composer update drupal/core webflo/drupal-core-require-dev --with-dependencies
 
 **Update a module**
 
