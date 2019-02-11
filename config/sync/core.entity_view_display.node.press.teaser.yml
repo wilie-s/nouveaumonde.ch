@@ -11,7 +11,6 @@ dependencies:
     - node.type.press
   module:
     - datetime
-    - pdf
     - text
     - user
 id: node.press.teaser
@@ -29,7 +28,7 @@ content:
     region: content
   field_date_only:
     type: datetime_default
-    weight: 0
+    weight: 1
     region: content
     label: hidden
     settings:
@@ -38,26 +37,13 @@ content:
     third_party_settings: {  }
   field_media:
     type: entity_reference_label
-    weight: 1
+    weight: 0
     region: content
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
-  field_pdf:
-    type: pdf_thumbnail
-    weight: 3
-    region: content
-    label: hidden
-    settings:
-      scale: '1'
-      width: 300px
-      height: ''
-    third_party_settings: {  }
-  links:
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  field_pdf: true
   langcode: true
+  links: true
