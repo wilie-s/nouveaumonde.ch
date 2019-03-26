@@ -17,6 +17,7 @@
 /.idea/
 nouveaumonde.sublime-project
 nouveaumonde.sublime-workspace
+nbproject/
 
 # Ignore .env files as they are personal
 /.env
@@ -26,3 +27,4 @@ nouveaumonde.sublime-workspace
 
 # Ignore tmp
 /tmp/
+/nbproject/private/
