@@ -22,9 +22,9 @@ dependencies:
     - node.type.event
     - responsive_image.styles.wide
   module:
-    - blazy
     - datetime
     - hms_field
+    - image
     - link
     - responsive_image
     - text
@@ -98,60 +98,14 @@ content:
     type: string
     region: content
   field_images:
-    type: blazy
-    weight: 12
-    region: content
-    label: hidden
+    weight: 17
+    label: above
     settings:
-      style: ''
       image_style: ''
-      thumbnail_style: ''
-      responsive_image_style: wide
-      media_switch: ''
-      ratio: ''
-      grid: null
-      grid_medium: null
-      grid_small: null
-      sizes: ''
-      breakpoints:
-        xs:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        sm:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        md:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        lg:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        xl:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-      current_view_mode: default
-      background: false
-      caption:
-        title: '0'
-        alt: '0'
-      grid_header: ''
-      iframe_lazy: true
-      icon: ''
-      layout: ''
-      view_mode: ''
-      cache: 0
-      optionset: default
-      skin: ''
-      box_caption: ''
-      box_caption_custom: ''
-      box_style: ''
-      box_media_style: ''
+      image_link: ''
     third_party_settings: {  }
+    type: image
+    region: content
   field_main_image:
     weight: 0
     label: hidden
