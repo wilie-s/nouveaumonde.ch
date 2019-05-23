@@ -5,5 +5,4 @@ dependencies: {  }
 name: Media
 vid: media
 description: ''
-hierarchy: 0
 weight: 0
