@@ -103,21 +103,23 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
   <div class="col-sm-12 col-md-8">
     {{ content.field_main_image }}
 
-    {% if archived != 1 or node.field_hide_price.value != '1' %}
-      {% if node.field_free.value == '1' %}
-        <span class="free content">{{ 'Free'|trans }}</span>
-      {% else %}
-
-        {% if node.field_sold_out.value == '1' %}
-          <div class="btn btn-default buy-content disable">
-            {{ 'Ticket'|trans }}
-            {{ content.field_prix }}
-            {{ content.field_sold_out }}
-          </div>
+    {% if archived != 1  %}
+      {%  if node.field_hide_price.value != '1' %}
+        {% if node.field_free.value == '1' %}
+          <span class="free content">{{ 'Free'|trans }}</span>
         {% else %}
-          <a class="btn btn-default buy-content" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
-        {% endif %}
 
+          {% if node.field_sold_out.value == '1' %}
+            <div class="btn btn-default buy-content disable">
+              {{ 'Ticket'|trans }}
+              {{ content.field_prix }}
+              {{ content.field_sold_out }}
+            </div>
+          {% else %}
+            <a class="btn btn-default buy-content" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
+          {% endif %}
+
+        {% endif %}
       {% endif %}
     {% endif %}
 
@@ -132,21 +134,23 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
 
 
   <div class="col-sm-12 col-md-4 col-share">
-    {% if archived != 1 or node.field_hide_price.value != '1' %}
-      {% if node.field_free.value == '1' %}
-        <span class="free aside">{{ 'Free'|trans }}</span>
-      {% else %}
-
-        {% if node.field_sold_out.value == '1' %}
-          <div class="btn btn-default btn-vertical aside disable">
-            {{ 'Ticket'|trans }}
-            {{ content.field_prix }}
-            {{ content.field_sold_out }}
-          </div>
+    {% if archived != 1  %}
+      {%  if node.field_hide_price.value != '1' %}
+        {% if node.field_free.value == '1' %}
+          <span class="free aside">{{ 'Free'|trans }}</span>
         {% else %}
-          <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
-        {% endif %}
 
+          {% if node.field_sold_out.value == '1' %}
+            <div class="btn btn-default btn-vertical aside disable">
+              {{ 'Ticket'|trans }}
+              {{ content.field_prix }}
+              {{ content.field_sold_out }}
+            </div>
+          {% else %}
+            <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
+          {% endif %}
+
+        {% endif %}
       {% endif %}
     {% endif %}
 
