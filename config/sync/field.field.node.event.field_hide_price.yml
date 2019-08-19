@@ -1,0 +1,23 @@
+uuid: 3ff89db2-8bfb-47e6-90ac-acbce6cc4d5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_price
+    - node.type.event
+id: node.event.field_hide_price
+field_name: field_hide_price
+entity_type: node
+bundle: event
+label: 'Hide price'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Hide
+  off_label: Display
+field_type: boolean

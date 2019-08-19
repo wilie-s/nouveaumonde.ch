@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.event.field_facebook_event
     - field.field.node.event.field_free
     - field.field.node.event.field_genre
+    - field.field.node.event.field_hide_price
     - field.field.node.event.field_images
     - field.field.node.event.field_main_image
     - field.field.node.event.field_petzitickets_link
@@ -76,6 +77,16 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_hide_price:
+    type: boolean
+    weight: 9
+    region: content
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
   field_main_image:
     type: responsive_image
     weight: 0
@@ -98,7 +109,7 @@ content:
     third_party_settings: {  }
   field_sold_out:
     type: boolean
-    weight: 9
+    weight: 10
     region: content
     label: hidden
     settings:
