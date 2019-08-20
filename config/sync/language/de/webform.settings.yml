@@ -1,6 +1,5 @@
 settings:
   default_form_open_message: 'Dieses Formular wurde noch nicht für Eingaben geöffnet.'
-  default_form_close_message: 'Entschuldigung...Für dieses Webformular dürfen keine neuen Eingaben vorgenommen werden.'
   default_form_exception_message: 'Dieses Webformular kann nicht angezeigt werden. Bitte kontaktieren Sie den Website-Administrator.'
   default_submit_button_label: Absenden
   default_reset_button_label: Reset
