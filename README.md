@@ -74,6 +74,8 @@ Restore
         
 ## Theme Development
 
+COMMANDS HAVE TO BE EXECUTED FROM  THE THEME FOLDER
+
 nodejs is used to compile less to css.
 
 **Requirement for development**
@@ -120,11 +122,11 @@ First you need to authorise your ssh key on the server (you will need ozcf_admin
     
 To check what is going to be deployed, without actually doing anythings (dry-run)
 
-    npm run deploy-dry-run
+     ./deploy.sh production
 
 Run the deployement script via npm
 
-    npm run deploy
+    ./deploy.sh production deploy
     
     
 This will run deploy.sh and copy all the files using rsync from your directory to the server except files listed in
@@ -132,6 +134,4 @@ rsync_excclude.txt.
 
 Then go on the production to revert configuration and clear cash if needed.
 
-Notes: in case you don't need npm, you can run the script directly
 
-    ./deploy.sh production deploy

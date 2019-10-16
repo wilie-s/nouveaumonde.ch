@@ -1,0 +1,19 @@
+{
+  "name": "nouveaumonde",
+  "version": "0.1.0",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-sass": "file:bootstrap",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.14.0",
+    "sass": "^1.17.3"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css",
+    "sass:watch": "sass --watch scss/style.scss css/style.css",
+    "start": "npm run sass:watch",
+    "build": "npm run sass"
+  }
+}

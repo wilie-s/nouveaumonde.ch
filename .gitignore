@@ -24,7 +24,7 @@ nbproject/
 
 # Ignore node_module
 /node_modules/
-
+/web/themes/monde/node_modules/
 # Ignore tmp
 /tmp/
 /nbproject/private/
