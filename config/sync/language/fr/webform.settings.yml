@@ -23,3 +23,5 @@ settings:
 element:
   default_more_title: Plus
   default_section_title_tag: h2
+mail:
+  default_subject: ''
