@@ -26,7 +26,7 @@ Composer is used to manage dependencies (drupal core, modules, theme, ..)
         
 **Update core**
 
-    composer update drupal/core webflo/drupal-core-require-dev "symfony/*" --with-dependencies
+    composer update drupal/core webflo/drupal-core-require-dev --with-dependencies
 
 **Update a module**
 
