@@ -1,6 +1,6 @@
 uuid: 8211dc9d-1f99-4256-8b42-222e4595e5b9
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -35,7 +35,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'administer taxonomy'
       cache:
         type: tag
         options: {  }
@@ -305,7 +305,14 @@ display:
         type: views_query
         options: {  }
       path: taxonomy/term/%
-      display_extenders: {  }
+      display_extenders:
+        simple_sitemap_display_extender:
+          index: false
+          variant: null
+          priority: '0.5'
+          changefreq: ''
+          arguments: {  }
+          max_links: 100
     cache_metadata:
       contexts:
         - 'languages:language_interface'
