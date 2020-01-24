@@ -6,6 +6,7 @@ id: node__event
 label: 'Content: Event'
 tags:
   og_image: '[node:field_main_image]'
+  og_title: '[node:title] [node:field_event_type] [node:field_genre]'
   twitter_cards_image: '[node:field_main_image]'
   twitter_cards_type: summary_large_image
   schema_event_door_time: '[node:field_doors_time:value]'
