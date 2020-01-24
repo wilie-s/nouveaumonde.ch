@@ -54,23 +54,9 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: mini
+        type: none
         options:
-          items_per_page: 60
           offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
       style:
         type: default
         options:
@@ -290,7 +276,17 @@ display:
       title: Programme
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        http_status_code:
+          id: http_status_code
+          table: views
+          field: http_status_code
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          status_code: 404
+          plugin_id: http_status_code
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
@@ -303,7 +299,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -361,7 +356,6 @@ display:
       max-age: -1
       contexts:
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
