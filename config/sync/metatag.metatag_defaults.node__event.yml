@@ -5,6 +5,7 @@ dependencies: {  }
 id: node__event
 label: 'Content: Event'
 tags:
+  title: '[node:title] [node:field_event_type] [node:field_genre]'
   og_image: '[node:field_main_image]'
   og_title: '[node:title] [node:field_event_type] [node:field_genre]'
   twitter_cards_image: '[node:field_main_image]'
