@@ -155,7 +155,7 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
     {% endif %}
 
     {% if content.field_facebook_event[0]['#url'] %}
-    <a class="btn btn-default btn-vertical" href="{{ content.field_facebook_event[0]['#url'] }}">{{ 'Facebook event'|trans }}</a>
+    <a class="btn btn-default btn-vertical" href="{{ content.field_facebook_event[0]['#url'] }}" target="_blank">{{ 'Facebook event'|trans }}</a>
     {% endif %}
 
     <a class="btn btn-default btn-vertical" href="http://twitter.com/share?&url={{ url('<current>') }}">{{ 'Share on twitter'|trans }}</a>
