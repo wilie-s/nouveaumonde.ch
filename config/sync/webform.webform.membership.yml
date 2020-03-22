@@ -125,6 +125,7 @@ settings:
   purge_days: null
   results_disabled: false
   results_disabled_ignore: false
+  results_customize: false
   token_view: false
   token_update: false
 access:
@@ -204,6 +205,7 @@ handlers:
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: true
+      exclude_attachments: false
       html: true
       attachments: false
       twig: false
@@ -214,4 +216,5 @@ handlers:
       sender_name: ''
       theme_name: ''
       parameters: {  }
+variants: {  }
 uuid: b36c7ef5-01fd-4197-bd3f-5993f85d258d

@@ -9,68 +9,17 @@ What is used:
 - composer
 - nodejs
 
-## Composer
-Composer is used to manage dependencies (drupal core, modules, theme, ..)
+## Update Drupal
 
-**Download all require dependency for the project**
+composer update drupal/core-recommended --with-dependencies
+drush updatedb
+drush cache:rebuild
 
-    composer install
-   
-**Install a new module**
-   
-    composer requiere install
-       
-**Check if their is update**
-        
-    composer outdated "drupal/*"
-        
-**Update core**
-
-    composer update drupal/core webflo/drupal-core-require-dev --with-dependencies
-
-**Update a module**
-
-    composer update drupal/modulename --with-dependencies
+More info: https://www.drupal.org/docs/8/update/update-core-via-composer
 
 ## Drush
 
-Drush is a command line tools for drupal. Drush is installed with composer automatically.
-
-
-List all the command
-
-    ./vendor/bin/drush
-    
-run DB update
-    
-     ./vendor/bin/drush updatedb
-            
-Check security update
-    
-     ./vendor/bin/drush pm:security
-
-Rebuild all cache (first things to do in case of strange bugs)
-
-    ./vendor/bin/drush cache-rebuild
-    
-Import/Export configuration
-
-    ./vendor/bin/drush config-import
-    ./vendor/bin/drush config-export
-    
-Manage module
-
-    ./vendor/bin/drush pm-enable
-    ./vendor/bin/drush pm-disable
-   
-Make a full backup (Backup your code, files, and database into a single file)
-
-    ./vendor/bin/drush archive-dump
-   
-Restore
-
-    ./vendor/bin/drush archive-restore
-
+https://www.drush.org/ 
         
 ## Theme Development
 
