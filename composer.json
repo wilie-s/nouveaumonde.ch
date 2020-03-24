@@ -46,6 +46,7 @@
         "drush/drush": "^10.1"
     },
     "require-dev": {
+        "zaporylie/composer-drupal-optimizations": "^1.1"
     },
     "conflict": {
         "drupal/drupal": "*"
