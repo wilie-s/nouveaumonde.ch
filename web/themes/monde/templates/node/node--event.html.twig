@@ -147,7 +147,7 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
               {{ content.field_sold_out }}
             </div>
           {% else %}
-            <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
+            <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Faire un don'|trans }} {{ content.field_prix }}</a>
           {% endif %}
 
         {% endif %}
