@@ -147,12 +147,16 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
               {{ content.field_sold_out }}
             </div>
           {% else %}
-            <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Faire un don'|trans }} {{ content.field_prix }}</a>
+{#             <a class="btn btn-default btn-vertical buy-aside" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a> #}
+
+<a class="btn btn-default btn-vertical buy-aside" href="https://www.petzi.ch/fr/events/44775-nouveau-monde-donation/">{{ 'Faire un don'|trans }}</a>
+
           {% endif %}
 
         {% endif %}
       {% endif %}
     {% endif %}
+
 
     {% if content.field_facebook_event[0]['#url'] %}
     <a class="btn btn-default btn-vertical" href="{{ content.field_facebook_event[0]['#url'] }}" target="_blank">{{ 'Facebook event'|trans }}</a>
