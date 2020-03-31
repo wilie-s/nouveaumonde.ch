@@ -122,9 +122,9 @@ set ticket_url = path('view.event_ticket.page_1', {'arg_0': node.id})
               {{ content.field_sold_out }}
             </div>
           {% else %}
-{#             <a class="btn btn-default" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
- #}
-<a class="btn btn-default" href="https://www.petzi.ch/fr/events/44775-nouveau-monde-donation/">{{ 'Faire un don'|trans }}</a>
+            <a class="btn btn-default" href="{{ ticket_url }}">{{ 'Ticket'|trans }} {{ content.field_prix }}</a>
+
+{# <a class="btn btn-default" href="https://www.petzi.ch/fr/events/44775-nouveau-monde-donation/">{{ 'Faire un don'|trans }}</a> #}
 
           {% endif %}
 
