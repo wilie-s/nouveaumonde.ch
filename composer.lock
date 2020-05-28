@@ -1790,7 +1790,7 @@
             "description": "Add to calendar button to be used for event page.",
             "homepage": "https://www.drupal.org/project/addtocalendar",
             "support": {
-                "source": "https://git.drupalcode.org/project/addtocalendar"
+                "source": "http://cgit.drupalcode.org/addtocalendar"
             }
         },
         {
@@ -1837,7 +1837,7 @@
             "description": "Administration links access filter provides a workaround for the common problem that users with 'Use the administration pages and help' permission see menu links they don't have access permission for.",
             "homepage": "http://drupal.org/project/admin_links_access_filter",
             "support": {
-                "source": "https://git.drupalcode.org/project/admin_links_access_filter"
+                "source": "http://cgit.drupalcode.org/admin_links_access_filter"
             }
         },
         {
@@ -2187,7 +2187,7 @@
             "description": "Override page Cache-Control header based on bubbled cacheability metadata.",
             "homepage": "https://www.drupal.org/project/cache_control_override",
             "support": {
-                "source": "https://git.drupalcode.org/project/cache_control_override"
+                "source": "http://cgit.drupalcode.org/cache_control_override"
             }
         },
         {
@@ -2516,16 +2516,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.8.4",
+            "version": "8.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "34e59fcf702c1b3c497bbd6e92e68e546c5d15b8"
+                "reference": "a5daf2aa45bbc72da72e1e64d5261f746ffb508c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/34e59fcf702c1b3c497bbd6e92e68e546c5d15b8",
-                "reference": "34e59fcf702c1b3c497bbd6e92e68e546c5d15b8",
+                "url": "https://api.github.com/repos/drupal/core/zipball/a5daf2aa45bbc72da72e1e64d5261f746ffb508c",
+                "reference": "a5daf2aa45bbc72da72e1e64d5261f746ffb508c",
                 "shasum": ""
             },
             "require": {
@@ -2742,7 +2742,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-03-18T16:26:33+00:00"
+            "time": "2020-05-20T08:22:02+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -2793,16 +2793,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "8.8.4",
+            "version": "8.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "4155bff03954bae498029899f44e8adf697b20e6"
+                "reference": "361d61f272767e0e34f8ac8c7a51e7c14e387714"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/4155bff03954bae498029899f44e8adf697b20e6",
-                "reference": "4155bff03954bae498029899f44e8adf697b20e6",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/361d61f272767e0e34f8ac8c7a51e7c14e387714",
+                "reference": "361d61f272767e0e34f8ac8c7a51e7c14e387714",
                 "shasum": ""
             },
             "require": {
@@ -2815,7 +2815,7 @@
                 "doctrine/common": "v2.7.3",
                 "doctrine/inflector": "v1.2.0",
                 "doctrine/lexer": "1.0.2",
-                "drupal/core": "8.8.4",
+                "drupal/core": "8.8.6",
                 "easyrdf/easyrdf": "0.9.1",
                 "egulias/email-validator": "2.1.11",
                 "guzzlehttp/guzzle": "6.3.3",
@@ -2869,7 +2869,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "time": "2020-03-18T16:26:33+00:00"
+            "time": "2020-05-20T08:22:02+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -3033,10 +3033,6 @@
                     "homepage": "https://www.drupal.org/node/3236/committers"
                 },
                 {
-                    "name": "pcambra",
-                    "homepage": "https://www.drupal.org/user/122101"
-                },
-                {
                     "name": "salvis",
                     "homepage": "https://www.drupal.org/user/82964"
                 },
@@ -3161,7 +3157,7 @@
             "description": "Provides a field for Hours, Minutes and Seconds stored as seconds.",
             "homepage": "https://www.drupal.org/project/hms_field",
             "support": {
-                "source": "https://git.drupalcode.org/project/hms_field"
+                "source": "http://cgit.drupalcode.org/hms_field"
             }
         },
         {
@@ -3205,26 +3201,22 @@
                     "homepage": "https://www.drupal.org/user/426816"
                 },
                 {
-                    "name": "IJsbrandy",
-                    "homepage": "https://www.drupal.org/user/3417871"
-                },
-                {
-                    "name": "dennis_meuwissen",
-                    "homepage": "https://www.drupal.org/user/3408452"
-                },
-                {
-                    "name": "jeroen_vreuls",
+                    "name": "jeroen_betawerk",
                     "homepage": "https://www.drupal.org/user/2700643"
                 },
                 {
                     "name": "keithm",
                     "homepage": "https://www.drupal.org/user/691250"
+                },
+                {
+                    "name": "mitchalbert",
+                    "homepage": "https://www.drupal.org/user/2255518"
                 }
             ],
             "description": "Allows you to use responsive images in the WYSIWYG editor.",
             "homepage": "https://www.drupal.org/project/inline_responsive_images",
             "support": {
-                "source": "https://git.drupalcode.org/project/inline_responsive_images"
+                "source": "http://cgit.drupalcode.org/inline_responsive_images"
             }
         },
         {
@@ -4473,6 +4465,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -4519,6 +4512,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
