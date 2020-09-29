@@ -21,6 +21,7 @@ permissions:
   - 'access toolbar'
   - 'access user profiles'
   - 'access webform submission log'
+  - 'administer blocks'
   - 'administer menu'
   - 'administer nodes'
   - 'administer users'
