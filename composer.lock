@@ -3526,17 +3526,17 @@
         },
         {
             "name": "drupal/schema_metatag",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/schema_metatag.git",
-                "reference": "8.x-1.7"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "880ce69c9c1510e90747ebfab64070dbf704f653"
+                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "dac50842bcac35607b0be8e28518e08fa3f6b66f"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -3550,8 +3550,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1595441023",
+                    "version": "8.x-1.8",
+                    "datestamp": "1599905688",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3759,17 +3759,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.19.0",
+            "version": "5.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "8.x-5.19"
+                "reference": "8.x-5.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.19.zip",
-                "reference": "8.x-5.19",
-                "shasum": "90a2084c2647bca791cc8b18a7e2a3b49f3da7ea"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.21.zip",
+                "reference": "8.x-5.21",
+                "shasum": "5505c8b85e73fbb1a4a55635b8a9568d143697c0"
             },
             "require": {
                 "drupal/core": "^8.8"
@@ -3782,9 +3782,10 @@
                 "drupal/clientside_validation": "~3.0",
                 "drupal/clientside_validation_jquery": "*",
                 "drupal/devel": "~3.0",
+                "drupal/entity": "~1.0",
                 "drupal/entity_print": "~2.0",
                 "drupal/gnode": "*",
-                "drupal/group": "~1.0",
+                "drupal/group": "1.0",
                 "drupal/lingotek": "~3.0",
                 "drupal/mailsystem": "~4.0",
                 "drupal/paragraphs": "~1.0",
@@ -3793,6 +3794,7 @@
                 "drupal/styleguide": "~1.0",
                 "drupal/telephone_validation": "~2.0",
                 "drupal/token": "~1.0",
+                "drupal/variationcache": "~1.0",
                 "drupal/webform_access": "*",
                 "drupal/webform_attachment": "*",
                 "drupal/webform_clientside_validation": "*",
@@ -3808,8 +3810,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.19",
-                    "datestamp": "1593681136",
+                    "version": "8.x-5.21",
+                    "datestamp": "1601385690",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
