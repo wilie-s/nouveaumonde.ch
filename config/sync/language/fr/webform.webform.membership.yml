@@ -1,1 +1,20 @@
-elements: "name:\n  '#title': Nom\n  '#first__title': Prénom\n  '#last__title': Nom\ntelephone:\n  '#title': Téléphone\nbirthday:\n  '#title': 'Date de naissance'\naddress:\n  '#title': Adresse\n  '#address__title': Addresse\n  '#city__title': Ville\n  '#state_province__title': Ville\n  '#postal_code__title': NPA\ntype:\n  '#options':\n    'Member 80 CHF': 'Membre 80 CHF'\n    'Member student / apprenticeship / AVS 50 CHF': 'Membre étudiant / apprenti / AVS 50 CHF'\n    'Member + Abonnement 160 CHF': 'Membre + Abonnement 160 CHF'\n"
+elements: |
+  name:
+    '#title': Nom
+    '#first__title': Prénom
+    '#last__title': Nom
+  telephone:
+    '#title': Téléphone
+  birthday:
+    '#title': 'Date de naissance'
+  address:
+    '#title': Adresse
+    '#address__title': Addresse
+    '#city__title': Ville
+    '#state_province__title': Ville
+    '#postal_code__title': NPA
+  type:
+    '#options':
+      'Member 80 CHF': 'Membre 80 CHF'
+      'Member student / apprenticeship / AVS 50 CHF': 'Membre étudiant / apprenti / AVS 50 CHF'
+      'Member + Abonnement 160 CHF': 'Membre + Abonnement 160 CHF'

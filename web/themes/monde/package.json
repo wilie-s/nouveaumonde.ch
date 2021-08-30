@@ -15,5 +15,8 @@
     "sass:watch": "sass --watch scss/style.scss css/style.css",
     "start": "npm run sass:watch",
     "build": "npm run sass"
+  },
+  "require": {
+    "drupal/core": "^8 || ^9"
   }
 }

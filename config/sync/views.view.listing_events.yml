@@ -349,12 +349,13 @@ display:
     display_options:
       display_extenders:
         simple_sitemap_display_extender:
-          index: true
-          variant: default
-          priority: '0.7'
-          changefreq: daily
-          arguments: {  }
-          max_links: 100
+          variants:
+            default:
+              index: true
+              priority: '0.7'
+              changefreq: daily
+              arguments: {  }
+              max_links: 100
       path: programme
       menu:
         type: normal

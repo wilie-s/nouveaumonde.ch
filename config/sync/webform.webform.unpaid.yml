@@ -12,7 +12,44 @@ id: unpaid
 title: Unpaid
 description: 'Form for &quot;b&eacute;n&eacute;vole&quot;'
 category: ''
-elements: "name:\n  '#type': webform_name\n  '#title': Name\n  '#required': true\n  '#title__access': false\n  '#first__title': 'First Name'\n  '#first__required': true\n  '#middle__access': false\n  '#last__title': 'Last Name'\n  '#last__required': true\n  '#suffix__access': false\n  '#degree__access': false\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\ntelephone:\n  '#type': tel\n  '#title': 'Phone number'\n  '#required': true\nbirthday:\n  '#type': date\n  '#title': 'Date of Birth'\n  '#required': true\naddress:\n  '#type': webform_address\n  '#title': Address\n  '#required': true\n  '#address__required': true\n  '#address_2__access': false\n  '#city__required': true\n  '#state_province__access': false\n  '#postal_code__required': true\n  '#country__access': false\nmessage:\n  '#type': textarea\n  '#title': Message\n"
+elements: |
+  name:
+    '#type': webform_name
+    '#title': Name
+    '#required': true
+    '#title__access': false
+    '#first__title': 'First Name'
+    '#first__required': true
+    '#middle__access': false
+    '#last__title': 'Last Name'
+    '#last__required': true
+    '#suffix__access': false
+    '#degree__access': false
+  email:
+    '#type': email
+    '#title': Email
+    '#required': true
+  telephone:
+    '#type': tel
+    '#title': 'Phone number'
+    '#required': true
+  birthday:
+    '#type': date
+    '#title': 'Date of Birth'
+    '#required': true
+  address:
+    '#type': webform_address
+    '#title': Address
+    '#required': true
+    '#address__required': true
+    '#address_2__access': false
+    '#city__required': true
+    '#state_province__access': false
+    '#postal_code__required': true
+    '#country__access': false
+  message:
+    '#type': textarea
+    '#title': Message
 css: ''
 javascript: ''
 settings:
@@ -33,7 +70,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -54,7 +91,6 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
-  form_elements_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
@@ -116,7 +152,7 @@ settings:
   confirmation_type: url_message
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: /node/7
+  confirmation_url: node/7
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -143,6 +179,7 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  token_delete: false
   serial_disabled: false
 access:
   create:
@@ -199,6 +236,7 @@ handlers:
   email:
     id: email
     label: Email
+    notes: ''
     handler_id: email
     status: true
     conditions: {  }

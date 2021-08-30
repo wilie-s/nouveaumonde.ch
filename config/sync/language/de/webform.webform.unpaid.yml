@@ -1,1 +1,14 @@
-elements: "name:\n  '#first__title': Vorname\n  '#last__title': Nachname\ntelephone:\n  '#title': Telefon\nbirthday:\n  '#title': Geburtsdatum\naddress:\n  '#address__title': Adresse\n  '#city__title': Ort\n  '#postal_code__title': Postleitzahl\nmessage:\n  '#title': Nachricht\n"
+elements: |
+  name:
+    '#first__title': Vorname
+    '#last__title': Nachname
+  telephone:
+    '#title': Telefon
+  birthday:
+    '#title': Geburtsdatum
+  address:
+    '#address__title': Adresse
+    '#city__title': Ort
+    '#postal_code__title': Postleitzahl
+  message:
+    '#title': Nachricht
