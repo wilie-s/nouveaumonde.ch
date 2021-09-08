@@ -8275,12 +8275,12 @@ footer.footer .partenaires {
 }
 footer.footer .partenaires .col {
   float: left;
-  width: 8.33%;
+  width: 7.6%;
   padding: 0 0.4%;
 }
 @media only screen and (max-width: 992px) {
   footer.footer .partenaires .col {
-    width: 16.66%;
+    width: 14.2%;
   }
 }
 footer.footer .partenaires .col a {
