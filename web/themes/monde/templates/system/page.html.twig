@@ -40,6 +40,7 @@
  *   comment/reply/12345).
  *
  * Regions:
+ * - page.header_top: To display content at the top of the page
  * - page.header: Items for the header region.
  * - page.navigation: Items for the navigation region.
  * - page.navigation_collapsible: Items for the navigation (collapsible) region.
@@ -57,6 +58,17 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+
+{# Top Page #}
+{% if page.header_top %}
+   <div class="row">
+      <div class="col-sm-12" role="heading">
+        {{ page.header_top }}
+      </div>
+    </div>
+{% endif %}
+
+
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
