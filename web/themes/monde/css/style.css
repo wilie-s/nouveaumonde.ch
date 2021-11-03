@@ -7967,6 +7967,12 @@ body {
     margin-top: 0;
   }
 }
+#header-top-wrapper {
+  background: black;
+  color: white !important;
+  padding: 12px;
+}
+
 ol, ul {
   padding-left: 1.5em;
 }
