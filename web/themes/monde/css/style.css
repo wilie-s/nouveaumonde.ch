@@ -7960,6 +7960,7 @@ body.toolbar-loading.toolbar {
 
 body {
   font-family: "AvenirNext-Regular", Helvetica, Arial, sans-serif;
+  font-display: swap;
 }
 
 @media screen and (min-width: 768px) {
@@ -7990,6 +7991,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: "AvenirNext-Heavy";
+  font-display: swap;
   margin: 0;
 }
 
@@ -8005,6 +8007,7 @@ img {
 
 strong {
   font-family: "AvenirNext-DemiBold";
+  font-display: swap;
 }
 
 .column {

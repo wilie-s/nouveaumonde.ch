@@ -20,6 +20,7 @@
 
 body {
   font-family: $font-family-base;
+  font-display: swap;
 }
 
 
@@ -53,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, {
   font-family: 'AvenirNext-Heavy';
+  font-display: swap;
   margin: 0;
 }
 
@@ -68,6 +70,7 @@ img {
 
 strong {
   font-family: 'AvenirNext-DemiBold';
+  font-display: swap;
 }
 
 .column {
